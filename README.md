@@ -62,17 +62,21 @@ Coming soon !
 
 ## Successfully Tested Devices
 - **DELL Latitude E5470 (2016) with Intel Core i7-6820HQ CPU (Frequency up to 3.6 GHz) with embedded Intel HD Graphics 530 GPU, 16GB RAM (2x8GB) DDR4 2133 MHz and a 512GB SSD disk :**
+  
 System:
 
 
 - **DELL VOSTRO (2023) with AMD Ryzen 7-5700U CPU (Frequency up to 4.3 GHz) with embedded AMD Radeon Graphics, 32GB RAM (1x32) DDR4 3200 MHz and a 512GB ROM SSD :**
+  
    System:
   Host: VostRom Kernel: 6.2.0-39-generic x86_64 bits: 64 Desktop: GNOME 42.9
     Distro: Ubuntu 22.04.3 LTS (Jammy Jellyfish)
+  
   Machine:
   Type: Laptop System: Dell product: Vostro 3525 v: 1.14.0
   Mobo: Dell model: 0RYWXV v: A02 serial: NA
     UEFI: Dell v: 1.14.0 date: 11/10/2023
+  
 Battery:
   ID-1: BAT1 charge: 40.8 Wh (100.0%) condition: 40.8/40.8 Wh (100.0%)
   CPU:
@@ -81,6 +85,7 @@ Battery:
   Speed (MHz): avg: 1425 min/max: 1400/4370 cores: 1: 1400 2: 1400 3: 1400
     4: 1400 5: 1400 6: 1400 7: 1800 8: 1400 9: 1400 10: 1400 11: 1400 12: 1400
     13: 1400 14: 1400 15: 1400 16: 1400
+    
   Graphics:
   Device-1: AMD Lucienne driver: amdgpu v: kernel
   Device-2: Microdia Integrated_Webcam_HD type: USB driver: uvcvideo
@@ -90,6 +95,7 @@ Battery:
   OpenGL:
     renderer: RENOIR (radeonsi renoir LLVM 15.0.7 DRM 3.49 6.2.0-39-generic)
     v: 4.6 Mesa 23.3.2 - kisak-mesa PPA
+    
   Audio:
   Device-1: AMD Renoir Radeon High Definition Audio driver: snd_hda_intel
   Device-2: AMD Raven/Raven2/FireFlight/Renoir Audio Processor
@@ -98,23 +104,30 @@ Battery:
   Sound Server-1: ALSA v: k6.2.0-39-generic running: yes
   Sound Server-2: PulseAudio v: 15.99.1 running: yes
   Sound Server-3: PipeWire v: 0.3.48 running: yes
+  
   Drives:
   Local Storage: total: 476.94 GiB used: 136.26 GiB (28.6%)
   ID-1: /dev/nvme0n1 vendor: Samsung model: PM9B1 NVMe 512GB
     size: 476.94 GiB
+    
   Partition:
   ID-1: / size: 274.46 GiB used: 136.04 GiB (49.6%) fs: ext4
     dev: /dev/nvme0n1p7
   ID-2: /boot/efi size: 296 MiB used: 224.4 MiB (75.8%) fs: vfat
     dev: /dev/nvme0n1p1
+    
   Swap:
   ID-1: swap-1 type: file size: 2 GiB used: 0 KiB (0.0%) file: /swapfile
   ID-2: swap-2 type: zram size: 15.35 GiB used: 0 KiB (0.0%)
     dev: /dev/zram0
+    
   Sensors:
   System Temperatures: cpu: 51.0 C mobo: 41.0 C sodimm: SODIMM C gpu: amdgpu
     temp: 45.0 C
   Fan Speeds (RPM): cpu: 0
+  
   Info:
   Processes: 422 Uptime: 4h 56m Memory: 30.69 GiB used: 6.26 GiB (20.4%)
   Shell: Sudo inxi: 3.3.13
+
+  - **New Devices to come  !!! Hope so !!!**
