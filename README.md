@@ -98,7 +98,6 @@ Audio:
   Sound Server-1: ALSA v: k6.2.0-39-generic running: yes
   Sound Server-2: PulseAudio v: 15.99.1 running: yes
   Sound Server-3: PipeWire v: 0.3.48 running: yes
-
 Drives:
   Local Storage: total: 476.94 GiB used: 136.26 GiB (28.6%)
   ID-1: /dev/nvme0n1 vendor: Samsung model: PM9B1 NVMe 512GB
