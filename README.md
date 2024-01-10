@@ -61,17 +61,17 @@ This package would not have been possible without the following contributors:
 Coming soon !
 
 ## Successfully Tested Devices
-- DELL Latitude E5470 (2016) with Intel Core i7-6820HQ CPU (Frequency up to 3.6 GHz) with embedded Intel HD Graphics 530 GPU, 16GB RAM (2x8GB) DDR4 2133 MHz and a 512GB SSD disk :
+- **DELL Latitude E5470 (2016) with Intel Core i7-6820HQ CPU (Frequency up to 3.6 GHz) with embedded Intel HD Graphics 530 GPU, 16GB RAM (2x8GB) DDR4 2133 MHz and a 512GB SSD disk :**
 System:
 
 
-- DELL VOSTRO (2023) with AMD Ryzen 7-5700U CPU (Frequency up to 4.3 GHz) with embedded AMD Radeon Graphics, 32GB RAM (1x32) DDR4 3200 MHz and a 512GB ROM SSD :
+- **DELL VOSTRO (2023) with AMD Ryzen 7-5700U CPU (Frequency up to 4.3 GHz) with embedded AMD Radeon Graphics, 32GB RAM (1x32) DDR4 3200 MHz and a 512GB ROM SSD :**
 System:
   Host: VostRom Kernel: 6.2.0-39-generic x86_64 bits: 64 Desktop: GNOME 42.9
     Distro: Ubuntu 22.04.3 LTS (Jammy Jellyfish)
 Machine:
-  Type: Laptop System: Dell product: Vostro 3525 v: 1.14.0 serial: 2QFWN04
-  Mobo: Dell model: 0RYWXV v: A02 serial: .2QFWN04.CNCMC003BU015A.
+  Type: Laptop System: Dell product: Vostro 3525 v: 1.14.0
+  Mobo: Dell model: 0RYWXV v: A02 serial: NA
     UEFI: Dell v: 1.14.0 date: 11/10/2023
 Battery:
   ID-1: BAT1 charge: 40.8 Wh (100.0%) condition: 40.8/40.8 Wh (100.0%)
@@ -98,17 +98,7 @@ Audio:
   Sound Server-1: ALSA v: k6.2.0-39-generic running: yes
   Sound Server-2: PulseAudio v: 15.99.1 running: yes
   Sound Server-3: PipeWire v: 0.3.48 running: yes
-Network:
-  Device-1: Realtek RTL8111/8168/8411 PCI Express Gigabit Ethernet
-    driver: r8169
-  IF: enp2s0 state: down mac: 04:bf:1b:a6:d7:61
-  Device-2: Realtek RTL8821CE 802.11ac PCIe Wireless Network Adapter
-    driver: rtw_8821ce
-  IF: wlp3s0 state: up mac: 4c:82:a9:55:e8:ef
-  IF-ID-1: docker0 state: down mac: 02:42:5b:57:27:83
-Bluetooth:
-  Device-1: Realtek Bluetooth Radio type: USB driver: btusb
-  Report: hciconfig ID: hci0 state: up address: 4C:82:A9:55:E8:F0 bt-v: 2.1
+
 Drives:
   Local Storage: total: 476.94 GiB used: 136.26 GiB (28.6%)
   ID-1: /dev/nvme0n1 vendor: Samsung model: PM9B1 NVMe 512GB
