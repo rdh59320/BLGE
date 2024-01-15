@@ -43,13 +43,21 @@ This package would not have been possible without the following contributors:
 ## Package Install Instructions
 
 - Open a terminal (Type "Terminal" in the application menu or Ctrl + Alt + T) then copy/paste the following command in it:
+  
   - Focal (Ubuntu 20.04) : 
 
         wget -O BeLGE_Install.sh https://github.com/rdh59320/BeLGE/releases/download/BeLGE-UBUNTU2004-v1-0/BeLGE-Ubuntu2004-V1-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
     
+    
   - Jammy (Ubuntu 22.04) :
 
         wget -O BeLGE_Install.sh https://github.com/rdh59320/BeLGE/releases/download/BeLGE-UBUNTU2204-v1-0/BeLGE-Ubuntu2204-V1-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
+    
+    
+ - Lunar (Ubuntu 23.04) [non LTS - Experimental] :
+ 
+          wget -O BeLGE_Install.sh https://github.com/rdh59320/BeLGE/releases/download/BeLGE-UBUNTU2304-V1-0/BeLGE-Ubuntu2304-V1-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
+
  
   - Mantic (Ubuntu 23.10) [non LTS - Experimental] :
  
