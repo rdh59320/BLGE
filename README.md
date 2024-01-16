@@ -1,6 +1,6 @@
 # BeLGE aka Better Linux Gaming Experience
 
-**BeLGE Package** was designed to enable you to run MS Games within the Steam app on a freshly installed version of Ubuntu 20.04 LTS or Ubuntu 22.04 LTS (still testing on other distros).
+**BeLGE Package** was designed to enable you to run MS Games within the Steam app on a freshly installed version Ubuntu 22.04 LTS, Ubuntu 23.04 or Ubuntu 23.10 (still testing on other distros). 
 
 ## Table of Contents
 - [Acknowledgments](#acknowledgments)
@@ -27,7 +27,8 @@ This package would not have been possible without the following contributors:
 
 - **DO NOT USE THIS PACKAGE IF YOUR SYSTEM DOES NOT HAVE THE MINIMAL REQUIREMENTS BELOW.**
 - To avoid any configuration conflicts with your system, it is **STRICTLY RECOMMENDED TO USE THIS PROGRAM ON A FRESHLY INSTALLED OS.**
-- This package is **only configured for Ubuntu 20.04 or 22.04-JJ LTS and WAS NOT TESTED WITH ANOTHER SYSTEM LANGUAGE THAN ENGLISH YET** (other languages may experience issues when running the script due to folder names). **So, if you are not using Ubuntu 20.04 or 22.04 with English language set on it, I advise you not to test the package** (broken links could appear due to different folder names with another language).
+- This package is **only configured for Ubuntu 22.04-JJ LTS, Ubuntu 23.04-LL or Ubuntu 23.10-MM and WAS NOT TESTED WITH ANOTHER SYSTEM LANGUAGE THAN ENGLISH YET** (other languages may experience issues when running the script due to folder names). **So, if you are not using Ubuntu 20.04 or 22.04 with English language set on it, I advise you not to test the package** (broken links could appear due to different folder names with another language).
+- The program was **tested on Ubuntu 20.04 Focal Fossa LTS** but **many instabilities** were noticed so the **version for Ubuntu 20.04 was removed** from the latest releases. 
 - Let's take into account that this package is **STILL EXPERIMENTAL**, and **YOU ARE RESPONSIBLE for ANY ISSUE** that could happen during its execution!!! (I never had any trouble yet)
 - It remains impossible for me to connect to the XBox server but this does not prevent you to play online multiplayer mode with a great gaming experience.
 - **YOU MUST OWN THE GAME ON STEAM TO RUN THIS PACKAGE, DON'T EVER USE A HACKED VERSION** (let's keep in mind the money could be useful for Steam to maintain Proton for exemple. If you are not willing to pay even a copper to play, maybe you should look after something which is already free instead !)
@@ -44,22 +45,17 @@ This package would not have been possible without the following contributors:
 
 - Open a terminal (Type "Terminal" in the application menu or Ctrl + Alt + T) then copy/paste the following command in it:
   
-  - Focal (Ubuntu 20.04) : 
-
-        wget -O BeLGE_Install.sh https://github.com/rdh59320/BeLGE/releases/download/BeLGE-UBUNTU2004-v1-0/BeLGE-Ubuntu2004-V1-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
-    
-    
-  - Jammy (Ubuntu 22.04) :
+  - Jammy Jellyfish (Ubuntu 22.04 LTS) :
 
         wget -O BeLGE_Install.sh https://github.com/rdh59320/BeLGE/releases/download/BeLGE-UBUNTU2204-v1-0/BeLGE-Ubuntu2204-V1-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
     
     
- - Lunar (Ubuntu 23.04) [non LTS - Experimental] :
+ - Lunar Lobster (Ubuntu 23.04) [non LTS - Experimental] :
  
           wget -O BeLGE_Install.sh https://github.com/rdh59320/BeLGE/releases/download/BeLGE-UBUNTU2304-V1-0/BeLGE-Ubuntu2304-V1-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
 
  
-  - Mantic (Ubuntu 23.10) [non LTS - Experimental] :
+  - Mantic Minotaur (Ubuntu 23.10) [non LTS - Experimental] :
  
           wget -O BeLGE_Install.sh https://github.com/rdh59320/BeLGE/releases/download/BeLGE-UBUNTU2310-v1-0/BeLGE-Ubuntu2310-V1-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
 
