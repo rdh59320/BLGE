@@ -72,7 +72,9 @@ This package would not have been possible without the following contributors:
 - Have fun and make friends online ... or not !!!
 
 ## Tutorial
-Coming soon !
+You can download the tutorial package [here](https://github.com/rdh59320/BeLGE/releases/download/BeLGE-UBUNTU2204-v1-0/Tutorial.zip)
+
+Unpack it and follow the pdf file instructions along with the different folders which contains pictures for BIOS screen (sorry for their poor quality !) and recorded video session to guide you in your installation process (these are raw videos so there is neither sound nor cutting, you can skip forward sometimes). 
 
 ## Successfully Tested Devices
 - **DELL Latitude E5470 (2016) with Intel Core i7-6820HQ CPU (Frequency up to 3.6 GHz) with embedded Intel HD Graphics 530 GPU, 16GB RAM (2x8GB) DDR4 2133 MHz and a 512GB SSD disk :**
