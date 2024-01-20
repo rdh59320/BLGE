@@ -7,7 +7,7 @@
 - [Warnings](#warnings)
 - [System Requirements](#system-requirements)
 - [Package Install Instructions](#package-install-instructions)
-- [Video Tutorials](#video-tutorials)
+- [Tutorial](#tutorial)
 - [Successfully Tested Devices](#successfully-tested-devices)
   
 ## Acknowledgments
@@ -71,7 +71,7 @@ This package would not have been possible without the following contributors:
 - If you don't have it yet, you'll have to buy now (else you can't play) ! It's worthy, trust me !!!
 - Have fun and make friends online ... or not !!!
 
-## Video Tutorials
+## Tutorial
 Coming soon !
 
 ## Successfully Tested Devices
