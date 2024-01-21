@@ -82,6 +82,59 @@ This package would not have been possible without the following contributors:
 - **DELL Latitude E5470 (2016) with Intel Core i7-6820HQ CPU (Frequency up to 3.6 GHz) with embedded Intel HD Graphics 530 GPU, 16GB RAM (2x8GB) DDR4 2133 MHz and a 512GB SSD disk :**
   
 System:
+  Host: roman-Latitude-E5470 Kernel: 6.5.0-14-generic x86_64 bits: 64
+    Desktop: GNOME 42.9 Distro: Ubuntu 22.04.3 LTS (Jammy Jellyfish)
+    
+Machine:
+  Type: Laptop System: Dell product: Latitude E5470 v: N/A serial: 810VDC2
+  Mobo: Dell model: 06DNG5 v: A00 serial: /810VDC2/CN1296365L004D/
+    UEFI: Dell v: 1.34.3 date: 11/20/2022
+    
+Battery:
+  ID-1: BAT0 charge: 37.7 Wh (100.0%) condition: 37.7/62.0 Wh (60.9%)
+CPU:
+  Info: quad core model: Intel Core i7-6820HQ bits: 64 type: MT MCP cache:
+    L2: 1024 KiB
+  Speed (MHz): avg: 800 min/max: 800/3600 cores: 1: 800 2: 800 3: 800
+    4: 800 5: 800 6: 800 7: 800 8: 800
+    
+Graphics:
+  Device-1: Intel HD Graphics 530 driver: i915 v: kernel
+  Device-2: Realtek Integrated_Webcam_HD type: USB driver: uvcvideo
+  Display: server: X.Org v: 1.21.1.4 driver: X: loaded: modesetting
+    unloaded: fbdev,vesa gpu: i915 resolution: 1920x1080~60Hz
+  OpenGL: renderer: Mesa Intel HD Graphics 530 (SKL GT2)
+    v: 4.6 Mesa 23.3.3 - kisak-mesa PPA
+    
+Audio:
+  Device-1: Intel 100 Series/C230 Series Family HD Audio
+    driver: snd_hda_intel
+  Sound Server-1: ALSA v: k6.5.0-14-generic running: yes
+  Sound Server-2: PulseAudio v: 15.99.1 running: yes
+  Sound Server-3: PipeWire v: 0.3.48 running: yes
+  
+Drives:
+  Local Storage: total: 476.94 GiB used: 42.18 GiB (8.8%)
+  ID-1: /dev/sda vendor: Micron model: SK hynix SC300 M.2 2280 512GB
+    size: 476.94 GiB
+    
+Partition:
+  ID-1: / size: 467.89 GiB used: 42.18 GiB (9.0%) fs: ext4 dev: /dev/sda2
+  ID-2: /boot/efi size: 511 MiB used: 6.1 MiB (1.2%) fs: vfat
+    dev: /dev/sda1
+    
+Swap:
+  ID-1: swap-1 type: file size: 2 GiB used: 0 KiB (0.0%) file: /swapfile
+  ID-2: swap-2 type: zram size: 7.69 GiB used: 768 KiB (0.0%)
+    dev: /dev/zram0
+    
+Sensors:
+  System Temperatures: cpu: 57.0 C pch: 41.5 C mobo: 53.0 C
+  Fan Speeds (RPM): cpu: 2895
+Info:
+
+  Processes: 257 Uptime: 38m Memory: 15.37 GiB used: 1.81 GiB (11.8%)
+  Shell: Sudo inxi: 3.3.13
 
 
 - **DELL VOSTRO (2023) with AMD Ryzen 7-5700U CPU (Frequency up to 4.3 GHz) with embedded AMD Radeon Graphics, 32GB RAM (1x32) DDR4 3200 MHz and a 512GB ROM SSD :**
@@ -97,6 +150,7 @@ System:
   
 Battery:
   ID-1: BAT1 charge: 40.8 Wh (100.0%) condition: 40.8/40.8 Wh (100.0%)
+  
   CPU:
   Info: 8-core model: AMD Ryzen 7 5700U with Radeon Graphics bits: 64
     type: MT MCP cache: L2: 4 MiB
