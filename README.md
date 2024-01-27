@@ -47,7 +47,7 @@ This package would not have been possible without the following contributors:
 
   - Focal Fossa (Ubuntu 20.04 LTS) :
  
-        wget -O BeLGE_Install.shhttps://github.com/rdh59320/BeLGE/releases/download/BeLGE-UBUNTU2004-v1-0/BeLGE-Ubuntu2004-V1-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
+        wget -O BeLGE_Install.sh https://github.com/rdh59320/BeLGE/releases/download/BeLGE-UBUNTU2004-v1-0/BeLGE-Ubuntu2004-V1-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
 
 
   - Jammy Jellyfish (Ubuntu 22.04 LTS) :
