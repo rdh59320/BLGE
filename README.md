@@ -56,7 +56,8 @@ This package would not have been possible without the following contributors:
         wget -O BeLGE_Install.sh https://github.com/rdh59320/BeLGE/releases/download/BeLGE-UBUNTU2204-v1-0/BeLGE-Ubuntu2204-V1-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
     
     
- - Noble Numbat (Ubuntu 24.04) [non LTS - Experimental] ==> COMING SOON ! 
+ - Noble Numbat (Ubuntu 24.04) [non LTS - Experimental]
+       ==> COMING SOON ! 
     
 - Since the script had to optimize some system parameters, super-user commands (sudo) are included in it and thus your password will be requirted for its correct execution.
 - Once the script ended and the system has been rebooted, you will notice a new desktop shortcup named "Steam Install" (if you don't, issues might have occured during the installation script execution).
