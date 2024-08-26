@@ -1,6 +1,6 @@
 # BeLGE aka Better Linux Gaming Experience
 
-**BeLGE Package** was designed to enable you to run MS Games within the Steam app on a freshly installed version Ubuntu 22.04 LTS, Ubuntu 23.04 or Ubuntu 23.10 (still testing on other distros). 
+**BeLGE Package** was designed to enable you to run MS Games within the Steam app on a freshly installed version Ubuntu LTS 20.04, Ubuntu 22.04 or Ubuntu 24.04 (still testing !!!). 
 
 ## Table of Contents
 - [Acknowledgments](#acknowledgments)
