@@ -27,11 +27,12 @@ This package would not have been possible without the following contributors:
 
 - **DO NOT USE THIS PACKAGE IF YOUR SYSTEM DOES NOT HAVE THE MINIMAL REQUIREMENTS BELOW.**
 - To avoid any configuration conflicts with your system, it is **STRICTLY RECOMMENDED TO USE THIS PROGRAM ON A FRESHLY INSTALLED OS.**
-- This package is **only configured for Ubuntu 22.04-JJ LTS, Ubuntu 23.04-LL or Ubuntu 23.10-MM and WAS NOT TESTED WITH ANOTHER SYSTEM LANGUAGE THAN ENGLISH YET** (other languages may experience issues when running the script due to folder names). **So, if you are not using Ubuntu 20.04 or 22.04 with English language set on it, I advise you not to test the package** (broken links could appear due to different folder names with another language).
-- The program was **tested on Ubuntu 20.04 Focal Fossa LTS** but **many instabilities** were noticed so the **version for Ubuntu 20.04 was removed** from the latest releases. 
+- This package is **only configured for Ubuntu LTS 20.04 Focal Fossa and 22.04-JJ and WAS NOT TESTED WITH ANOTHER SYSTEM LANGUAGE THAN ENGLISH YET** (other languages may experience issues when running the script due to folder names, i'm working on it). 
+**So, if you are not using Ubuntu 20.04 or 22.04 with English language set on it, I advise you not to test the package or set your system in English during Installation** (broken links could appear due to different folder names with another language).
+- The program was **tested on Ubuntu 20.04 Focal Fossa LTS** but **many instabilities** were noticed so the **BE CAREFULL WHEN USING IT** (an update will be available soon with Ubuntu 24.04 as well !). 
 - Let's take into account that this package is **STILL EXPERIMENTAL**, and **YOU ARE RESPONSIBLE for ANY ISSUE** that could happen during its execution!!! (I never had any trouble yet)
-- It remains impossible for me to connect to the XBox server but this does not prevent you to play online multiplayer mode with a great gaming experience.
-- **YOU MUST OWN THE GAME ON STEAM TO RUN THIS PACKAGE, DON'T EVER USE A HACKED VERSION** (let's keep in mind the money could be useful for Steam to maintain Proton for exemple. If you are not willing to pay even a copper to play, maybe you should look after something which is already free instead !)
+- It remains impossible for me to connect to the XBox server but this does not prevent you to play online multiplayer mode with a great gaming experience (Maybe the same reasons that CaptureAge is not working on Linux just like Arkanosis said on https://aoe2.arkanosis.net/linux/#how_do_i_use_capture_age_on_linux , you should have look !) .
+- **YOU MUST OWN THE GAME ON STEAM TO RUN THIS PACKAGE, DON'T EVER USE A HACKED VERSION** (Let's keep in mind that money could be useful for Valve to maintain Steam Proton for exemple. If you are not willing to pay even a copper to play, maybe you should look after something which is already free instead ! Cracked version aren't so innocent that it could seem to since in these world only a few people are really ready to spent time ansd mind ressources for others !!! Too Bad !!!)
 
 ## System Requirements
 
@@ -69,10 +70,11 @@ This package would not have been possible without the following contributors:
 - Have fun and make friends online ... or not !!!
 
 ## Tutorial
-- Comming soon !!
+- Comming soon !! I hope but it took longer than I used to think first !!! 
 
 ## Successfully Tested Devices
-- **DELL Latitude E5470 (2016) with Intel Core i7-6820HQ CPU (Frequency up to 3.6 GHz) with embedded Intel HD Graphics 530 GPU, 16GB RAM (2x8GB) DDR4 2133 MHz and a 512GB SSD disk
+- **DELL Latitude E5470 (2016) with Intel Core i7-6820HQ CPU (Frequency up to 3.6 GHz) with embedded Intel HD Graphics 530 GPU, 16GB RAM (2x8GB) DDR4 2133 MHz and a 512GB SSD disk**
 
 - **DELL VOSTRO (2023) with AMD Ryzen 7-5700U CPU (Frequency up to 4.3 GHz) with embedded AMD Radeon Graphics, 32GB RAM (1x32) DDR4 3200 MHz and a 512GB ROM SSD :**
+  
 - **New Devices to come  !!! Hope so !!!**
