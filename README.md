@@ -46,17 +46,17 @@ This package would not have been possible without the following contributors:
 
 - Open a terminal (Type "Terminal" in the application menu or Ctrl + Alt + T) then copy/paste the following command in it:
 
- #- Focal Fossa (Ubuntu 20.04 LTS) :
+**Focal Fossa (Ubuntu 20.04 LTS) :**
  
         wget -O BeLGE_Install.sh https://github.com/rdh59320/BeLGE/releases/download/BeLGE-UBUNTU2004-v1-0/BeLGE-Ubuntu2004-V1-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
 
 
- #- Jammy Jellyfish (Ubuntu 22.04 LTS) :
+ **Jammy Jellyfish (Ubuntu 22.04 LTS) :**
 
         wget -O BeLGE_Install.sh https://github.com/rdh59320/BeLGE/releases/download/BeLGE-UBUNTU2204-v1-0/BeLGE-Ubuntu2204-V1-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
     
     
- #- Noble Numbat (Ubuntu 24.04) :
+**Noble Numbat (Ubuntu 24.04) :**
        ==> COMING SOON ! 
 
     
