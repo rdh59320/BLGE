@@ -1,0 +1,15 @@
+[Desktop Entry]
+
+# Designer : Roman PCR59320 aka Roman O'Cry  (pcr59320@gmail.com / https://github.com/rdh59320/)
+# Description : CPU Governor Switcher to choose either powersave or performance CPU profile
+# Licence CREATIVE COMMONS CC BY-NC-SA 4.0
+# Version : 1.0
+
+Version=1.0
+Type=Application
+Terminal=false
+Name=CPU Governor
+Icon=/opt/BeLGE/App/CPUGOV/xfsm-switch.svg
+Exec=xterm -e 'echo -e "\n\n Password required for launching the app \n\n" && sleep 1 && sudo bash /opt/BeLGE/App/CPUGOV/cpu-scal-gov.sh'
+Categories=Applications;
+

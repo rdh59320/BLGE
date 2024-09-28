@@ -1,0 +1,16 @@
+[Desktop Entry]
+
+# Designer : Roman PCR59320 aka Roman O'Cry  (pcr59320@gmail.com / https://github.com/rdh59320/)
+# Description : ClamAV scan app
+# Licence CREATIVE COMMONS CC BY-NC-SA 4.0
+# Version : 1.0
+
+
+Version=1.0
+Type=Application
+Terminal=false
+Name=ClamAV Scan
+Icon=/opt/BeLGE/App/ClamAV/ClamAV.png
+Exec=xterm -e 'bash /opt/BeLGE/App/ClamAV/Clamav-scan.sh'
+Categories=Applications;
+
