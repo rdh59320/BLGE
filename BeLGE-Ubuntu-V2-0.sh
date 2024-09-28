@@ -24,7 +24,7 @@ fi
 echo -e "\n\n\n   Be.L.G.E V2.0 aka  \n\n\n"
 echo -e "\n\n   Better Linux Gaming Experience   \n\n"
 echo -e "\n\n   Avalaible for UBUNTU 20.04, 22.04 and 24.04 LTS \n\n"
-echo -e "\n\n   EXPERIMENTAL Package for Steam installation with GE-Proton \n\n"
+echo -e "\n\n   EXPERIMENTAL Package for Steam installation with ProtonUp-Qt \n\n"
 
 # Request for Package installation
 read -p " Type y or Y then press [y/Y] to install or anyother key to quit [DEFAULT] : " repstart
@@ -49,7 +49,7 @@ apt -y install inxi curl wget xz-utils
 # Downloading package archive and extraction into the opt directory then removing archive 
 
 cd opt/
-wget -O BeLGE.tar.xz https://github.com/rdh59320/BeLGE/releases/download/BeLGE-UBUNTU-v2-0/BeLGE.tar.xz
+wget -O BeLGE.tar.xz https://github.com/rdh59320/BeLGE/releases/download/BeLGE-V2-0/BeLGE.tar.xz
 sleep 1
 tar -Jxvf BeLGE.tar.xz -C /opt/
 sleep 1
