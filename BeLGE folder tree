@@ -1,0 +1,42 @@
+Here below is the folder tree structure of the Belge package in your system once installed 
+
+/opt/BeLGE/
+├── App
+│   ├── ClamAV
+│   │   ├── ClamAV.desktop
+│   │   ├── ClamAV.png
+│   │   └── Clamav-scan.sh
+│   ├── CPU_Switch
+│   │   ├── cpu-scal-gov.sh
+│   │   ├── CPU_switch.desktop
+│   │   └── xfsm-switch.svg
+│   ├── Grub
+│   │   ├── BeLGE_wallpaper.jpg
+│   │   └── grub
+│   └── Sys_Update
+│       ├── system-software-update.svg
+│       ├── Sysupdater.desktop
+│       └── Sysupdater.sh
+├── Install
+│   ├── Comp
+│   │   ├── GPU_Check.sh
+│   │   └── OS_Check.sh
+│   └── Config
+│       ├── GPU_Drivers.sh
+│       ├── Steam_Config.sh
+│       ├── Sys_Config.sh
+│       ├── Sys_Custom.sh
+│       └── WineHQ.sh
+└── Var
+    ├── GPU
+    │   ├── AMD
+    │   ├── GPU
+    │   ├── INTEL
+    │   └── NVIDIA
+    └── OS
+        ├── FF
+        ├── JJ
+        ├── NN
+        └── OS
+
+Total : 12 directories, 26 files
