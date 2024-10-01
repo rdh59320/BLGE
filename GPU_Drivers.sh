@@ -8,7 +8,7 @@
 # Begin script
 
 ## Getting the GPU supplier variable
-GPU='cat /home/$USER/.BeLGE/Var/GPU/GPU'
+GPU='cat /home/$USER/.BeLGE/GPU'
 ## Applying the right PPA according to the detected GPU
 
 # Case where AMD or Intel is the main GPU supplier (variables has been dowloaded above when checking GPU supplier)
