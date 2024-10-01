@@ -16,7 +16,7 @@ wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/w
 
 # Condition to download the right PPA key according to your OS (variable OS previously generated)
 
-Distro='cat /opt/BeLGE/Var/OS/OS'
+Distro='cat /home/$USER/.BeLGE/Var/OS/OS'
 wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/$Distro/winehq-$Distro.sources
 
 echo -e "\n\n Installing Wine-HQ staging on your System \n\n"

@@ -24,18 +24,17 @@ fi
 echo -e "\n\n\n   Be.L.G.E V2.0 aka  \n\n\n"
 echo -e "\n\n   Better Linux Gaming Experience   \n\n"
 echo -e "\n\n   Avalaible for UBUNTU 20.04, 22.04 and 24.04 LTS \n\n"
-echo -e "\n\n   EXPERIMENTAL Package for Steam installation with ProtonUp-Qt \n\n"
+echo -e "\n\n   EXPERIMENTAL Package for Steam installation with GE-Proton \n\n"
 
 # Request for Package installation
 read -p " Type y or Y then press [y/Y] to install or anyother key to quit [DEFAULT] : " repstart
 
-if [ $repstart != "y" -o $repstar != "Y" ]
-	then echo -e "\n\n Package won't be installed \n\n"
-	echo " Good Bye \!\!\!"
-	echo -e "\n\n"
-	sleep 2
-	exit
-fi
+if [ $repstart != "y" -o $repstar != "Y" ] then echo -e "\n\n Package won't be installed \n\n";
+	echo " Good Bye \!\!\!";
+	echo -e "\n\n";
+	sleep 2;
+	exit;
+fi;
 
 # Install wget curl, inxi & xz-utils for system infos, package download and extraction
 
@@ -72,25 +71,25 @@ bash /opt/BeLGE/Install/Comp/GPU_Check.sh
 
 # Processing the compatibility test with previous scripts variables
 ## Getting OS and GPU check variables
-OS='cat /opt/BeLGE/Var/OS/OS'
-GPU='cat /opt/BeLGE/Var/GPU/GPU'
+OS='cat /home/$USER/.BeLGE/Var/OS/OS'
+GPU='cat /home/$USER/.BeLGE/Var/GPU/GPU'
 
 ## Checking OS is compatible 
-if [ $OS = "0" ] 
-	then echo -e "Your OS is not supported \n\n Programm must stop now \n\n Package will be deleted from your system \n\n"
-	sleep 3
-	rm -rf /opt/BeLGE
-	sleep 1
-	exit
+if [ $OS = "0" ] then echo -e "Your OS is not supported \n\n Programm must stop now \n\n Package will be deleted from your system \n\n";
+	sleep 1;
+	rm -rf /opt/BeLGE;
+	rm -rf /home/$USER/.BeLGE;
+	sleep 3;
+	exit;
 fi
 
 ## Checking GPU is compatible 
-if [ $GPU = "0" ] 
-	then echo -e "Your GPU is not supported \n\n Programm must stop now \n\n Package will be deleted from your system \n\n"
-	sleep 3
-	rm -rf /opt/BeLGE
-	sleep 1
-	exit
+if [ $GPU = "0" ] then echo -e "Your GPU is not supported \n\n Programm must stop now \n\n Package will be deleted from your system \n\n";
+	sleep 1;
+	rm -rf /opt/BeLGE;
+	rm -rf /home/$USER/.BeLGE;
+	sleep 3;
+	exit;
 fi
 
 ## Confirmation request of the package installation
@@ -98,11 +97,11 @@ fi
 echo -e "\n\n\n  Your system is suitable for installation \n\n\n Would you like to install the BeLGE package ? \n Type n or N then press [ENTER] to abort installation \n"
 read -p " Or press Any Other Key to Continue [DEFAULT] : " repinstall
 
-if [ $repinstall = "n" -o $repinstall = "N" ]
-	then echo -e "\n\n Installation has been aborted \n\n Program will shutdown now and \n\n Package will be deleted from your system \n\n";
-	sleep 3;
-	rm -rf /opt/BeLGE;
+if [ $repinstall = "n" -o $repinstall = "N" ] then echo -e "\n\n Installation has been aborted \n\n Program will shutdown now and \n\n Package will be deleted from your system \n\n";
 	sleep 1;
+	rm -rf /opt/BeLGE;
+	rm -rf /home/$USER/.BeLGE
+	sleep 3;
 	exit;
 fi
 
@@ -138,11 +137,13 @@ apt -y autoremove --purge
 echo -e "\n\n\n Let's Reboot to apply all Updates \n\n\n"
 
 
-read -p " Press any key to launch system reboot : " reboot
+read -p " Press any key to launch the system reboot : " reboot
 
 # Install script autoremove before reboot 
 
+rm -rf /home/$USER/.BeLGE
 rm -f BeLGE_Install.sh
+echo -e "\n\n System is rebooting \n\n"
 sleep 1
 reboot
 
