@@ -12,7 +12,7 @@ GPU='cat /home/$USER/.BeLGE/Var/GPU/GPU'
 ## Applying the right PPA according to the detected GPU
 
 # Case where AMD or Intel is the main GPU supplier (variables has been dowloaded above when checking GPU supplier)
-if [ "$GPU" = "amd" -o "$GPU" = "intel" ]
+if [ "$GPU" = "AMD" -o "$GPU" = "Intel" ]
 	then echo -e "\n\n\n Adding Intel/AMD Mesa/Vulkan Drivers\n\n\n" ;
 	sudo add-apt-repository ppa:kisak/kisak-mesa -y;
 	sudo apt update;
@@ -20,7 +20,7 @@ if [ "$GPU" = "amd" -o "$GPU" = "intel" ]
 	sudo apt install -y libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386;
     	
 # Case where NVIDIA is the main GPU supplier
-elif [ "$GPU" = "nvidia" ] 
+elif [ "$GPU" = "NVIDIA" ] 
 	then echo -e "\n\n\n Adding  NVIDIA Drivers \n\n\n";
 	sudo add-apt-repository ppa:graphics-drivers/ppa -y;
 	sudo apt update;
