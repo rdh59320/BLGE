@@ -17,26 +17,15 @@ Here below is the folder tree structure of the Belge package in your system once
 │       ├── system-software-update.svg
 │       ├── Sysupdater.desktop
 │       └── Sysupdater.sh
-├── Install
-│   ├── Comp
-│   │   ├── GPU_Check.sh
-│   │   └── OS_Check.sh
-│   └── Config
-│       ├── GPU_Drivers.sh
-│       ├── Steam_Config.sh
-│       ├── Sys_Config.sh
-│       ├── Sys_Custom.sh
-│       └── WineHQ.sh
-└── Var
-    ├── GPU
-    │   ├── AMD
-    │   ├── GPU
-    │   ├── INTEL
-    │   └── NVIDIA
-    └── OS
-        ├── FF
-        ├── JJ
-        ├── NN
-        └── OS
+└── Install
+    ├── Comp
+    │   ├── GPU_Check.sh
+    │   └── OS_Check.sh
+    └── Config
+        ├── GPU_Drivers.sh
+        ├── Steam_Config.sh
+        ├── Sys_Config.sh
+        ├── Sys_Custom.sh
+        └── WineHQ.sh
 
-Total : 12 directories, 26 files
+9 directories, 18 files
