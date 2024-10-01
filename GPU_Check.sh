@@ -26,23 +26,29 @@ nvidia='cat /home/$USER/.BeLGE/Var/GPU/NVIDIA'
 # Variables simplification into boolean (empty=0, non-empty=1)
 
 # Case AMD file is tested empty then AMD is false and boolean var is switched to 0 (else 1 if Device-1 is AMD)
-if [ ! -s "$amd" ] then echo "0" > /home/$USER/.BeLGE/Var/GPU/AMD;
+if [ ! -s "$amd" ] then 
+    echo "0" > /home/$USER/.BeLGE/Var/GPU/AMD;
 
-else echo "amd" > /home/$USER/.BeLGE/Var/GPU/GPU;
+else 
+    echo "amd" > /home/$USER/.BeLGE/Var/GPU/GPU;
 	
 fi;
 
 # Case Intel file is tested empty then AMD is false and boolean var is switched to 0 (else 1 if Device-1 is AMD)
-if [ ! -s "$intel" ] then echo "0" > /home/$USER/.BeLGE/Var/GPU/Intel;
+if [ ! -s "$intel" ] then 
+    echo "0" > /home/$USER/.BeLGE/Var/GPU/Intel;
 
-else echo "intel" > /home/$USER/.BeLGE/Var/GPU/GPU;
+else 
+    echo "intel" > /home/$USER/.BeLGE/Var/GPU/GPU;
 	
 fi;
 	
 # Case NVIDIA file is tested empty then AMD is false and boolean var is switched to 0 (else 1 if Device-1 is AMD)	
-if [ ! -s "$nvidia" ] then echo "0" > /home/$USER/.BeLGE/Var/GPU/NVIDIA;
+if [ ! -s "$nvidia" ] then 
+    echo "0" > /home/$USER/.BeLGE/Var/GPU/NVIDIA;
 
-else echo "nvidia" > /home/$USER/.BeLGE/Var/GPU/GPU;
+else 
+    echo "nvidia" > /home/$USER/.BeLGE/Var/GPU/GPU;
 	
 fi;
 
