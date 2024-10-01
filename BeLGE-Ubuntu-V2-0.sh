@@ -61,32 +61,26 @@ echo -e "\n\n  Package has been downloaded \n\n"
 chmod +x /opt/BeLGE/Install/Comp/*
 chmod +x /opt/BeLGE/Install/Config/*
 
+# Creating the Belge Var file in home directory
+mkdir -p /home/$USER/.BeLGE/
+
 ### Compatibility Scripts
 
 ## OS check script
 bash /opt/BeLGE/Install/Comp/OS_Check.sh
 
-## GPU compatibility check script
+## GPU check script
 bash /opt/BeLGE/Install/Comp/GPU_Check.sh
 
 # Processing the compatibility test with previous scripts variables
 ## Getting OS and GPU check variables
-OS='cat /home/$USER/.BeLGE/Var/OS/OS'
-GPU='cat /home/$USER/.BeLGE/Var/GPU/GPU'
+OS='cat /home/$USER/.BeLGE/OS'
+GPU='cat /home/$USER/.BeLGE/OS'
 
-## Checking OS is compatible 
-if [ $OS = "0" ] then 
+# Compatibility check => if OS or GPU var is set to "0" means not compatible then stoping programm
+
+if [ $OS = "0" -o $GPU = "0" ] then
     echo -e "Your OS is not supported \n\n Programm must stop now \n\n Package will be deleted from your system \n\n";
-    sleep 1;
-    rm -rf /opt/BeLGE;
-    rm -rf /home/$USER/.BeLGE;
-    sleep 3;
-    exit;
-fi
-
-## Checking GPU is compatible 
-if [ $GPU = "0" ] then 
-    echo -e "Your GPU is not supported \n\n Programm must stop now \n\n Package will be deleted from your system \n\n";
     sleep 1;
     rm -rf /opt/BeLGE;
     rm -rf /home/$USER/.BeLGE;
@@ -146,6 +140,7 @@ read -p " Press any key to launch the system reboot : " reboot
 
 rm -rf /home/$USER/.BeLGE
 rm -f BeLGE_Install.sh
+rm -rf /opt/BeLGE/Install
 echo -e "\n\n System is rebooting \n\n"
 sleep 1
 reboot
