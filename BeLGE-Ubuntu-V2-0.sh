@@ -27,7 +27,8 @@ echo -e "\n\n  Please wait while the program is loading \n\n"
 echo -e "\n\n  the required packages for compatibilty analysis \n\n"
 sleep 1
 
-apt update 
+apt update
+apt full-upgrade -y
 apt -y install inxi curl wget xz-utils
 
 # Downloading package archive and extraction into the opt directory then removing archive 
