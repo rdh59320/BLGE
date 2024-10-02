@@ -7,18 +7,7 @@
 
 # Begin Install script
 
-## MUST BE RUN AS ROOT
-
-# if user is not running the command as root
-
-if [ "$UID" -ne 0 ] then
-# output message if user has not root priviledges
-    echo "Please run the installer with SUDO!"
-        # stop script         
-    exit
-fi
-
-### Package Installation Request
+## Package Installation Request
 
 echo -e "\n\n\n   Be.L.G.E V2.0 aka  \n\n\n"
 echo -e "\n\n   Better Linux Gaming Experience   \n\n"
@@ -29,13 +18,9 @@ echo -e "\n\n   EXPERIMENTAL Package for Steam installation with GE-Proton \n\n"
 read -p " Type y or Y then press [y/Y] to install or anyother key to quit [DEFAULT] : " repstart
 
 if [ $repstart != "y" -o $repstar != "Y" ] then 
-    echo -e "\n\n Package won't be installed \n\n";
-    echo " Good Bye \!\!\!";
-    echo -e "\n\n";
-    sleep 2;
-    exit;
-fi;
-
+    echo -e "\n\n Package won't be installed \n\n";echo " Good Bye \!\!\!";echo -e "\n\n";sleep 2 && exit;
+    
+ 
 # Install wget curl, inxi & xz-utils for system infos, package download and extraction
 
 echo -e "\n\n  Please wait while the program is loading \n\n"
@@ -47,7 +32,7 @@ apt -y install inxi curl wget xz-utils
 
 # Downloading package archive and extraction into the opt directory then removing archive 
 
-cd opt/
+cd /opt
 wget -O BeLGE.tar.xz https://github.com/rdh59320/BeLGE/releases/download/BeLGE-V2-0/BeLGE.tar.xz
 sleep 1
 tar -Jxvf BeLGE.tar.xz -C /opt/
@@ -86,7 +71,6 @@ if [ $OS = "0" -o $GPU = "0" ] then
     rm -rf /home/$USER/.BeLGE;
     sleep 3;
     exit;
-fi
 
 ## Confirmation request of the package installation
 
@@ -100,7 +84,6 @@ if [ $repinstall = "n" -o $repinstall = "N" ] then
     rm -rf /home/$USER/.BeLGE
     sleep 3;
     exit;
-fi
 
 # System configuration script
 bash /opt/BeLGE/Install/Config/Sys_Config.sh
@@ -142,7 +125,6 @@ rm -rf /home/$USER/.BeLGE
 rm -f BeLGE_Install.sh
 rm -rf /opt/BeLGE/Install
 echo -e "\n\n System is rebooting \n\n"
-sleep 1
-reboot
+sleep 1 && reboot
 
 # End script
