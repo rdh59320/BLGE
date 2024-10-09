@@ -112,7 +112,7 @@ sudo bash /opt/BeLGE/Install/Config/GPU_Drivers.sh
 sudo bash /opt/BeLGE/Install/Config/Steam_Config.sh 
 
 # System Customization
-sudo bash /opt/BeLGE/Install/Config/Sys_Custom.sh
+bash /opt/BeLGE/Install/Config/Sys_Custom.sh
 
 # Last update then reboot
 
@@ -124,8 +124,8 @@ echo -e "\n\n BeLGE package Installation complete \n\n"
 
 echo -e "\n\n\n Last Update before Restart \n\n\n"
 
-sudo apt update
-sudo apt full-upgrade -y
+sudo aptitude update
+sudo aptitude full-upgrade -y
 sudo apt autoremove --purge -y
 
 echo -e "\n\n\n System update complete. Ready for reboot \n\n\n"
