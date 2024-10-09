@@ -56,7 +56,7 @@ This package would not have been possible without the following contributors:
 
 **On Ubuntu 20.04 FF, 22.04 JJ or 24.04 NN only :**
  
-        wget -O BeLGE_Install.sh https://raw.githubusercontent.com/rdh59320/BeLGE/65caccf6c649019bec12c4e4561ae60fd07ceb90/BeLGE-Ubuntu-V2-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
+    wget -O BeLGE_Install.sh https://raw.githubusercontent.com/rdh59320/BeLGE/refs/heads/BeLGEV2-0/BeLGE-Ubuntu-V2-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
 
     
 - Since the script had to optimize some system parameters, super-user commands (sudo) are included in it and thus your password will be required for its correct execution.
