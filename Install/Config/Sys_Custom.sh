@@ -63,6 +63,6 @@ sudo mv /opt/BeLGE/App/BeLGE_wallpaper.jpg /boot/grub/Images/
 sudo mv -f /opt/BeLGE/App/grub /etc/default/grub
 sudo update-grub
 
-echo "System customization completed successfully."
+echo -e "\n\n System customization completed successfully \n\n"
 
 # End script
