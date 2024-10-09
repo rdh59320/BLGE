@@ -28,7 +28,7 @@ if ! sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/win
 fi
 
 # Condition to download the right PPA key according to your OS (variable OS previously generated)
-Distro=$(cat "/home/$USER/.BeLGE/OS")
+Distro=$(cat "/opt/BeLGE/Var/OS")
 
 if ! sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/$Distro/winehq-$Distro.sources; then
     echo "Failed to download WineHQ sources. Please check your internet connection and OS compatibility."
