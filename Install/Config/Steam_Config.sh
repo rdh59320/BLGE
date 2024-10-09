@@ -39,12 +39,7 @@ echo -e "\n\n Installing ProtonUp-Qt dependencies \n\n"
 sudo apt install -y git unzip xdotool xxd yad scummvm inotify-tools libssl-dev dosbox timidity
 
 echo -e "\n\n Installing ProtonUp-Qt compatibility tool \n\n"
-if ! flatpak install flathub net.davidotek.pupgui2 -y; then
-    echo "Failed to install ProtonUp-Qt. Please check the error messages above."
-    exit 1
-fi
-
-echo -e "\n\n ProtonUp-Qt is now installed on your system \n\n"
+flatpak install flathub net.davidotek.pupgui2 -y
 
 echo "Steam and ProtonUp-Qt installation completed successfully."
 
