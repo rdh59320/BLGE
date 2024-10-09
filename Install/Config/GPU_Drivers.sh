@@ -18,7 +18,7 @@ trap 'handle_error $LINENO' ERR
 # Begin script
 
 ## Getting the GPU supplier variable
-GPU=$(cat "/home/$USER/.BeLGE/GPU")
+GPU=$(cat "/opt/BeLGE/Var/GPU")
 
 ## Applying the right PPA according to the detected GPU
 
