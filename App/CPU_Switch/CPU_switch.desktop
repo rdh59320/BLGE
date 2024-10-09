@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=BeLGE CPU Governor
+GenericName=CPU Performance Manager
+Comment=Switch between power-saving and performance CPU profiles
+Exec=pkexec /opt/BeLGE/App/CPU_Switch/cpu-scal-gov.sh
+Icon=/opt/BeLGE/App/CPU_Switch/xfsm-switch.svg
+Terminal=false
+Categories=System;Settings;HardwareSettings;
+Keywords=CPU;Governor;Performance;PowerSave;
+StartupNotify=true
