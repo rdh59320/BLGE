@@ -36,7 +36,7 @@ echo -e " \n\nSteam has been pre-installed on your System \n\n"
 # ProtonUp-Qt Installation via Flatpak as recommended by Davidotek
 
 echo -e "\n\n Installing ProtonUp-Qt dependencies \n\n"
-sudo apt install -y git pgrep unzip xdotool xrandr xwininfo xxd yad scummvm inotify-tools libssl-dev dosbox timidity fluid-soundfont
+sudo apt install -y git unzip xdotool xxd yad scummvm inotify-tools libssl-dev dosbox timidity
 
 echo -e "\n\n Installing ProtonUp-Qt compatibility tool \n\n"
 if ! flatpak install flathub net.davidotek.pupgui2 -y; then
