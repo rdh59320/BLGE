@@ -81,7 +81,7 @@ This package would not have been possible without the following contributors:
 
 ## Successfully Tested Devices
 
--**HP ProBook 640 G1 with Intel Core i4-4210M CPU (frequency up to 3.2 GHz in Turbomode) with embedded Mesa Intel HD Graphics 4600 GPU, 8GB (2x4GB) SDRAM  DDR3 1600 MHz and a 512 GB SATA SSD ROM**
+- **HP ProBook 640 G1 with Intel Core i4-4210M CPU (frequency up to 3.2 GHz in Turbomode) with embedded Mesa Intel HD Graphics 4600 GPU, 8GB (2x4GB) SDRAM  DDR3 1600 MHz and a 512 GB SATA SSD ROM**
 
 - **DELL Latitude E5470 (2016) with Intel Core i7-6820HQ CPU (Frequency up to 3.6 GHz) with embedded Intel HD Graphics 530 GPU, 16GB RAM (2x8GB) DDR4 2133 MHz and a 512GB NVMe SSD disk**
 
