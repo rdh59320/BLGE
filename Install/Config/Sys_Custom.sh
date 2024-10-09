@@ -59,8 +59,8 @@ copy_desktop_file "/opt/BeLGE/App/ClamAV/ClamAV.desktop" "/usr/share/application
 
 ## Grub customization
 sudo mkdir -p /boot/grub/Images
-sudo cp /opt/BeLGE/App/Grub/BeLGE_wallpaper.jpg /boot/grub/Images/
-sudo cp -f /opt/BeLGE/App/Grub/grub /etc/default/grub
+sudo mv /opt/BeLGE/App/BeLGE_wallpaper.jpg /boot/grub/Images/
+sudo mv -f /opt/BeLGE/App/grub /etc/default/grub
 sudo update-grub
 
 echo "System customization completed successfully."
