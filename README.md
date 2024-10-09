@@ -45,7 +45,7 @@ This package would not have been possible without the following contributors:
 ## System Requirements
 
 **Minimal System Requirements (for now) :**
-- Minimal configuration tested system for now is a HP ProBook 640 G1 with Intel Core i4-4210M CPU (frequency up to 3.2 GHz in Turbomode) with embedded Mesa Intel HD Graphics 4600 GPU, 8GB (2x4GB) SDRAM  DDR3 1600 MHz and a 512 GB SATA SSD ROM (all technical data are listed in the [Successfully Tested Devices](#successfully-tested-devices) section below.
+- Minimal configuration tested system for now is a HP ProBook 640 G1 with Intel Core i4-4210M CPU (frequency up to 3.2 GHz in Turbomode) with embedded Mesa Intel HD Graphics 4600 GPU, 8GB (2x4GB) SDRAM  DDR3 1600 MHz and a 512 GB SATA SSD ROM (all other tested devices technical data are listed in the [Successfully Tested Devices](#successfully-tested-devices) section below).
    
 **Recommended:**
 - Quad-core CPU @ 3.6 GHz (Intel Core i5/7 or AMD Ryzen 5/7 or higher performances CPU) with at least 16GB RAM DDR4 and a SSD disk (NVMe is prefered to SATA) with at least 30GB free space.
@@ -80,8 +80,11 @@ This package would not have been possible without the following contributors:
 - Comming soon !! I hope but it took longer than I used to think first !!! 
 
 ## Successfully Tested Devices
+
+-**HP ProBook 640 G1 with Intel Core i4-4210M CPU (frequency up to 3.2 GHz in Turbomode) with embedded Mesa Intel HD Graphics 4600 GPU, 8GB (2x4GB) SDRAM  DDR3 1600 MHz and a 512 GB SATA SSD ROM**
+
 - **DELL Latitude E5470 (2016) with Intel Core i7-6820HQ CPU (Frequency up to 3.6 GHz) with embedded Intel HD Graphics 530 GPU, 16GB RAM (2x8GB) DDR4 2133 MHz and a 512GB NVMe SSD disk**
 
 - **DELL VOSTRO (2023) with AMD Ryzen 7-5700U CPU (Frequency up to 4.3 GHz) with embedded AMD Radeon Graphics, 32GB RAM (1x32) DDR4 3200 MHz and a 512GB NVMe SSD :**
   
-- **New Devices to come  !!! Hope so !!!**
+- **More Devices to come  !!! Hope so !!!**
