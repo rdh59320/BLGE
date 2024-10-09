@@ -63,9 +63,6 @@ echo -e "\n\n  Package has been downloaded and extracted \n\n"
 sudo chmod +x /opt/BeLGE/Install/Comp/*
 sudo chmod +x /opt/BeLGE/Install/Config/*
 
-# Creating the BeLGE Var file in home directory
-mkdir -p "$HOME/.BeLGE/"
-
 ### Compatibility Scripts
 
 ## OS check script
@@ -85,7 +82,6 @@ if [ "$OS" = "0" ] || [ "$GPU" = "0" ]; then
     echo -e "Your system is not supported \n\n Program must stop now \n\n Package will be deleted from your system \n\n"
     sleep 1
     sudo rm -rf /opt/BeLGE
-    rm -rf "$HOME/.BeLGE"
     sleep 3
     exit 1
 fi
@@ -99,7 +95,6 @@ if [ "$repinstall" = "n" ] || [ "$repinstall" = "N" ]; then
     echo -e "\n\n Installation has been aborted \n\n Program will shut down now and \n\n Package will be deleted from your system \n\n"
     sleep 1
     sudo rm -rf /opt/BeLGE
-    rm -rf "$HOME/.BeLGE"
     sleep 3
     exit 0
 fi
@@ -139,9 +134,9 @@ read -p " Press any key to launch the system reboot : " reboot
 
 # Install script autoremove before reboot 
 
-rm -rf "$HOME/.BeLGE"
 sudo rm -f /opt/BeLGE_Install.sh
 sudo rm -rf /opt/BeLGE/Install
+sudo rm -rf /opt/BeLGE/Var
 echo -e "\n\n System is rebooting \n\n"
 sleep 1 && sudo reboot
 
