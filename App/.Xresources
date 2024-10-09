@@ -1,0 +1,7 @@
+xterm*background:  #000000
+xterm*foreground:  Green
+xterm*VT100*geometry: 80x25
+xterm*faceName: Ubuntu Mono
+xterm*faceSize: 16
+xterm*renderFont: true
+
