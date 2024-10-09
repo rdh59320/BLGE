@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=BeLGE Antivirus Scan
+GenericName=Virus Scanner
+Comment=Scan your system for viruses and malware using ClamAV
+Exec=pkexec /opt/BeLGE/App/ClamAV/Clamav-scan.sh
+Icon=/opt/BeLGE/App/ClamAV/ClamAV.png
+Terminal=false
+Categories=System;Security;
+Keywords=Antivirus;Security;Scan;ClamAV;
+StartupNotify=true
