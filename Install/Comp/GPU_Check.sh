@@ -31,10 +31,10 @@ elif echo "$GPU_INFO" | grep -qi "Intel"; then
     echo "Intel" > "/opt/BeLGE/Var/GPU"
     echo "Detected Intel GPU"
 elif echo "$GPU_INFO" | grep -qi "NVIDIA"; then
-    echo "NVIDIA" > "/opt/BeLGE/Var/"
+    echo "NVIDIA" > "/opt/BeLGE/Var/GPU"
     echo "Detected NVIDIA GPU"
 else
-    echo "0" > "/opt/BeLGE/Var/"
+    echo "0" > "/opt/BeLGE/Var/GPU"
     echo "Unsupported or unrecognized GPU detected. BeLGE supports AMD, Intel, and NVIDIA GPUs."
 fi
 
