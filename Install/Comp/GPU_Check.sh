@@ -25,16 +25,16 @@ fi
 GPU_INFO=$(inxi -G | grep "Device-1")
 
 if echo "$GPU_INFO" | grep -qi "AMD"; then
-    echo "AMD" > "$HOME/.BeLGE/GPU"
+    echo "AMD" > "/opt/BeLGE/Var/GPU"
     echo "Detected AMD GPU"
 elif echo "$GPU_INFO" | grep -qi "Intel"; then
-    echo "Intel" > "$HOME/.BeLGE/GPU"
+    echo "Intel" > "/opt/BeLGE/Var/GPU"
     echo "Detected Intel GPU"
 elif echo "$GPU_INFO" | grep -qi "NVIDIA"; then
-    echo "NVIDIA" > "$HOME/.BeLGE/GPU"
+    echo "NVIDIA" > "/opt/BeLGE/Var/"
     echo "Detected NVIDIA GPU"
 else
-    echo "0" > "$HOME/.BeLGE/GPU"
+    echo "0" > "/opt/BeLGE/Var/"
     echo "Unsupported or unrecognized GPU detected. BeLGE supports AMD, Intel, and NVIDIA GPUs."
 fi
 
