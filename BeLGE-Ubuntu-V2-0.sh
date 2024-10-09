@@ -76,8 +76,8 @@ sudo bash /opt/BeLGE/Install/Comp/GPU_Check.sh
 
 # Processing the compatibility test with previous scripts variables
 ## Getting OS and GPU check variables
-OS=$(cat "$HOME/.BeLGE/OS")
-GPU=$(cat "$HOME/.BeLGE/GPU")
+OS=$(cat "/opt/BeLGE/Var/OS")
+GPU=$(cat "/opt/BeLGE/Var/GPU")
 
 # Compatibility check => if OS or GPU var is set to "0" means not compatible then stopping program
 
