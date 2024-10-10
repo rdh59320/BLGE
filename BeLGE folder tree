@@ -4,7 +4,6 @@ opt
 |
 BeLGE
 ├── App
-│   ├── BeLGE_wallpaper.jpg
 │   ├── ClamAV
 │   │   ├── ClamAV.desktop
 │   │   ├── ClamAV.png
@@ -13,26 +12,28 @@ BeLGE
 │   │   ├── cpu-scal-gov.sh
 │   │   ├── CPU_switch.desktop
 │   │   └── xfsm-switch.svg
-│   ├── grub
-│   ├── Sys_Update
-│   │   ├── system-software-update.svg
-│   │   ├── Sysupdater.desktop
-│   │   └── Sysupdater.sh
-│   └── .Xresources
+│   └── Sys_Update
+│       ├── system-software-update.svg
+│       ├── Sysupdater.desktop
+│       └── Sysupdater.sh
 ├── Install
 │   ├── Comp
 │   │   ├── GPU_Check.sh
 │   │   └── OS_Check.sh
-│   └── Config
-│       ├── GPU_Drivers.sh
-│       ├── Steam_Config.sh
-│       ├── Sys_Config.sh
-│       ├── Sys_Custom.sh
-│       └── WineHQ.sh
+│   ├── Config
+│   │   ├── GPU_Drivers.sh
+│   │   ├── Steam_Config.sh
+│   │   ├── Sys_Config.sh
+│   │   ├── Sys_Custom.sh
+│   │   └── WineHQ.sh
+│   └── Resources
+│       ├── BeLGE_wallpaper.jpg
+│       ├── grub
+│       └── .Xresources
 ├── LICENSE.MD
 ├── README.md
 └── Var
     ├── GPU
     └── OS
 
-9 directories, 23 files
+10 directories, 23 files
