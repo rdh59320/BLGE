@@ -31,29 +31,29 @@ Desktop_path=$(xdg-user-dir DESKTOP)
 ### SysUpdater
 sudo cp /opt/BeLGE/App/Sys_Update/Sysupdater.desktop $Desktop_path
 sudo chown $USER $Desktop_path/Sysupdater.desktop
-sudo chmod +x $Desktop_path/Sysupdater.desktop
+sudo chmod a+x $Desktop_path/Sysupdater.desktop
 
 sudo cp /opt/BeLGE/App/Sys_Update/Sysupdater.desktop /usr/share/applications 
 sudo chown $USER:$USER /usr/share/applications/Sysupdater.desktop 
-sudo chmod +x /usr/share/applications/Sysupdater.desktop
+sudo chmod a+x /usr/share/applications/Sysupdater.desktop
 
 ### CPU Switcher
 sudo cp /opt/BeLGE/App/CPU_Switch/CPU_switch.desktop $Desktop_path 
 sudo chown $USER:$USER $Desktop_path/CPU_switch.desktop 
-sudo chmod +x $Desktop_path/CPU_switch.desktop
+sudo chmod a+x $Desktop_path/CPU_switch.desktop
 
 sudo cp /opt/BeLGE/App/CPU_Switch/CPU_switch.desktop /usr/share/applications 
 sudo chown $USER:$USER /usr/share/applications/CPU_switch.desktop 
-sudo chmod +x /usr/share/applications/CPU_switch.desktop
+sudo chmod a+x /usr/share/applications/CPU_switch.desktop
 
 ### ClamAV
 sudo cp /opt/BeLGE/App/ClamAV/ClamAV.desktop $Desktop_path 
 sudo chown $USER:$USER $Desktop_path/ClamAV.desktop 
-sudo chmod +x $Desktop_path/ClamAV.desktop
+sudo chmod a+x $Desktop_path/ClamAV.desktop
 
 sudo cp /opt/BeLGE/App/ClamAV/ClamAV.desktop /usr/share/applications 
 sudo chown $USER:$USER /usr/share/applications/ClamAV.desktop 
-sudo chmod +x /usr/share/applications/ClamAV.desktop
+sudo chmod a+x /usr/share/applications/ClamAV.desktop
 
 echo -e "\n\n BeLGE Apps installed successfully \n\n"
 
