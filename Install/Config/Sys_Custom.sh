@@ -18,49 +18,49 @@ trap 'handle_error $LINENO' ERR
 # Begin script
 
 ## Xterm configuration for apps use
-if [ -f /opt/BeLGE/App/.Xresources ]; then
-    sudo mv /opt/BeLGE/App/.Xresources ~/.Xresources
-    sudo chown $USER:$USER ~/.Xresources
-    xrdb -merge ~/.Xresources
-else
-    echo "Warning: .Xresources file not found. Skipping Xterm configuration."
-fi
+sudo cp /opt/BeLGE/Install/Resources/.Xresources ~/.Xresources
+sudo chown $USER:$USER ~/.Xresources
+xrdb -merge ~/.Xresources
 
 ## Adding new apps on the system
 
 # Defining path to desktop to send a desktop shortcut
 Desktop_path=$(xdg-user-dir DESKTOP)
 
-# Function to copy and set permissions for .desktop files
-copy_desktop_file() {
-    local src="$1"
-    local dest_dir="$2"
-    local filename=$(basename "$src")
-    
-    if [ -f "$src" ]; then
-        sudo cp "$src" "$dest_dir/"
-        sudo chown $USER:$USER "$dest_dir/$filename"
-    else
-        echo "Warning: $src not found. Skipping."
-    fi
-}
-
+## Copy destop shortcut to Desktop and applications directories with change of owner and allowing exection
 ### SysUpdater
-copy_desktop_file "/opt/BeLGE/App/Sys_Update/Sysupdater.desktop" "$Desktop_path"
-copy_desktop_file "/opt/BeLGE/App/Sys_Update/Sysupdater.desktop" "/usr/share/applications"
+sudo cp /opt/BeLGE/App/Sys_Update/Sysupdater.desktop $Desktop_path
+sudo chown $USER $Desktop_path/Sysupdater.desktop
+sudo chmod +x $Desktop_path/Sysupdater.desktop
+
+sudo cp /opt/BeLGE/App/Sys_Update/Sysupdater.desktop /usr/share/applications 
+sudo chown $USER:$USER /usr/share/applications/Sysupdater.desktop 
+sudo chmod +x /usr/share/applications/Sysupdater.desktop
 
 ### CPU Switcher
-copy_desktop_file "/opt/BeLGE/App/CPU_Switch/CPU_switch.desktop" "$Desktop_path"
-copy_desktop_file "/opt/BeLGE/App/CPU_Switch/CPU_switch.desktop" "/usr/share/applications"
+sudo cp /opt/BeLGE/App/Sys_Update/CPU_switch.desktop $Desktop_path 
+sudo chown $USER:$USER $Desktop_path/CPU_switch.desktop 
+sudo chmod +x $Desktop_path/CPU_switch.desktop
+
+sudo cp /opt/BeLGE/App/Sys_Update/CPU_switch.desktop /usr/share/applications 
+sudo chown $USER:$USER /usr/share/applications/CPU_switch.desktop 
+sudo chmod +x /usr/share/applications/CPU_switch.desktop
 
 ### ClamAV
-copy_desktop_file "/opt/BeLGE/App/ClamAV/ClamAV.desktop" "$Desktop_path"
-copy_desktop_file "/opt/BeLGE/App/ClamAV/ClamAV.desktop" "/usr/share/applications"
+sudo cp /opt/BeLGE/App/Sys_Update/ClamAV.desktop $Desktop_path 
+sudo chown $USER:$USER $Desktop_path/ClamAV.desktop 
+sudo chmod +x $Desktop_path/ClamAV.desktop
+
+sudo cp /opt/BeLGE/App/Sys_Update/ClamAV.desktop /usr/share/applications 
+sudo chown $USER:$USER /usr/share/applications/ClamAV.desktop 
+sudo chmod +x /usr/share/applications/ClamAV.desktop
+
+echo -e "\n\n BeLGE Apps installed successfully \n\n"
 
 ## Grub customization
 sudo mkdir -p /boot/grub/Images
-sudo mv /opt/BeLGE/App/BeLGE_wallpaper.jpg /boot/grub/Images/
-sudo mv -f /opt/BeLGE/App/grub /etc/default/grub
+sudo cp /opt/BeLGE/Install/Resources/BeLGE_wallpaper.jpg /boot/grub/Images/
+sudo cp -f /opt/BeLGE/Install/Resources/grub /etc/default/grub
 sudo update-grub
 
 echo -e "\n\n System customization completed successfully \n\n"
