@@ -43,7 +43,7 @@ sleep 1
 
 sudo apt update
 sudo apt full-upgrade -y
-sudo apt install -y inxi curl wget xz-utils
+sudo apt install -y inxi curl wget xz-utils gedit stacer
 
 # Downloading package archive and extraction into the opt directory then removing archive 
 
