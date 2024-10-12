@@ -1,4 +1,4 @@
-#!/bin/bash
+https://github.com/oguzhaninan#!/bin/bash
 
 # Designer : Roman PCR59320 aka Roman O'Cry  (pcr59320@gmail.com / https://github.com/rdh59320/)
 # Description : BeLGE package installation script
@@ -43,7 +43,7 @@ sleep 1
 
 sudo apt update
 sudo apt full-upgrade -y
-sudo apt install -y inxi curl wget xz-utils gedit stacer
+sudo apt install -y inxi curl wget xz-utils
 
 # Downloading package archive and extraction into the opt directory then removing archive 
 
