@@ -4,7 +4,7 @@
 
 ***PLEASE DO NOT TRY TO USE IT UNTIL THIS WARNING HAS BEEN REMOVED***
 
-***PACKAGE IS STILL IN CORRECTIONS DUE TO SEVERAL CODE ERRORS***
+***PACKAGE IS STILL IN TEST BEFORE RELEASE***
 
 ***THANKS FOR YOUR UNDERSTANDING***
 
@@ -24,9 +24,10 @@ This package would not have been possible without the following contributors:
 - [KISAK PPA](https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa) for providing all the GPU drivers needed for AMD & Intel devices
 - [WineHQ Project](https://www.winehq.org/about) for allowing us to emulate MS Programs 
 - [Thomas Crider aka GloriousEggroll](https://github.com/GloriousEggroll) for providing us GE-proton
-- [Thomas Crider aka GloriousEggroll](https://github.com/DavidoTek) for providing us ProntonUp-Qt (Vielen dank !!!) 
+- [DavidoTek](https://github.com/DavidoTek) for providing us ProntonUp-Qt (Vielen dank !!!) 
 - [Jérémie Roquet aka Arkanosis](https://github.com/Arkanosis) for his AoE2 Linux gaming website advice (Un grand merci pour toi, Jérémie !!! C'était super utile !!!) 
 - [Maarten Baert](https://www.maartenbaert.be/simplescreenrecorder/) for providing SimpleScreenRecorder I am using to make video tutorials (Haartelijke bedankt voor Maarten ook, natuurlijk !!! Mischien de beste desktoprecorder die ik ooit heb gebruikt !!! Bravo !!!). If you don't see them yet, they are coming soon.
+- [Oguzhan Inan](https://github.com/oguzhaninan) for providing Stacer, a very user-friendly tool for system monitoring and very good looking as well !!! And now it's available in Ubuntu main repository since Ubuntu 20.04 !!! Great Job !!!
 - Everyone who gave me the support to give birth to this project ! 
 - The entire Linux Community of course (especially those playing AoE2DE on Steam) !!!
 - Always be grateful for the Open-Source Community, so THANKS to ALL of YOU !!!
