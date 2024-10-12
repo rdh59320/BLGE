@@ -42,7 +42,7 @@ sudo apt update
 sudo apt -y full-upgrade
 
 # Install the useful dep prog
-sudo apt install -y xterm numlockx tlp aptitude gdebi-core flatpak gnome-software-plugin-flatpak linux-lowlatency clamav clamtk clamav-daemon
+sudo apt install -y xterm numlockx tlp aptitude gdebi-core flatpak gnome-software-plugin-flatpak linux-lowlatency clamav clamtk clamav-daemon gedit stacer
 
 # Updating Snap
 sudo snap refresh
