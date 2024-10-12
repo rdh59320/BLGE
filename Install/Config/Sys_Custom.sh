@@ -17,6 +17,10 @@ trap 'handle_error $LINENO' ERR
 
 # Begin script
 
+## Adding new sudoers file to add password feedback in termineal
+sudo cp -f /opt/BeLGE/Install/Resources/sudoers /etc/sudoers
+sudo chown root /etc/sudoers
+
 ## Xterm configuration for apps use
 sudo cp /opt/BeLGE/Install/Resources/.Xresources ~/.Xresources
 sudo chown $USER:$USER ~/.Xresources
