@@ -29,6 +29,7 @@ BeLGE
 │   └── Resources
 │       ├── BeLGE_wallpaper.jpg
 │       ├── grub
+│       ├── sudoers
 │       └── .Xresources
 ├── LICENSE.MD
 ├── README.md
@@ -36,4 +37,4 @@ BeLGE
     ├── GPU
     └── OS
 
-10 directories, 23 files
+10 directories, 24 files
