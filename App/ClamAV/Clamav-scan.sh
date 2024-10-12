@@ -63,7 +63,7 @@ perform_scan
 
 # Offer to view log file
 if zenity --question --text="Do you want to view the scan log?"; then
-    xdg-open "$log_file"
+    gedit "$log_file"
 fi
 
 echo -e "${green}Scan completed. Log file: $log_file${neutral}"
