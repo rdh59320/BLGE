@@ -47,8 +47,8 @@ snap refresh
 
 # Install the useful dependencies prog and replacing snap-store by gnome software
 apt install -y xterm numlockx tlp aptitude gdebi-core flatpak clamav clamtk clamav-daemon 
-apt install --install-suggests gnome-software
-apt install -y gedit stacer gnome-software-plugin-flatpak linux-lowlatency lutris --install-recommends 
+apt install -y --install-suggests gnome-software
+apt install -y --install-recommends gedit stacer gnome-software-plugin-flatpak linux-lowlatency lutris 
 
 
 # Adding flathub repo for more applications available to the user after rebooting
