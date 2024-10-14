@@ -106,10 +106,10 @@ sudo bash /opt/BeLGE/Install/Config/Sys_Config.sh
 bash /opt/BeLGE/Install/Config/WineHQ.sh
 
 # GPU drivers configuration script
-sudo bash /opt/BeLGE/Install/Config/GPU_Drivers.sh 
+bash /opt/BeLGE/Install/Config/GPU_Drivers.sh 
 
 # Steam Debian package Installation
-sudo bash /opt/BeLGE/Install/Config/Steam_Config.sh 
+bash /opt/BeLGE/Install/Config/Steam_Config.sh 
 
 # System Customization
 bash /opt/BeLGE/Install/Config/Sys_Custom.sh
