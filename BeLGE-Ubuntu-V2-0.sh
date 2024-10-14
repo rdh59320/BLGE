@@ -25,15 +25,30 @@ echo -e "\n\n   Available for UBUNTU 20.04, 22.04 and 24.04 LTS \n\n"
 echo -e "\n\n   EXPERIMENTAL Package for Steam installation with ProtonUp-Qt\n\n"
 
 # Request for Package installation
-read -p " Type y or Y then press [ENTER] to install or any other key to quit [DEFAULT] : " repstart
+read -p " Type y/Y to install or q/Q to quit then press [ENTER] :  " repstart
 
-if [ "$repstart" != "y" ] && [ "$repstart" != "Y" ]; then
-    echo -e "\n\n Package won't be installed \n\n"
-    echo " Good Bye !!!"
-    echo -e "\n\n"
-    sleep 2 
-    exit 0
-fi
+## Agreement to installation or exit confirmation
+
+repconf=0
+while [ $(repconf) = 0 ]; do
+
+    if [ "$repstart" = "q" ] || [ "$repstart" = "Q" ]; then
+        echo -e "\n\n Package won't be installed \n\n"
+        echo " Good Bye !!!"
+        echo -e "\n\n"
+        sleep 2 
+        exit 0
+        repconf=1
+        
+    elif [ "$repstart" = "y" ] || [ "$repstart" = "Y" ]; then
+        echo -e "\n\n Package Installation Starting \n\n Yur system needs to be compatible to continue the process  \n\n"
+        repconf=1
+    
+    else echo -e "\n\n Only q,Q,y and Y are valid answers. \n\n"
+    
+    fi
+    
+done
 
 # Install wget curl, inxi & xz-utils for system infos, package download and extraction
 
@@ -88,10 +103,10 @@ fi
 
 ## Confirmation request of the package installation
 
-echo -e "\n\n\n  Your system is suitable for installation \n\n\n Would you like to install the BeLGE package? \n Type n or N then press [ENTER] to abort installation \n"
+echo -e "\n\n\n  Your system is suitable for installation \n\n\n Would you like to continue installation of the package? \n Type q or Q then press [ENTER] to exit installation \n"
 read -p " Or press Any Other Key to Continue [DEFAULT] : " repinstall
 
-if [ "$repinstall" = "n" ] || [ "$repinstall" = "N" ]; then
+if [ "$repinstall" = "q" ] || [ "$repinstall" = "Q" ]; then
     echo -e "\n\n Installation has been aborted \n\n Program will shut down now and \n\n Package will be deleted from your system \n\n"
     sleep 1
     sudo rm -rf /opt/BeLGE
@@ -103,13 +118,13 @@ fi
 sudo bash /opt/BeLGE/Install/Config/Sys_Config.sh
 
 # WineHQ configuration script
-bash /opt/BeLGE/Install/Config/WineHQ.sh
+sudo bash /opt/BeLGE/Install/Config/WineHQ.sh
 
 # GPU drivers configuration script
-bash /opt/BeLGE/Install/Config/GPU_Drivers.sh 
+sudo bash /opt/BeLGE/Install/Config/GPU_Drivers.sh 
 
 # Steam Debian package Installation
-bash /opt/BeLGE/Install/Config/Steam_Config.sh 
+sudo bash /opt/BeLGE/Install/Config/Steam_Config.sh 
 
 # System Customization
 bash /opt/BeLGE/Install/Config/Sys_Custom.sh
