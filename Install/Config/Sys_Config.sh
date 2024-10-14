@@ -32,28 +32,32 @@ echo "vm.swappiness=10" | sudo tee -a /etc/sysctl.d/99-sysctl.conf
 echo "vm.max_map_count=2147483642" | sudo tee -a /etc/sysctl.d/99-sysctl.conf
 
 # Loading custom VM file in system configuration
-sudo sysctl -p /etc/sysctl.d/99-sysctl.conf
+sysctl -p /etc/sysctl.d/99-sysctl.conf
 
 # Updating system with x86 architecture added then install required packages
 
 echo -e "\n\n Adding 32 bits architecture for package compatibility \n\n And first updating system \n\n"
-sudo dpkg --add-architecture i386
-sudo apt update
-sudo apt -y full-upgrade
-
-# Install the useful dep prog
-sudo apt install -y xterm numlockx tlp aptitude gdebi-core flatpak gnome-software-plugin-flatpak linux-lowlatency clamav clamtk clamav-daemon gedit stacer
+dpkg --add-architecture i386
+apt update
+apt -y full-upgrade
 
 # Updating Snap
-sudo snap refresh
+snap remove --purge snap-store
+snap refresh
+
+# Install the useful dependencies prog and replacing snap-store by gnome software
+apt install -y xterm numlockx tlp aptitude gdebi-core flatpak clamav clamtk clamav-daemon 
+apt install --install-suggests gnome-software
+apt install -y gedit stacer gnome-software-plugin-flatpak linux-lowlatency lutris --install-recommends 
+
 
 # Adding flathub repo for more applications available to the user after rebooting
-sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 echo -e "\n\n\n System is Now Updated \n\n\n"
 
 # Adding TLP to enhance power management
-sudo systemctl enable tlp && sudo tlp start
+systemctl enable tlp && tlp start
 
 echo "System configuration completed successfully."
 
