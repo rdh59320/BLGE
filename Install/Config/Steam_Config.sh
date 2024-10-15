@@ -18,25 +18,9 @@ trap 'handle_error $LINENO' ERR
 # Begin script
 
 # Steam Debian package Installation
-echo -e "\n\n Downloading latest Steam debian package \n\n"
+echo -e "\n\n Adding Steam installer package and \n\n Other dependency packages for compatibility tools \n\n"
 
-if ! wget -O ~/steam.deb http://media.steampowered.com/client/installer/steam.deb; then
-    echo "Failed to download Steam package. Please check your internet connection."
-    exit 1
-fi
-
-if ! sudo gdebi -n ~/steam.deb; then
-    echo "Failed to install Steam package. Please check the error messages above."
-    exit 1
-fi
-
-rm ~/steam.deb
-echo -e " \n\nSteam has been pre-installed on your System \n\n"
-
-# ProtonUp-Qt Installation via Flatpak as recommended by Davidotek
-
-echo -e "\n\n Installing ProtonUp-Qt dependencies \n\n"
-sudo apt install -y git unzip xdotool xxd yad scummvm inotify-tools libssl-dev dosbox timidity
+sudo apt install -y git unzip xdotool xxd yad scummvm inotify-tools libssl-dev dosbox timidity steam-installer
 
 echo -e "\n\n Installing ProtonUp-Qt compatibility tool \n\n"
 flatpak install flathub net.davidotek.pupgui2 -y
