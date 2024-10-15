@@ -1,4 +1,4 @@
-https://github.com/oguzhaninan#!/bin/bash
+#!/bin/bash
 
 # Designer : Roman PCR59320 aka Roman O'Cry  (pcr59320@gmail.com / https://github.com/rdh59320/)
 # Description : BeLGE package installation script
