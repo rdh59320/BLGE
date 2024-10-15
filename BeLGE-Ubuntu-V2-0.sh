@@ -29,23 +29,25 @@ read -p " Type y/Y to install or q/Q to quit then press [ENTER] :  " repstart
 
 ## Agreement to installation or exit confirmation
 
-repconf=0
-while [ $(repconf) = 0 ]; do
+read -p " Type y/Y to install or q/Q to quit then press [ENTER] :  " repstart
 
+## Agreement to installation or exit confirmation
+
+while true; do
     if [ "$repstart" = "q" ] || [ "$repstart" = "Q" ]; then
         echo -e "\n\n Package won't be installed \n\n"
         echo " Good Bye !!!"
         echo -e "\n\n"
         sleep 2 
         exit 0
-        repconf=1
         
     elif [ "$repstart" = "y" ] || [ "$repstart" = "Y" ]; then
-        echo -e "\n\n Package Installation Starting \n\n Yur system needs to be compatible to continue the process  \n\n"
-        repconf=1
+        echo -e "\n\n Package Installation Starting \n\n Your system needs to be compatible to continue the process  \n\n"
+        break
     
-    else echo -e "\n\n Only q,Q,y and Y are valid answers. \n\n"
-    
+    else
+        echo -e "\n\n Only q,Q,y and Y are valid answers. \n\n"
+        read -p " Type y/Y to install or q/Q to quit then press [ENTER] :  " repstart
     fi
     
 done
