@@ -28,12 +28,10 @@ echo -e "\n\n   EXPERIMENTAL Package for Steam installation with ProtonUp-Qt\n\n
 read -p " Type y/Y to install or q/Q to quit then press [ENTER] :  " repstart
 
 ## Agreement to installation or exit confirmation
+confirm=false
 
-read -p " Type y/Y to install or q/Q to quit then press [ENTER] :  " repstart
+while [ $confirm = false ]; do
 
-## Agreement to installation or exit confirmation
-
-while true; do
     if [ "$repstart" = "q" ] || [ "$repstart" = "Q" ]; then
         echo -e "\n\n Package won't be installed \n\n"
         echo " Good Bye !!!"
