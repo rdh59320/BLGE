@@ -21,7 +21,7 @@ trap 'handle_error $LINENO' ERR
 
 echo -e "\n\n\n   Be.L.G.E V2.0 aka  \n\n\n"
 echo -e "\n\n   Better Linux Gaming Experience   \n\n"
-echo -e "\n\n   Available for UBUNTU 20.04, 22.04 and 24.04 LTS \n\n"
+echo -e "\n\n   Available for UBUNTU 22.04 and 24.04 LTS \n\n"
 echo -e "\n\n   EXPERIMENTAL Package for Steam installation with ProtonUp-Qt\n\n"
 
 # Request for Package installation
@@ -30,7 +30,7 @@ read -p " Type y/Y to install or q/Q to quit then press [ENTER] :  " repstart
 ## Agreement to installation or exit confirmation
 confirm=false
 
-while [ $confirm = false ]; do
+while [ "$confirm" = false ]; do
 
     if [ "$repstart" = "q" ] || [ "$repstart" = "Q" ]; then
         echo -e "\n\n Package won't be installed \n\n"
