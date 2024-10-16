@@ -99,8 +99,11 @@ if [ "$OS" = "0" ] || [ "$GPU" = "0" ]; then
     sudo rm -rf /opt/BeLGE
     sleep 3
     exit 1
+elif [ "$OS" = "focal" ]; then
+    echo -e "\n\n Ubuntu 20.04 Focal Fossa is no longer supported \n\n Please, you must first upgrade your OS before running BeLGE program \n\n"
+    sleep 3
+    exit 1
 fi
-
 
 ## Confirmation request of the package installation
 
