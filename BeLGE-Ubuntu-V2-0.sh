@@ -101,6 +101,7 @@ if [ "$OS" = "0" ] || [ "$GPU" = "0" ]; then
     exit 1
 fi
 
+
 ## Confirmation request of the package installation
 
 echo -e "\n\n\n  Your system is suitable for installation \n\n\n Would you like to continue installation of the package? \n Type q or Q then press [ENTER] to exit installation \n"
