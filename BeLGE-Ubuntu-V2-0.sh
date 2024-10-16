@@ -28,6 +28,7 @@ echo -e "\n\n   EXPERIMENTAL Package for Lutris and Valve Steam with ProtonUp-Qt
 read -p " Type y/Y to install or q/Q to quit then press [ENTER] :  " repstart
 
 ## Agreement to installation or exit confirmation
+
 confirm=false
 
 while [ "$confirm" = false ]; do
@@ -93,14 +94,20 @@ GPU=$(cat "/opt/BeLGE/Var/GPU")
 
 # Compatibility check => if OS or GPU var is set to "0" means not compatible then stopping program
 
+## Case either OS or GPU unsupported
+
 if [ "$OS" = "0" ] || [ "$GPU" = "0" ]; then
     echo -e "Your system is not supported \n\n Program must stop now \n\n Package will be deleted from your system \n\n"
     sleep 1
     sudo rm -rf /opt/BeLGE
     sleep 3
     exit 1
+
+## Case OS is focal fossa ==> Upgrading request
 elif [ "$OS" = "focal" ]; then
-    echo -e "\n\n Ubuntu 20.04 Focal Fossa is no longer supported \n\n Please, you must first upgrade your OS before running BeLGE program \n\n"
+    echo -e "\n\n Ubuntu 20.04 Focal Fossa is no longer supported \n\n Please, you must first upgrade your OS before running BeLGE program \n\n Program have to stop now. \n\n"
+    sleep 1
+    sudo rm -rf /opt/BeLGE
     sleep 3
     exit 1
 fi
