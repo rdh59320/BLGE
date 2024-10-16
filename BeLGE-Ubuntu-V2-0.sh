@@ -101,44 +101,6 @@ if [ "$OS" = "0" ] || [ "$GPU" = "0" ]; then
     exit 1
 fi
 
-# Case OS is Ubuntu 20.04 
-
-if [ "$OS" = "focal" ] then
-    echo -e "\n\n Your OS, Ubuntu 20.04 Focal Fossa, is no longer supported \n\n If you wish to install the BeLGE package \n\n First, you have to upgrade your system to Ubuntu 22.04 \n\n"
-    sleep 2
-    echo -e "\n\n Would you like to upgrade to Ubuntu 22.04 LTS Jammy Jellyfish ? \n\n"
-
-    ## Confirmation upgrading Ubuntu 20.04 Focal Fossa
-    u22conf=false
-    
-    while [ "$u22conf" = false ]; do
-    
-            read -p " Press y/Y to upgrade to Ubuntu 22.04 or q/Q to exit program : " u22rep
-            
-            if [ "$u22rep" = "y" ] || [ "$u22rep" = "Y" ]; then
-                echo -e "\n\n Ubuntu will be upgraded to 22.04 LTS Jammy Jellyfish \n\n"
-                echo -e "\n\n Be careful while your system is updating \n\n"
-                sleep 1 
-                sudo apt update
-                sudo apt -y full-upgrade
-                sudo apt install update-manager-core -y
-                sudo do-release-upgrade
-                
-            elif [ "$u22rep" = "q" ] || [ "$u22rep" = "Q" ]; then
-                echo -e "\n\n Ubuntu won't be upgraded to 22.04 LTS Jammy Jellyfish \n\n"
-                echo -e "\n\n Program must stop because not supported on your OS \n\n"
-                sudo rm -rf /opt/BeLGE
-                sleep 3
-                exit 1
-                break
-                
-            else echo -e "\n\n Only y/Y or q/Q are suitable answers. \n\n"
-
-            fi
-            
-    done
-    
-fi
 ## Confirmation request of the package installation
 
 echo -e "\n\n\n  Your system is suitable for installation \n\n\n Would you like to continue installation of the package? \n Type q or Q then press [ENTER] to exit installation \n"
