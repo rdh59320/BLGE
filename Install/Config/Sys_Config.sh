@@ -42,7 +42,6 @@ apt update
 apt -y full-upgrade
 
 # Updating Snap
-snap remove --purge snap-store
 snap refresh
 
 # Install the useful dependencies prog and replacing snap-store by gnome software
