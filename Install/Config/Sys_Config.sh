@@ -40,14 +40,15 @@ echo -e "\n\n Adding 32 bits architecture for package compatibility \n\n And fir
 dpkg --add-architecture i386
 apt update
 apt -y full-upgrade
+# Install the useful dependencies prog and replacing snap-store by gnome software
+apt install -y snapd xterm numlockx tlp aptitude gdebi-core flatpak clamav clamtk clamav-daemon
+apt install -y --install-suggests gnome-software
+apt install -y --install-recommends gedit stacer gnome-software-plugin-flatpak lutris 
 
 # Updating Snap
 snap refresh
 
-# Install the useful dependencies prog and replacing snap-store by gnome software
-apt install -y xterm numlockx tlp aptitude gdebi-core flatpak clamav clamtk clamav-daemon 
-apt install -y --install-suggests gnome-software
-apt install -y --install-recommends gedit stacer gnome-software-plugin-flatpak linux-lowlatency lutris 
+
 
 
 # Adding flathub repo for more applications available to the user after rebooting
