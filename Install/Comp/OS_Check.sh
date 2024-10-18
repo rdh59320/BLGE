@@ -18,13 +18,13 @@ trap 'handle_error $LINENO' ERR
 # Begin script
 
 # Ubuntu version detection
-if grep -q "Ubuntu 20.04" /etc/os-release; then
+if grep -q "UBUNTU_CODENAME=focal" /etc/os-release; then
     echo "focal" > "/opt/BeLGE/Var/OS"
     echo "Detected Ubuntu 20.04 (Focal Fossa)"
-elif grep -q "Ubuntu 22.04" /etc/os-release; then
+elif grep -q "UBUNTU_CODENAME=jammy" /etc/os-release; then
     echo "jammy" > "/opt/BeLGE/Var/OS"
     echo "Detected Ubuntu 22.04 (Jammy Jellyfish)"
-elif grep -q "Ubuntu 24.04" /etc/os-release; then
+elif grep -q "UBUNTU_CODENAME=noble" /etc/os-release; then
     echo "noble" > "/opt/BeLGE/Var/OS"
     echo "Detected Ubuntu 24.04 (Noble Numbat)"
 else
