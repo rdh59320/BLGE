@@ -29,7 +29,6 @@ check_install_dependency() {
     fi
 }
 
-check_install_dependency "notify-send"
 check_install_dependency "zenity"
 check_install_dependency "clamav"
 
@@ -37,7 +36,8 @@ check_install_dependency "clamav"
 update_clamav() {
     echo -e "${green}[1/2] UPDATING${neutral}"
     zenity --info --width=300 --height=100 --text="Antivirus Database updates"
-    notify-send -i system-software-update "ClamAV" "Updating database"
+    echo -e "\n\n ClamAV is updating the database \n\n"
+    sleep 1  
     
     sudo systemctl stop clamav-freshclam
     sudo freshclam
@@ -54,7 +54,8 @@ perform_scan() {
     input_dir=$(zenity --file-selection --directory "${HOME}")
     clamscan -r --remove --bell --log="$log_file" "$input_dir"
     
-    notify-send -i dialog-ok "ClamAV" "Scan is now complete"
+    echo -e "\n\n ClamAV Scan is now complete \n\n"
+    sleep 1
 }
 
 # Main execution
