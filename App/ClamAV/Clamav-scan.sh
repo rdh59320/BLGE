@@ -49,7 +49,8 @@ perform_scan() {
     echo -e "${green}[2/2] SCANNING${neutral}"
     : > "$log_file"
     zenity --info --width=300 --height=100 --text="Choose which directory to scan"
-    notify-send -i system-software-update "ClamAV" "Starting scan"
+    echo -e  "\n\n ClamAV Starting Scan \n\n"
+    sleep 1
     
     input_dir=$(zenity --file-selection --directory "${HOME}")
     clamscan -r --remove --bell --log="$log_file" "$input_dir"
