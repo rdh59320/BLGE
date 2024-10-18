@@ -1,12 +1,15 @@
 # BeLGE aka Better Linux Gaming Experience
 
-**BeLGE Package** was designed to enable you to run MS Games within the Steam app and Lutris Open Gaming Platform on Ubuntu LTS either 20.04, Ubuntu 22.04 or Ubuntu 24.04. 
-
 ***PLEASE DO NOT TRY TO USE IT UNTIL THIS WARNING HAS BEEN REMOVED***
 
 ***PACKAGE IS STILL IN TEST BEFORE RELEASE***
 
 ***THANKS FOR YOUR UNDERSTANDING***
+
+**BeLGE Package** was designed to give you the usefull tools that enable you to run MS Games within the Steam app or Lutris Open Gaming Platform on either Ubuntu Ubuntu 22.04, Ubuntu 24.04, ZorinOS 17.2 or Pop!OS 22.04.
+
+***Ubuntu 20.04 Focal Fossa is no longer supported due to too many dependency issues but also too much time to update the system after install***
+I strongly advise you to **upgrade your system** to Ubuntu 22.04 Jammy Jellyfish or 24.04 Noble Numbat if you wish to use this package.
 
 ## Table of Contents
 - [Acknowledgments](#acknowledgments)
@@ -38,19 +41,20 @@ This package would not have been possible without the following contributors:
 - **Please note that the package is STILL EXPERIMENTAL and might need further modifications or optimization later**
 - **DO NOT USE THIS PACKAGE IF YOUR SYSTEM DOES NOT HAVE THE MINIMAL REQUIREMENTS BELOW.**
 - To avoid any configuration conflicts with your system, it is **STRICTLY RECOMMENDED TO USE THIS PROGRAM ON A FRESHLY INSTALLED OS.**
-- This package is **only configured for Ubuntu LTS 20.04 Focal Fossa, 22.04 Jammy Jellyfish or 24.04 Noble Numbat** (some other other Ubuntu-based-distros may run the programm but beware). 
-- The program was **tested on Ubuntu 20.04 Focal Fossa LTS** but **many instabilities** were noticed so the **BE CAREFULL WHEN USING IT**
+- This package is **only configured for Ubuntu 22.04 Jammy Jellyfish, 24.04 Noble Numbat or Pop!OS 22.04** (some other Ubuntu-based-distros may run the programm but beware of depency conflicts). 
 - Let's take into account that this package is **STILL EXPERIMENTAL** as told before and **YOU ARE RESPONSIBLE for ANY ISSUE** that could happen during its execution!!! (I never had any trouble yet but I don't have only few systems to test it on)
-- It remains **impossible** for me to connect to the XBox server but this does not prevent you to play online multiplayer mode with a great gaming experience (Maybe the same reasons that **CaptureAge** is **not working on Linux** just like Arkanosis said on https://aoe2.arkanosis.net/linux/#how_do_i_use_capture_age_on_linux , you should have a look !) .
-- **YOU MUST OWN THE GAME ON STEAM TO RUN THIS PACKAGE, DON'T EVER USE A HACKED VERSION** (Let's keep in mind that money could be useful for Valve to maintain Steam Proton for exemple. If you are not willing to pay even a copper to play, maybe you should look after something which is already free instead ! Cracked version aren't so innocent that it could seem to since in these world only a few people are really ready to spent time ansd mind ressources for others !!! Too Bad !!!)
-- **Unfortunately, some games remain totally impractical even with a good compatibility tool !!!*** This is the case of **PUBG: Battlegrounds** for example. Please have a look on [Proton Database](https://www.protondb.com/) to be sure before installing the game (else it won't be able to start anyway). You can check [here](https://www.protondb.com/explore?sort=fixWanted) the games that are borked.  
+- It remains **impossible for me to connect to the XBox server** but that **does not prevent you to play online multiplayer mode** with a great gaming experience (Maybe the same reasons that **CaptureAge** is **not working on Linux** just like Arkanosis said on https://aoe2.arkanosis.net/linux/#how_do_i_use_capture_age_on_linux , you should have a look !) .
+- **YOU MUST OWN THE GAME ON STEAM TO RUN THIS PACKAGE, DON'T EVER USE A HACKED VERSION** Let's keep in mind that some games on Steam are free to play but also money could be useful for Valve to maintain Steam Proton for exemple and video games studios to pay their employees. If you are not willing to pay even a copper to play, maybe you should look after something which is already free instead ! **Cracked version aren't so innocent** that it could seem to since in these world only a few people are really ready to spent time and mind ressources to help others for free !!! Too Bad !!!
+  
+- **Unfortunately, some games remain totally impractical even with a good compatibility tool !!!*** This is the case of **PUBG: Battlegrounds** for example. Please have a look on [Proton Database](https://www.protondb.com/) to be sure before installing the game (else it won't be able to start anyway). You can check [here](https://www.protondb.com/explore?sort=fixWanted) the games that are borked.
+  
 ## System Requirements
 
 **Minimal System Requirements (for now) :**
-- Minimal configuration tested system for now is a HP ProBook 640 G1 with Intel Core i4-4210M CPU (frequency up to 3.2 GHz in Turbomode) with embedded Mesa Intel HD Graphics 4600 GPU, 4GB (1x4GB) SDRAM  DDR3 1600 MHz and a 512 GB SATA SSD ROM (all other tested devices technical data are listed in the [Successfully Tested Devices](#successfully-tested-devices) section below).
+- Minimal configuration tested system for now is a HP ProBook 640 G1 with Intel Core i4-4210M CPU (frequency up to 3.2 GHz in Turbomode) with embedded Mesa Intel HD Graphics 4600 GPU, 4GB (1x4GB) SDRAM  DDR3 1600 MHz and a 500 GB HDD 5400RPM SATA ROM (all other tested devices technical data are listed in the [Successfully Tested Devices](#successfully-tested-devices) section below).
    
 **Recommended:**
-- Quad-core CPU @ 3.6 GHz (Intel Core i5/7 or AMD Ryzen 5/7 or higher performances CPU) with at least 16GB RAM DDR4 and a SSD disk (NVMe is prefered to SATA) with at least 30GB free space.
+- Quad-core CPU @ 3.6 GHz (Intel Core i5/7 or AMD Ryzen 5/7 or higher performances CPU) with at least 16GB RAM DDR4 and a SSD disk (PCIe is prefered to SATA) with at least 30GB free space.
 
 ## Package Install Instructions
 
@@ -71,7 +75,6 @@ This package would not have been possible without the following contributors:
 
 ## Additional Apps
 - BeLGE provides additional apps to improve your new OS
-- Low latency Linux Kernel is added so that you can increase a bit your system (don't expect a great increase !)
 - The package will customize your your system starting menu in order for you to choose the best way for you to launch your system (either on generic or low latency kernel)
 - BeLGE will also install 3 additional apps and their desktop entries : ClamAV Scan, CPU Governor and System Updater
 - ClamAV Scan allow you to scan the folder you want with ClamAV daemon
