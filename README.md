@@ -33,6 +33,8 @@ Testing sessions reports will be published later
 9. [Successfully Tested Devices](#successfully-tested-devices)
 
 *******
+
+<div id='acknoledgements'/>  
   
 ## Acknowledgments
 
@@ -50,8 +52,12 @@ This package would not have been possible without the following contributors:
 * The entire Linux Gaming Community of course (especially those playing AoE2DE on Steam) !!!
 * Always be grateful for the Open-Source Community, so THANKS to ALL of YOU !!!
 
+<div id='introduction'/>  
+  
 ## Introduction
 
+
+<div id='warnings'/>  
 
 ## Warnings
 
@@ -65,6 +71,8 @@ This package would not have been possible without the following contributors:
   
 * **Unfortunately, some games remain totally impractical even with a good compatibility tool !!!*** This is the case of **PUBG: Battlegrounds** on Steam for example (Fortnite is also unplayable due to the same software). Please have a look on [Proton Database](https://www.protondb.com/) to be sure before installing the game (else it won't be able to start anyway). You can check [here](https://www.protondb.com/explore?sort=fixWanted) the games that are borked. I found some hacking tricks on Kali Linux forums to prepare your linux kernel to be compatible with those anti-cheat softwares but the process is very long, complex and causes many security breaches in the kernel !!! Else you won't be able to update the linux-kernel on your system anymore or you will have to make the same process on the new one and it takes a lot of time that is why I strongly not recommend it ! 
 
+<div id='system-requirements'/>  
+  
 ## System Requirements
 
 **Minimal System Configuration tested for now :**
@@ -73,7 +81,8 @@ This package would not have been possible without the following contributors:
 **Recommended:**
 - Quad-core CPU @ 3.6 GHz (Intel Core i5/7 or AMD Ryzen 5/7 or higher performances CPU) with at least 16GB RAM DDR4 and a SSD disk (PCIe is prefered to SATA) with at least 30GB free space.
 
-
+<div id='package-install-instructions'/>  
+  
 ## Package Install Instructions
 
 **On Ubuntu 22.04 Jammy Jellyfish, Ubuntu 24.04 Noble Numbat (or Kubuntu and Xubuntu), Pop!OS 22.04 and ZORIN OS 17.2 :**
@@ -92,6 +101,8 @@ This package would not have been possible without the following contributors:
 * If you don't have it yet, you'll have to buy at least one else you can't play. Note that some are free to download if you don't want to spent your money !
 * Have fun and make friends online ... or not !!!
 
+<div id='additional-apps'/>  
+  
 ## Additional Apps
 * BeLGE provides additional apps to improve your new OS
 * The package will customize your your system starting menu in order for you to choose the best way for you to launch your system (either on generic or low latency kernel)
@@ -100,14 +111,17 @@ This package would not have been possible without the following contributors:
 * CPU Governor allows you to quickly switch between "Powersave" or "Performance" CPU mode according to your needs (switch to Performance to play then go back to Powersave once your gaming is over)
 * System Updater which allows you to update the ClamAV database, the APT, Snap and Flatpak repositories in the same time
 
+<div id='tutorial'/>  
 ## Tutorial
 * Comming soon !! I hope but it took longer than I used to think first !!! 
 
-
+<div id='testing-report'/>  
 ## Testing report
 
 * Testing sessions report is still on writing but I can tell you that results for performance tests are better than expected !!! I am the first surprised !!!
 
+<div id='successfully-tested-devices'/> 
+  
 ## Successfully Tested Devices
 
 * **HP ProBook 640 G1 with Intel Core i5-4210M CPU (frequency up to 3.2 GHz in Turbomode) with embedded Mesa Intel HD Graphics 4600 GPU, 4GB (1x4GB) SDRAM  DDR3 1600 MHz and a 500 GB SATA HDD 5400RPM ROM**
