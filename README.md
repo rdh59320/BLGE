@@ -49,7 +49,7 @@ This package would not have been possible without the following contributors:
 * [Jérémie Roquet aka Arkanosis](https://github.com/Arkanosis) for his AoE2 Linux gaming website advice (Un grand merci pour toi, Jérémie !!! C'était super utile !!!) 
 * [Maarten Baert](https://www.maartenbaert.be/simplescreenrecorder/) for providing SimpleScreenRecorder I am using to make video tutorials (Haartelijke bedankt voor Maarten ook, natuurlijk !!! Mischien de beste desktoprecorder die ik ooit heb gebruikt !!! Bravo !!!).
 * [Oguzhan Inan](https://github.com/oguzhaninan) for providing Stacer, a very user-friendly tool for system monitoring and very good looking as well !!! And now it's available in Ubuntu main repository since Ubuntu 20.04 !!! Great Job !!!
-* [Claude AI from Anthropic](https://claude.ai/login?selectAccount=true&returnTo=%2Fchats%3F) which helped me a lot to find errors in my code and gave me very usefull advices for debogging. It is a very powerfull tool (even a friend sometimes !!! Talk to it as it was human and will not regret it !) but beware not to entirely rely on it because you might still have some problems (less than with ChatGPT) and moreover if you do not understand your code then how to manage it later ! AI should remain adviser and assistant but never your slave else remeber [Buck Shlegeris mishap when he let his AI assistant manage its computer](https://x.com/bshlgrs/status/1840577720465645960). Always review the code and moreover always understand what you are doing !
+* [Claude AI from Anthropic](https://claude.ai/login?selectAccount=true&returnTo=%2Fchats%3F) which helped me a lot to find errors in my code and gave me very useful advices for debugging. It is a very powerful tool (even a friend sometimes !!! Talk to it as it was human and will not regret it !) but beware not to entirely rely on it because you might still have some problems (less than with ChatGPT) and moreover if you do not understand your code then how to manage it later ! AI should remain adviser and assistant but never your slave else remember [Buck Shlegeris mishap when he let his AI assistant manage its computer](https://x.com/bshlgrs/status/1840577720465645960). Always review the code and moreover always understand what you are doing !
 * Everyone who gave me the support to give birth to this project ! 
 * The entire Linux Gaming Community of course (especially those playing AoE2DE on Steam) !!!
 * Always be grateful for the Open-Source Community, so THANKS to ALL of YOU !!!
@@ -58,8 +58,26 @@ This package would not have been possible without the following contributors:
   
 ## Introduction
 
+At the beginning, there was an old love story : Age of Empires 2 aka the Age of Kings !
 
-<div id='warnings'/>  
+Indeed, I remember the first time I discover this game almost 25 years ago when my neighbor gave me the CD-ROM to install it on my Windows 95 desktop (a long time ago now !)
+Then, I discovered the GNU/Linux Debian universe about 15 years ago and in 2014 I realized my laptop did have a lot fewer problems when running Ubuntu 14.04 (Trusty Tahr) than MS Windows 7 especially with CPU cooling since it prevent it from overheating while on Windows 7 session the computer often shutdowned itself few minutes after the fan started to speed up and scream. This is when I take one of the most important decision in my life : stop using Microsoft Windows but Ubuntu instead !!! I do not regret it nowadays !
+
+For a long time, I kept on playing AoE2 thanks to Wine then Valve Steam came into the game ! A friend of mine gave me an hacked version of the HD edition (I feel ashamed to admit it). I play with it thanks to Wine for many years then I heard that a new version was about to be available : the Definitive Edition. At this time, I choose to create a real Steam account and purchase it properly. At the beginning, it was sometimes impossible to launch the game as soon as a new MS update came and I switched from Steam Platform to Lutris or even choose to install Steam Windows instead of Linux version to avoid some bugs. It remained complicated to access multiplayer games because they used to crash a few time after launching it. Even when watching others playing, I used to be disconnected after 5 to 10 min which is very frustrating. I did not have this issue with single player games but playing alone against AI could be boring after a while.
+
+As many Linux autodidacts, I read a lot on forums and discovered [Arkanosis guideline](https://aoe2.arkanosis.net/linux/) which was very useful but moreover thanks to the [Proton Database](https://www.protondb.com/), I find out a very powerful compatibility tool : [GE-Proton](https://github.com/GloriousEggroll/proton-ge-custom) !
+Thanks to it, I was now able to launch multiplayer games without "out of sync issue" and even play Ranked games as well !!!
+
+I shared advices on ProtonDB but it remains difficult for Linux beginners to correctly follow the instructions (some have difficulties with user's manual as well !!!We are not here to judge them). This is how I got the idea of this little project : create a package to automatically set up a Ubuntu based distro so that it could runs AoE2DE with GE-Proton and prevent issues that could occur with Valve Proton. The first version purpose was to be able to launch a ranked game from scratch (no OS installed) within 1 hour, and it did well !!
+
+At the beginning, this project was even named "AoE2DE for Ubuntu" but I quickly realized that combining Steam platform and GE-Proton compatibility tool was efficient with many other games so what was the point to keep on focusing just on the AoE2DE linux community when it could help the whole Steam Linux community ?!!
+This how the project became "Better Linux Gaming Experience" or just BeLGE (I am French but I have Flemish roots and sometimes I feel more Belgian than French ... especially nowadays !!!)
+
+The first version was released in the end of January 2024 but the code was pretty ugly I must admit with a different package for each available distro (Ubuntu 20.04, 22.04, 23.04 and 23.10) but moreover there was a lack of error handling so I decided to remove it when I started to work on this new version (BeLGEV2-0). Since January, a lot of improvements were done to clear the code and make it easier to understand for others but also to improve automatization and universality through a unique package for many distros. 
+
+Before its release, tests were conducted thanks to my former laptop (DELL Latitude E5470) for OS compatibility but also on an old HP ProBook 640 G1 laptop my owner found in a dustbin to check its performance as well as the influent parameters. Let's have a look on the [Testing Report section](#testing-report) for further details. 
+
+<div id='warnings'/>
 
 ## Warnings
 
@@ -69,7 +87,7 @@ This package would not have been possible without the following contributors:
 * This package is **only configured for Ubuntu 22.04 Jammy Jellyfish, 24.04 Noble Numbat, Pop!OS 22.04 and Zorin OS 17.2**. Some other Ubuntu-based-distros may run the programm but beware of depency conflicts which can occur. You never know unless you have a complete understanding of what you are doing ! 
 * Let's take into account that this package is **STILL EXPERIMENTAL** as told before and **YOU ARE RESPONSIBLE for ANY ISSUE** that could happen during its execution!!!
 * It remains **impossible for me to connect to the XBox server** but that **does not prevent you to play online multiplayer mode** with a great gaming experience (Maybe the same reasons that **CaptureAge** is **not working on Linux** just like Arkanosis said on https://aoe2.arkanosis.net/linux/#how_do_i_use_capture_age_on_linux , you should have a look !) .
-* **YOU MUST OWN THE GAME ON STEAM TO RUN THIS PACKAGE, DON'T EVER USE A HACKED VERSION** Let's keep in mind that some games on Steam are free to play but also money could be useful for Valve to maintain Steam Proton for exemple and video games studios to pay their employees. If you are not willing to pay even a copper to play, maybe you should look after something which is already free instead ! **Cracked version aren't so innocent** that it could seem to since in these world only a few people are really ready to spent time and mind ressources to help others for free !!! Too Bad !!!
+* **YOU MUST OWN THE GAME ON STEAM TO RUN THIS PACKAGE, DON'T EVER USE A HACKED VERSION** Let's keep in mind that some games on Steam are free to play but also money could be useful for Valve to maintain Steam Proton for example and video games studios to pay their employees. If you are not willing to pay even a copper to play, maybe you should look after something which is already free instead ! **Hacked versions aren't so innocent** that it could seem to since in these world only a few people are really ready to spent time and mind resources to help others for free !!! Too Bad !!!
   
 * **Unfortunately, some games remain totally impractical even with a good compatibility tool !!!*** This is the case of **PUBG: Battlegrounds** on Steam for example (Fortnite is also unplayable due to the same software). Please have a look on [Proton Database](https://www.protondb.com/) to be sure before installing the game (else it won't be able to start anyway). You can check [here](https://www.protondb.com/explore?sort=fixWanted) the games that are borked. I found some hacking tricks on Kali Linux forums to prepare your linux kernel to be compatible with those anti-cheat softwares but the process is very long, complex and causes many security breaches in the kernel !!! Else you won't be able to update the linux-kernel on your system anymore or you will have to make the same process on the new one and it takes a lot of time that is why I strongly not recommend it ! 
 
@@ -98,7 +116,7 @@ This package would not have been possible without the following contributors:
 * Since the script had to optimize some system parameters, super-user commands (sudo) are included in it and thus your password will be required for its correct execution.
 * Once the Steam have been installed, enter your Steam login and password to access your account.
 * Be sure to have completed the Steam configuration before adding a new compatibility tool
-* Then you can open ProtonUp-Qt in the appliactions menu, choose the compatibility tool and its version you decide to add into Steam compatibility tools
+* Then you can open ProtonUp-Qt in the applications menu, choose the compatibility tool and its version you decide to add into Steam compatibility tools
 * Select an MS game in your Library.
 * If you don't have it yet, you'll have to buy at least one else you can't play. Note that some are free to download if you don't want to spent your money !
 * Have fun and make friends online ... or not !!!
@@ -116,7 +134,7 @@ This package would not have been possible without the following contributors:
 <div id='tutorial'/>  
   
 ## Tutorial
-* Comming soon !! I hope but it took longer than I used to think first !!! 
+* Coming soon !! I hope but it took longer than I used to think first !!! 
 
 <div id='testing-report'/>  
   
