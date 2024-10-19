@@ -107,18 +107,16 @@ Before its release, tests were conducted thanks to my former laptop (DELL Latitu
 
 **On Ubuntu 22.04 Jammy Jellyfish, Ubuntu 24.04 Noble Numbat (or Kubuntu and Xubuntu), Pop!OS 22.04 and ZORIN OS 17.2 :**
 
-* Open a terminal (Type "Terminal" in the application menu or Ctrl + Alt + T) then copy/paste the following command in it:
-
- 
-  'wget -O BeLGE_Install.sh https://github.com/rdh59320/BeLGE/releases/download/BeLGE-V2-0/BeLGE-Ubuntu-V2-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh'
-
-    
-* Since the script had to optimize some system parameters, super-user commands (sudo) are included in it and thus your password will be required for its correct execution.
+* Since the script has to optimize some system parameters, super-user commands (sudo) are included in it so your password will be required for its correct execution.
 * Once the Steam have been installed, enter your Steam login and password to access your account.
 * Be sure to have completed the Steam configuration before adding a new compatibility tool
 * Then you can open ProtonUp-Qt in the applications menu, choose the compatibility tool and its version you decide to add into Steam compatibility tools
 * Select an MS game in your Library.
 * If you don't have it yet, you'll have to buy at least one else you can't play. Note that some are free to download if you don't want to spent your money !
+* Open a terminal (Type "Terminal" in the application menu or Ctrl + Alt + T) then copy/paste the following command in it:
+  
+      wget -O BeLGE_Install.sh https://github.com/rdh59320/BeLGE/releases/download/BeLGE-V2-0/BeLGE-Ubuntu-V2-0.sh && sudo chmod +x BeLGE_Install.sh && bash BeLGE_Install.sh
+    
 * Have fun and make friends online ... or not !!!
 
 <div id='additional-apps'/>  
