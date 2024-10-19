@@ -4,7 +4,9 @@
 
 ***Ubuntu 20.04 Focal Fossa is no longer supported due to too many dependency issues but also too much time to update the system after install***
 
-The package successfully runs on **Ubuntu, Kubuntu, Xubuntu, Zorin OS 17.2 and Pop!OS 22.04**
+The package successfully runs on **Ubuntu, Kubuntu, Xubuntu, Zorin OS 17.2 and Pop!OS 22.04** 
+Tests had also been conducted on **Lubuntu and ElementaryOS** but **Steam Linux does not work properly on the first one** (you have to install Steam Windows through Lutris platform) and the package make **too many changes in ElementaryOS settings** so I do not recommend you to use it even if it works.
+Unfortunately, **LinuxMint is not compatible** with the package but it is not surprising because the additionnal PPA for GPU drivers are not supported as [warned by Glorious Eggroll here](https://github.com/lutris/docs/blob/master/InstallingDrivers.md).
 
 I strongly advise you to **upgrade your system** to Ubuntu 22.04 Jammy Jellyfish or 24.04 Noble Numbat if you wish to use this package.
 
