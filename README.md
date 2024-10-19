@@ -112,10 +112,12 @@ This package would not have been possible without the following contributors:
 * System Updater which allows you to update the ClamAV database, the APT, Snap and Flatpak repositories in the same time
 
 <div id='tutorial'/>  
+  
 ## Tutorial
 * Comming soon !! I hope but it took longer than I used to think first !!! 
 
 <div id='testing-report'/>  
+  
 ## Testing report
 
 * Testing sessions report is still on writing but I can tell you that results for performance tests are better than expected !!! I am the first surprised !!!
