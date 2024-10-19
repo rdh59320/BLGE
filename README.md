@@ -11,7 +11,8 @@ Unfortunately, **LinuxMint is not compatible** with the package but it is not su
 I strongly advise you to **upgrade your system** to Ubuntu 22.04 Jammy Jellyfish or 24.04 Noble Numbat if you wish to use this package.
 
 ***PACKAGE HAS NOW BEEN SUCCESSFULLY TESTED***
-Testing sessions reports will be published later
+
+**Testing sessions reports on compatibility will be completed later***
 
 ***YOU MAY NOW USE IT WITH CAUTION***
 
