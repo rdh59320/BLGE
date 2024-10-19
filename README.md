@@ -140,8 +140,109 @@ Before its release, tests were conducted thanks to my former laptop (DELL Latitu
   
 ## Testing report
 
-* Testing sessions report is still on writing but I can tell you that results for performance tests are better than expected !!! I am the first surprised !!!
+***Performance and Compatibility*** were conducted from October 15th to October 18th 2024.
 
+1. **Perfomance Tests**
+   
+   * **Introduction**
+     
+In order to attest the effectiveness of this shell-script-based package, assays have been conducted on a 10 year old laptop which is very slow when running MS Windows 10 and can not be upgraded to MS Windows 11 due to its lack of TPM. Among the areas of use of a computer, Gaming is one of those that require the most resources this is why it was chosen to attest the improvements we can encounter with the program (but also because this package was designed for).
+The purpose of this study is to demonstrate that it is possible in one hand to run a long time support Operating System, which would be still maintained for at least 2 more years and even more (GNU/Linux Debian based Canonical Ubuntu), but also in the other hand still able to properly launch games on the Valve Steam Platform. 
+These assays also study the most influencial parameters on the laptop performances. Among those which seem to be the most relevant, 3 were chosen for this study : The OS version, the nature of the Hard Drive and the quantity of RAM.
+   
+   * **Materials and Methods**
+
+ *Laptop* : HP ProBook 640 G1 with Intel Core i5-4210M CPU (frequency up to 3.2 GHz in Turbomode) with embedded Mesa Intel HD Graphics 4600 GPU (512MB memory capacity)
+ *RAM* : 2 SAMSUNG RAM sticks 4GB (SDRAM DDR3 1Rx8 PC3L-12800S-11-13-B4 1600MHz)
+ *ROM* : a Seagate SATA HDD (500GB @ 5400RPM) and a Fanxiang SATA SSD (512GB @ 6Gb/s)
+ *OS* : Ubuntu 22.04.5 LTS ISO and Ubuntu 24.04.1 LTS ISO
+ 
+ 
+ *Measures* : t1 = Time to install OS (min) / t2 = Time to access Github repository in 1rst session (min) / t3 = Time to rune the program (min) / t4 = Time to load system in 2nd session / t5 = Time to set up Steam Platform and GE-Proton (min) / t6 = Time to reload Steam Platform after GE-Proton installation (min) / t7 = Time to download and launch the game (game menu access) / t tot = t1 + t2 +t3 +t4 +t5 +t6 +t7 (Total time elapsed from boot on empty drive to game menu access)
+ *Performance indicator* : An indicator is created for the total process with the objective to access the game menu within 1 hour --> Perf-Ind  = (60 x 100) / t tot(min) assuming 
+ *Parameters Levels* : 
+ 
+ | Parameter        | Ubuntu Version | ROM Type  | RAM Quantity |
+ | ------|-----|-----|-----|
+ | Level -1 | 22.04 Jammy Jellyfish | HDD 5400RPM | 4GB DDR3 |
+  | Level +1 | 24.04 Noble Numbat | SSD 6Gb/s | 8GB DDR3 |
+
+*Design of experiments* : 
+| Exp | Ubuntu | ROM | RAM | Run Order |
+| 1   | 22.04  | HDD | 4GB | 1 |
+| 2   | 24.04  | HDD | 4GB | 2 |
+| 3   | 22.04  | SSD | 4GB | 7 |
+| 4   | 24.04  | SSD | 4GB | 8 |
+| 5   | 22.04  | HDD | 8GB | 3 |
+| 6   | 24.04  | HDD | 8GB | 4 |
+| 7   | 22.04  | SSD | 8GB | 5 |
+| 8   | 24.04  | SSD | 8GB | 6 |
+
+*Tested Game* : Blade Runner Enhanced Edition (Steam app 1678420)
+*Compatibility tool* : GE-Proton 9.15 for experiments 1,2,5,6,7,8 and GE-Proton 9.16 for exp 3 and 4 using Proton-Qt (GE-Proton update does not had impact on the t6 time and thus on the total time as well) 
+
+   * **Results**
+
+Every time has been recorded with a precision of 0.5 min and reported in the table below :
+
+| Exp | t1 (min) | t2(min) | t3 (min) | t4(min) |	t5 (min) | t6 (min) | t7 (min | t tot (min) | Perf-Ind |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| 1 | 20,0 | 4,0 |	24,0 |	3,0 |	7,0 |	2,0 |	17,0 | 77.0 | 77 |
+| 2 | 21,0 |	5,0 |	20,0 |	3,0 |	5,0 |	3,0 |	18,0 | 75.0 | 80 |
+| 3 | 9,0 | 	2,0 | 8,0 | 1,0 | 4,0 |	0,5 |	12,5 | 37.0 | 162 |
+| 4 | 12,0 | 2,0	| 7,0	| 1,0	| 3,0	| 0,5	| 13,5 | 39.0 | 153 |
+| 5 | 22,0 |	5,0 |	22,0 |	3,0 |	5,0 |	2,0 |	12,0 | 71.0 | 84 |
+| 6 | 15,0 |	3,0 |	20,0 |	2,0 |	5,0 |	2,0 |	12,0 | 59.0 | 101 |
+| 7 | 8,0 |	2,0 |	9,0 |	1,0 |	4,0 |	1,0 |	10,5 | 35.5 | 169 |
+| 8 | 9,0 |	2,0 |	7,0 |	1,0 |	3,0 |	0,5 |	12,0 | 34.5 | 173 |
+| Mean | 14,5 |	3,1 |	14,6 |	1,9 |	4,5 |	1,4 |	13,3 | 124.9 |
+| SD | 5,8 |	1,4 |	7,5 |	1,0 |	1,3 |	0,9 |	2,7	| 19,0	| 43,1 |
+
+Where SD is the calculated standard deviation to normalize responses with the mean measures tn normalized value = (tn - tn_mean) / SD_n
+The normalized value are shown in the table here below :
+
+| Exp | t1 (min) | t2(min) | t3 (min) | t4(min) |	t5 (min) | t6 (min) | t7 (min | t tot (min) | Perf-Ind |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| 1 | 0.94 | 0.65 |	1.25 |	1.14 |	1.91 |	0.60 |	1.34 | 1.24 | -1.11 |
+| 2 | 1.11 |	1.38 |	0.72 |	1.14 |	0.38 |	1.66 |	1.72 | 1.13 | -1.04 |
+| 3 | -0.94 | -0.83 | -0.89 | -0.88 | -0.38 |	-0.99 |	-0.35 | -0.87 | 0.86 |
+| 4 | -0.43 | -0.83	| -1.02	| -0.88	| -1.15	| -0.99	| 0.02 | -0.76 | 0.65 |
+| 5 | 1.29 |	1.38 |	0.99 |	1.14 |	0.38 |	0.60 |	-0.54 | 0.92 | -0.95 |
+| 6 | 0.09 |	-0.09 |	0.72 |	0.13 |	0.38 |	0.60 |	-0.54 | 0.29 | -0.55 |
+| 7 | -1.11 |	-0.83 |	-0.75 |	-0.88 |	-0.38 |	-0.46 |	-1.11 | -0.95 | 1.02 |
+| 8 | -0.94 |	-0.83 |	-1.02 |	-0.88 |	-1.15 |	-0.99 |	-0.54 | -1.00 | 1.12 |
+
+With these normalized data we can calculate the normalized influential factors (coresponding to t the Student test variable) for each parameters and their interactions on the **perormance index** (other response were not study further here) as well as the p-value for the 3 main factors. 
+The degrees of freedom is 4 for studying 3 parameters on a sample of 8 experiments (dof = 8-3-1 = 4) which means t=2.776 for a 95% confidence interval. Results are summarized below :
+
+ | Parameter  | X1 = OS Version | X2 = ROM Type  | X3 = RAM Quantity | I12 | I13 | I23 | I123 |
+ |------|-----|-----|-----|------|-----|-----|-----|
+ | Student variable (t) | 0.17 |	3,66 |	1.59 |	-0,29 |	0,31 |	-0,01 |	-0,01 |
+ | p-value | 0.187 |	0.022 |	0.873 |	*** |	*** |	*** |	*** |
+
+Where I12 is the interaction between OS version and ROM type, I13 the one between OS version and RAM quantity, I23 between ROM type and RAM quantity and I123 the second order interaction between all parameters.
+These results show that the disk type is the most influential parameter then the RAM quantity but neither the OS version or the interactions are relevant. The p-value demonstrate that only the ROM type could be considered relevant on this study (p<0.05). 
+     
+   * **Discussion**
+
+The maximal total time obtained for experiment 2 (Ubuntu 24.04 with 4GB DDR3 RAM and a 500 GB HDD at 5400RPM (which is not really fitted to gaming purpose) is 80 min which seems quite acceptable for this hardware configuration. All results obtained with SSD hard drive are faster than 40 min which is in agreement with the Student test variables calculated above and demonstrate the ***ROM type is a relevant parameter*** to upgrade older computer performances. Fastest access to game was obtained with experiment 8 (Ubuntu 24.04 / SSD / 8GB). RAM quantity have also an impact but less relevant and the p-value does not demonstrate its consistency in our case since only ROM Type obtained a p-value < 0.05. Another big surprise while conducted this study was the results with experiment 6. Indeed, it was not expected to fall beneath 60 min for the total process at all with the newest Ubuntu LTS version (24.04 Noble Numbat) but especially with a HDD @ 5400rpm. It is supposed that the newest Ubuntu LTS have a better RAM management between the 2 slots of the laptop but further investigations may be required to confirm this statement. 
+     
+   * **Conclusion**
+
+This study work demonstrate that many computers running slow on MS Windows 10 and sentenced to the dustbin due to the lack of minimum hardware requirements to upgrade to MS Windows 11 could still be used with Ubuntu lastest LTS and using BeLGE package will allow them to configure the OS, install Steam platform as well as running a game within an acceptable deadline (from 35 to 80 min in our example). Since the growing availability and compatibility of many softwares on Ubuntu as well as on other GNU/Linux distros, there is something to deal with the millions of computers which would lose their security support around the world next year. 
+   
+2. **Compatibility Tests**
+   
+   * **Introduction**
+     
+   * **Materials and Methods**
+     
+   * **Results**
+     
+   * **Discussion**
+     
+   * **Conclusion**
+   
 <div id='successfully-tested-devices'/> 
   
 ## Successfully Tested Devices
