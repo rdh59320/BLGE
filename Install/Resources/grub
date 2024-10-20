@@ -34,4 +34,4 @@ GRUB_GFXMODE=1920x1080
 
 # Uncomment to get a beep at grub start
 #GRUB_INIT_TUNE="480 440 1"
-GRUB_BACKGROUND="/boot/grub/Images/BeLGE_wallpaper.png"
+GRUB_BACKGROUND="/boot/grub/Images/BeLGE_wallpaper.jpg"
