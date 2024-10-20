@@ -6,7 +6,7 @@
 
 ***PACKAGE HAS NOW BEEN SUCCESSFULLY TESTED***
 
-**Testing sessions reports on compatibility will be completed later***
+**Testing sessions reports on compatibility will be completed later**
 
 ***YOU MAY NOW USE IT WITH CAUTION***
 
@@ -24,8 +24,8 @@
 3. [Warnings](#warnings)
 4. [System Requirements](#system-requirements)
 5. [Package Install Instructions](#package-install-instructions)
-6. [Additional Apps](#additional-apps)
-7. [Tutorial](#tutorial)
+6. [Tutorial](#tutorial)
+7. [Additional Apps](#additional-apps)
 8. [Testing Report](#testing-report)
 9. [Successfully Tested Devices](#successfully-tested-devices)
 
@@ -120,6 +120,13 @@ I strongly advise you to **upgrade your system** to Ubuntu 22.04 Jammy Jellyfish
     
 * Have fun and make friends online ... or not !!!
 
+
+<div id='tutorial'/>  
+  
+## Tutorial
+* Coming soon !! I hope but it took longer than I used to think first !!!
+
+
 <div id='additional-apps'/>  
   
 ## Additional Apps
@@ -130,10 +137,6 @@ I strongly advise you to **upgrade your system** to Ubuntu 22.04 Jammy Jellyfish
 * CPU Governor allows you to quickly switch between "Powersave" or "Performance" CPU mode according to your needs (switch to Performance to play then go back to Powersave once your gaming is over)
 * System Updater which allows you to update the ClamAV database, the APT, Snap and Flatpak repositories in the same time
 
-<div id='tutorial'/>  
-  
-## Tutorial
-* Coming soon !! I hope but it took longer than I used to think first !!! 
 
 <div id='testing-report'/>  
   
@@ -143,13 +146,13 @@ I strongly advise you to **upgrade your system** to Ubuntu 22.04 Jammy Jellyfish
 
 1. **Perfomance Tests**
    
-   * **Introduction**
+* **Introduction**
      
 In order to attest the effectiveness of this shell-script-based package, assays have been conducted on a 10 year old laptop which is very slow when running MS Windows 10 and can not be upgraded to MS Windows 11 due to its lack of TPM. Among the areas of use of a computer, Gaming is one of those that require the most resources this is why it was chosen to attest the improvements we can encounter with the program (but also because this package was designed for).
 The purpose of this study is to demonstrate that it is possible in one hand to run a long time support Operating System, which would be still maintained for at least 2 more years and even more (GNU/Linux Debian based Canonical Ubuntu), but also in the other hand still able to properly launch games on the Valve Steam Platform. 
 These assays also study the most influencial parameters on the laptop performances. Among those which seem to be the most relevant, 3 were chosen for this study : The OS version, the nature of the Hard Drive and the quantity of RAM.
    
-   * **Materials and Methods**
+* **Materials and Methods**
 
  *Laptop* : HP ProBook 640 G1 with Intel Core i5-4210M CPU (frequency up to 3.2 GHz in Turbomode) with embedded Mesa Intel HD Graphics 4600 GPU (512MB memory capacity)
  *RAM* : 2 SAMSUNG RAM sticks 4GB (SDRAM DDR3 1Rx8 PC3L-12800S-11-13-B4 1600MHz)
@@ -180,7 +183,7 @@ These assays also study the most influencial parameters on the laptop performanc
 *Tested Game* : Blade Runner Enhanced Edition (Steam app 1678420)
 *Compatibility tool* : GE-Proton 9.15 for experiments 1,2,5,6,7,8 and GE-Proton 9.16 for exp 3 and 4 using Proton-Qt (GE-Proton update does not had impact on the t6 time and thus on the total time as well) 
 
-   * **Results**
+* **Results**
 
 Every time has been recorded with a precision of 0.5 min and reported in the table below :
 
@@ -222,25 +225,25 @@ The degrees of freedom is 4 for studying 3 parameters on a sample of 8 experimen
 Where I12 is the interaction between OS version and ROM type, I13 the one between OS version and RAM quantity, I23 between ROM type and RAM quantity and I123 the second order interaction between all parameters.
 These results show that the disk type is the most influential parameter then the RAM quantity but neither the OS version or the interactions are relevant. The p-value demonstrate that only the ROM type could be considered relevant on this study (p<0.05). 
      
-   * **Discussion**
+* **Discussion**
 
 The maximal total time obtained for experiment 2 (Ubuntu 24.04 with 4GB DDR3 RAM and a 500 GB HDD at 5400RPM (which is not really fitted to gaming purpose) is 80 min which seems quite acceptable for this hardware configuration. All results obtained with SSD hard drive are faster than 40 min which is in agreement with the Student test variables calculated above and demonstrate the ***ROM type is a relevant parameter*** to upgrade older computer performances. Fastest access to game was obtained with experiment 8 (Ubuntu 24.04 / SSD / 8GB). RAM quantity have also an impact but less relevant and the p-value does not demonstrate its consistency in our case since only ROM Type obtained a p-value < 0.05. Another big surprise while conducted this study was the results with experiment 6. Indeed, it was not expected to fall beneath 60 min for the total process at all with the newest Ubuntu LTS version (24.04 Noble Numbat) but especially with a HDD @ 5400rpm. It is supposed that the newest Ubuntu LTS have a better RAM management between the 2 slots of the laptop but further investigations may be required to confirm this statement. 
      
-   * **Conclusion**
+* **Conclusion**
 
 This study work demonstrate that many computers running slow on MS Windows 10 and sentenced to the dustbin due to the lack of minimum hardware requirements to upgrade to MS Windows 11 could still be used with Ubuntu lastest LTS and using BeLGE package will allow them to configure the OS, install Steam platform as well as running a game within an acceptable deadline (from 35 to 80 min in our example). Since the growing availability and compatibility of many softwares on Ubuntu as well as on other GNU/Linux distros, there is something to deal with the millions of computers which would lose their security support around the world next year. 
    
 2. **Compatibility Tests**
    
-   * **Introduction**
+* **Introduction**
      
-   * **Materials and Methods**
+* **Materials and Methods**
      
-   * **Results**
+* **Results**
      
-   * **Discussion**
+* **Discussion**
      
-   * **Conclusion**
+* **Conclusion**
    
 <div id='successfully-tested-devices'/> 
   
