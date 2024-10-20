@@ -4,12 +4,6 @@
 
 ***Ubuntu 20.04 Focal Fossa is no longer supported due to too many dependency issues but also too much time to update the system after install***
 
-The package successfully runs on **Ubuntu, Kubuntu, Xubuntu, Zorin OS 17.2 and Pop!OS 22.04** 
-Tests had also been conducted on **Lubuntu and ElementaryOS** but **Steam Linux does not work properly on the first one** (you have to install Steam Windows through Lutris platform) and the package make **too many changes in ElementaryOS settings** so I do not recommend you to use it even if it works.
-Unfortunately, **LinuxMint is not compatible** with the package but it is not surprising because the additionnal PPA for GPU drivers are not supported as [warned by Glorious Eggroll here](https://github.com/lutris/docs/blob/master/InstallingDrivers.md).
-
-I strongly advise you to **upgrade your system** to Ubuntu 22.04 Jammy Jellyfish or 24.04 Noble Numbat if you wish to use this package.
-
 ***PACKAGE HAS NOW BEEN SUCCESSFULLY TESTED***
 
 **Testing sessions reports on compatibility will be completed later***
@@ -82,6 +76,12 @@ Before its release, tests were conducted thanks to my former laptop (DELL Latitu
 
 ## Warnings
 
+The package successfully runs on **Ubuntu, Kubuntu, Xubuntu, Zorin OS 17.2 and Pop!OS 22.04** 
+Tests had also been conducted on **Lubuntu and ElementaryOS** but **Steam Linux does not work properly on the first one** (you have to install Steam Windows through Lutris platform) and the package make **too many changes in ElementaryOS settings** so I do not recommend you to use it even if it works.
+Unfortunately, **LinuxMint is not compatible** with the package but it is not surprising because the additionnal PPA for GPU drivers are not supported as [warned by Glorious Eggroll here](https://github.com/lutris/docs/blob/master/InstallingDrivers.md).
+
+I strongly advise you to **upgrade your system** to Ubuntu 22.04 Jammy Jellyfish or 24.04 Noble Numbat if you wish to use this package.
+
 * **Please note that the package is STILL EXPERIMENTAL and might need further modifications or optimization later**
 * **DO NOT USE THIS PACKAGE IF YOUR SYSTEM DOES NOT HAVE THE MINIMAL REQUIREMENTS BELOW.**
 * To avoid any configuration conflicts with your system, it is **STRICTLY RECOMMENDED TO USE THIS PROGRAM ON A FRESHLY INSTALLED OS.**
@@ -97,10 +97,10 @@ Before its release, tests were conducted thanks to my former laptop (DELL Latitu
 ## System Requirements
 
 **Minimal System Configuration tested for now :**
-- Minimal configuration tested system for now is a HP ProBook 640 G1 with Intel Core i4-4210M CPU (frequency up to 3.2 GHz in Turbomode) with embedded Mesa Intel HD Graphics 4600 GPU, 4GB (1x4GB) SDRAM  DDR3 1600 MHz and a 500 GB HDD 5400RPM SATA ROM (all other tested devices technical data are listed in the [Successfully Tested Devices](#successfully-tested-devices) section below).
+- Minimal tested configuration system for now is a HP ProBook 640 G1 with a Intel Core i4-4210M CPU (frequency up to 3.2 GHz in Turbomode) and embedded Mesa Intel HD Graphics 4600 GPU, 4GB (1x4GB) SDRAM  DDR3 1600 MHz and a 500 GB HDD 5400RPM SATA ROM (all other tested devices technical data are listed in the [Successfully Tested Devices](#successfully-tested-devices) section below).
    
 **Recommended:**
-- Quad-core CPU @ 3.6 GHz (Intel Core i5/7 or AMD Ryzen 5/7 or higher performances CPU) with at least 16GB RAM DDR4 and a SSD disk (PCIe is prefered to SATA) with at least 30GB free space.
+- Quad-core CPU @ 3.6 GHz (Intel Core i5/7 or AMD Ryzen 5/7 or higher performances CPU) with at least 16GB RAM DDR4 and a SSD disk (PCIe is prefered to SATA) with at least 500 GB or more ROM capacity .
 
 <div id='package-install-instructions'/>  
   
