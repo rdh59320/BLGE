@@ -219,7 +219,7 @@ The degrees of freedom is 4 for studying 3 parameters on a sample of 8 experimen
 
  | Parameter  | X1 = OS Version | X2 = ROM Type  | X3 = RAM Quantity | I12 | I13 | I23 | I123 |
  |------|-----|-----|-----|------|-----|-----|-----|
- | Student variable (t) | 0.17 |	3,66 |	1.59 |	-0,29 |	0,31 |	-0,01 |	-0,01 |
+ | Student var t_Perf-Ind | 0.17 |	3,66 |	1.59 |	-0,29 |	0,31 |	-0,01 |	-0,01 |
  | p-value | 0.187 |	0.022 |	0.873 |	*** |	*** |	*** |	*** |
 
 Where I12 is the interaction between OS version and ROM type, I13 the one between OS version and RAM quantity, I23 between ROM type and RAM quantity and I123 the second order interaction between all parameters.
