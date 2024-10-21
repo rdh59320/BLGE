@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Designer : Roman PCR59320 aka Roman O'Cry  (pcr59320@gmail.com / https://github.com/rdh59320/)
-# Description : Steam Installation script
+# Description : System configuration script
 # Licence CREATIVE COMMONS CC BY-NC-SA 4.0
 # Version : 1.1
 
@@ -17,35 +17,49 @@ trap 'handle_error $LINENO' ERR
 
 # Begin script
 
-# Steam Debian package Installation
-echo -e "\n\n Downloading latest Steam debian package \n\n"
+### Installation of the dep packages and sources
 
-if ! wget -O ~/steam.deb http://media.steampowered.com/client/installer/steam.deb; then
-    echo "Failed to download Steam package. Please check your internet connection."
-    exit 1
-fi
+## OS optimization
 
-if ! sudo gdebi -n ~/steam.deb; then
-    echo "Failed to install Steam package. Please check the error messages above."
-    exit 1
-fi
+echo -e "\n\n\n OS Optimization \n\n"
 
-rm ~/steam.deb
-echo -e " \n\nSteam has been pre-installed on your System \n\n"
+# Swappiness and max_map_count values in a custom file 
+ 
+# Swappiness decreased to 10% instead of 60% 
+echo "vm.swappiness=10" | sudo tee -a /etc/sysctl.d/99-sysctl.conf
 
-# ProtonUp-Qt Installation via Flatpak as recommended by Davidotek
+# Max map count increased to 1048576 such as in Steam Plateform 
+# Please read for more info (https://discourse.ubuntu.com/t/any-negative-thoughts-about-raising-vm-max-map-count/42044) 
+echo "vm.max_map_count=2147483642" | sudo tee -a /etc/sysctl.d/99-sysctl.conf
 
-echo -e "\n\n Installing ProtonUp-Qt dependencies \n\n"
-sudo apt install -y git unzip xdotool xxd yad scummvm inotify-tools libssl-dev dosbox timidity
+# Loading custom VM file in system configuration
+sysctl -p /etc/sysctl.d/99-sysctl.conf
 
-echo -e "\n\n Installing ProtonUp-Qt compatibility tool \n\n"
-if ! flatpak install flathub net.davidotek.pupgui2 -y; then
-    echo "Failed to install ProtonUp-Qt. Please check the error messages above."
-    exit 1
-fi
+# Updating system with x86 architecture added then install required packages
 
-echo -e "\n\n ProtonUp-Qt is now installed on your system \n\n"
+echo -e "\n\n Adding 32 bits architecture for package compatibility \n\n And first updating system \n\n"
+dpkg --add-architecture i386
+apt update
+apt -y full-upgrade
+# Install the useful dependencies prog and replacing snap-store by gnome software
+apt install -y snapd xterm numlockx tlp aptitude gdebi-core flatpak clamav clamtk clamav-daemon grub2
+apt install -y --install-suggests gnome-software
+apt install -y --install-recommends gedit stacer gnome-software-plugin-flatpak 
 
-echo "Steam and ProtonUp-Qt installation completed successfully."
+# Updating Snap
+snap refresh
+
+
+
+
+# Adding flathub repo for more applications available to the user after rebooting
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+echo -e "\n\n\n System is Now Updated \n\n\n"
+
+# Adding TLP to enhance power management
+systemctl enable tlp && tlp start
+
+echo "System configuration completed successfully."
 
 # End script
