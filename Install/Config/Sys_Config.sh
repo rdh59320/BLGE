@@ -28,7 +28,8 @@ echo -e "\n\n\n OS Optimization \n\n"
 # Swappiness decreased to 10% instead of 60% 
 echo "vm.swappiness=10" | sudo tee -a /etc/sysctl.d/99-sysctl.conf
 
-# Max map count increased to 2147483642
+# Max map count increased to 1048576 such as in Steam Plateform 
+# Please read for more info (https://discourse.ubuntu.com/t/any-negative-thoughts-about-raising-vm-max-map-count/42044) 
 echo "vm.max_map_count=2147483642" | sudo tee -a /etc/sysctl.d/99-sysctl.conf
 
 # Loading custom VM file in system configuration
@@ -41,9 +42,9 @@ dpkg --add-architecture i386
 apt update
 apt -y full-upgrade
 # Install the useful dependencies prog and replacing snap-store by gnome software
-apt install -y snapd xterm numlockx tlp aptitude gdebi-core flatpak clamav clamtk clamav-daemon
+apt install -y snapd xterm numlockx tlp aptitude gdebi-core flatpak clamav clamtk clamav-daemon grub2
 apt install -y --install-suggests gnome-software
-apt install -y --install-recommends gedit stacer gnome-software-plugin-flatpak lutris 
+apt install -y --install-recommends gedit stacer gnome-software-plugin-flatpak 
 
 # Updating Snap
 snap refresh
