@@ -199,7 +199,7 @@ Every time has been recorded with a precision of 0.5 min and reported in the tab
 | 6 | 15,0 |	3,0 |	20,0 |	2,0 |	5,0 |	2,0 |	12,0 | 59.0 | 101 |
 | 7 | 8,0 |	2,0 |	9,0 |	1,0 |	4,0 |	1,0 |	10,5 | 35.5 | 169 |
 | 8 | 9,0 |	2,0 |	7,0 |	1,0 |	3,0 |	0,5 |	12,0 | 34.5 | 173 |
-| Mean | 14,5 |	3,1 |	14,6 |	1,9 |	4,5 |	1,4 |	13,3 | 124.9 |
+| Mean | 14,5 |	3,1 |	14,6 |	1,9 |	4,5 |	1,4 |	13,4 | 53.5 | 124.9 |
 | SD | 5,8 |	1,4 |	7,5 |	1,0 |	1,3 |	0,9 |	2,7	| 19,0	| 43,1 |
 
 Where SD is the calculated standard deviation to normalize responses with the mean measures tn normalized value = (tn - tn_mean) / SD_n
