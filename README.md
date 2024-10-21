@@ -158,7 +158,8 @@ These assays also study the most influencial parameters on the laptop performanc
  *RAM* : 2 SAMSUNG RAM sticks 4GB (SDRAM DDR3 1Rx8 PC3L-12800S-11-13-B4 1600MHz)
  *ROM* : a Seagate SATA HDD (500GB @ 5400RPM) and a Fanxiang SATA SSD (512GB @ 6Gb/s)
  *OS* : Ubuntu 22.04.5 LTS ISO and Ubuntu 24.04.1 LTS ISO
- 
+
+ *Internet connexion* : Ethernet and fiber optic network with very high speed connection (downlaod speed = 880 Mbps and upload = 550 MBps, tested on https://www.speedtest.net/)
  
  *Measures* : t1 = Time to install OS (min) / t2 = Time to access Github repository in 1rst session (min) / t3 = Time to rune the program (min) / t4 = Time to load system in 2nd session / t5 = Time to set up Steam Platform and GE-Proton (min) / t6 = Time to reload Steam Platform after GE-Proton installation (min) / t7 = Time to download and launch the game (game menu access) / t tot = t1 + t2 +t3 +t4 +t5 +t6 +t7 (Total time elapsed from boot on empty drive to game menu access)
  *Performance indicator* : An indicator is created for the total process with the objective to access the game menu within 1 hour --> Perf-Ind  = (60 x 100) / t tot(min) assuming 
@@ -171,6 +172,7 @@ These assays also study the most influencial parameters on the laptop performanc
 
 *Design of experiments* : 
 | Exp | Ubuntu | ROM | RAM | Run Order |
+|------|-----|-----|-----|-----|
 | 1   | 22.04  | HDD | 4GB | 1 |
 | 2   | 24.04  | HDD | 4GB | 2 |
 | 3   | 22.04  | SSD | 4GB | 7 |
@@ -227,7 +229,7 @@ These results show that the disk type is the most influential parameter then the
      
 * **Discussion**
 
-The maximal total time obtained for experiment 2 (Ubuntu 24.04 with 4GB DDR3 RAM and a 500 GB HDD at 5400RPM (which is not really fitted to gaming purpose) is 80 min which seems quite acceptable for this hardware configuration. All results obtained with SSD hard drive are faster than 40 min which is in agreement with the Student test variables calculated above and demonstrate the ***ROM type is a relevant parameter*** to upgrade older computer performances. Fastest access to game was obtained with experiment 8 (Ubuntu 24.04 / SSD / 8GB). RAM quantity have also an impact but less relevant and the p-value does not demonstrate its consistency in our case since only ROM Type obtained a p-value < 0.05. Another big surprise while conducted this study was the results with experiment 6. Indeed, it was not expected to fall beneath 60 min for the total process at all with the newest Ubuntu LTS version (24.04 Noble Numbat) but especially with a HDD @ 5400rpm. It is supposed that the newest Ubuntu LTS have a better RAM management between the 2 slots of the laptop but further investigations may be required to confirm this statement. 
+The maximal total time obtained for experiment 2 (Ubuntu 24.04 with 4GB DDR3 RAM and a 500 GB HDD at 5400RPM (which is not really fitted to gaming purpose) is 80 min which seems quite acceptable for this hardware configuration. All results obtained with SSD hard drive are faster than 40 min which is in agreement with the Student test variables calculated above and demonstrate the ***ROM type is a relevant parameter*** to upgrade older computer performances. Fastest access to game was obtained with experiment 8 (Ubuntu 24.04 / SSD / 8GB). RAM quantity have also an impact but less relevant and the p-value does not demonstrate its consistency in our case since only ROM Type obtained a p-value < 0.05. Another big surprise while conducted this study was the results with experiment 6. Indeed, it was not expected to fall beneath 60 min for the total process at all with the newest Ubuntu LTS version (24.04 Noble Numbat) but especially with a HDD @ 5400rpm. It is supposed that the newest Ubuntu LTS have a better RAM management with all RAM slots but further investigations may be required to confirm this statement. Another limited factor which has not been studied here is the network connection speed. Indeed, even though the BeLGE package size is quite tiny (only 1 MB), OS install, package intall and game download require to download a huge quantity of data (dozens of GB) from different external sources (Ubuntu, Kisak and Valve Steam repositories). Moreover, Steam servers speed is likely to be responsible of the results between experiments 7 and 8 on t7 which is lower for Exp 7 than Exp 8 whereas the oppsosite was expected (Exp 8 has a better material configuration). This is why a high connection speed is strongly recommanded to use this package and even necessary if you wish to play online. 
      
 * **Conclusion**
 
