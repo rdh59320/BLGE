@@ -163,9 +163,9 @@ These assays also study the most influencial parameters on the laptop performanc
  *Compatibility tool* : GE-Proton 9.15 for experiments 1,2,5,6,7,8 and GE-Proton 9.16 for exp 3 and 4 using Proton-Qt (GE-Proton update does not had impact on the t6 time and thus on the total time as well) 
  
  *Measures* : t1 = Time to install OS (min) / t2 = Time to access Github repository in 1rst session (min) / t3 = Time to rune the program (min) / t4 = Time to load system in 2nd session / t5 = Time to set up Steam Platform and GE-Proton (min) / t6 = Time to reload Steam Platform after GE-Proton installation (min) / t7 = Time to download, run and acces the game menu / t tot = t1 + t2 +t3 +t4 +t5 +t6 +t7 (Total time elapsed from boot on empty drive to game menu access)
- *Performance indicator* : An indicator is created for the total process with the objective to access the game menu within 1 hour --> Perf-Ind  = (60 x 100) / t tot(min) assuming 
- *Parameters Levels* : 
+ *Performance index* : An indicator is created for the total process with the objective to access the game menu within 1 hour --> Perf-Ind  = (60 x 100) / t tot(min) assuming 
  
+ *Parameters Levels* :  
  | Parameter        | Ubuntu Version | ROM Type  | RAM Quantity |
  | ------|-----|-----|-----|
  | Level -1 | 22.04 Jammy Jellyfish | HDD 5400RPM | 4GB DDR3 |
@@ -254,7 +254,7 @@ Indeed, In September 2024 Linux desktops market share 4.5 % whereas it was only 
  *Time Measures* : *Measures* : t1 = Time to install OS (min) / t2 = Time to access Github repository in 1rst session (min) / t3 = Time to rune the program (min) / t4 = Time to load system in 2nd session / t5 = Time to set up Steam Platform and GE-Proton (min) / t6 = Time to reload Steam Platform after GE-Proton installation (min) / t7 = Time to download, run and acces game menu / t tot = t1 + t2 +t3 +t4 +t5 +t6 +t7 (Total time elapsed from boot on empty drive to game menu access)
  *Time Meausres uncertainty* = 0.5 min
  
-* Performances Indeces* : IP1 (global perf. index) = 6 000 / (t tot) - IP2 (Ready to play Index) = 3 000 /(t tot - t7) - RBTS = Score value for the Ranked Benchmark Test (> 900 for 1vs1 match and > 1 000 for 2vs2 or more)    
+*Performances Indeces* : IP1 (global perf. index) = 6 000 / (t tot) - IP2 (Ready to play Index) = 3 000 /(t tot - t7) - RBTS = Score value for the Ranked Benchmark Test (> 900 for 1vs1 match and > 1 000 for 2vs2 or more)    
   
 * **Results**
     
