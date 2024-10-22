@@ -19,19 +19,28 @@
 *******
 
 ## Table of Contents
-1. [Acknowledgments](#acknowledgments)
-2. [Introduction](#introduction)
+1. [Introduction](#introduction)
+2. [Acknowledgments](#acknowledgments)
 3. [Warnings](#warnings)
 4. [System Requirements](#system-requirements)
 5. [Package Install Instructions](#package-install-instructions)
 6. [Tutorial](#tutorial)
 7. [Additional Apps](#additional-apps)
-8. [Testing Report](#testing-report)
-9. [Successfully Tested Devices](#successfully-tested-devices)
+8. [Successfully Tested Devices](#successfully-tested-devices)
+9. [Testing Report](#testing-report)
+10. [Package History](#package-history)
 
 *******
 
-<div id='acknoledgements'/>  
+<div id='introduction'/>  
+  
+## Introduction
+
+
+
+Before its release, tests were conducted thanks to my former laptop (DELL Latitude E5470) for OS compatibility but also on an old HP ProBook 640 G1 laptop my owner found in a dustbin to check its performance as well as the influent parameters. Let's have a look on the [Testing Report section](#testing-report) for further details. 
+<div id='acknoledgements'/> 
+
   
 ## Acknowledgments
 
@@ -49,28 +58,6 @@ This package would not have been possible without the following contributors:
 * The entire Linux Gaming Community of course (especially those playing AoE2DE on Steam) !!!
 * Always be grateful for the Open-Source Community, so THANKS to ALL of YOU !!!
 
-<div id='introduction'/>  
-  
-## Introduction
-
-At the beginning, there was an old love story : Age of Empires 2 aka the Age of Kings !
-
-Indeed, I remember the first time I discover this game almost 25 years ago when my neighbor gave me the CD-ROM to install it on my Windows 95 desktop (a long time ago now !)
-Then, I discovered the GNU/Linux Debian universe about 15 years ago and in 2014 I realized my laptop did have a lot fewer problems when running Ubuntu 14.04 (Trusty Tahr) than MS Windows 7 especially with CPU cooling since it prevent it from overheating while on Windows 7 session the computer often shutdowned itself few minutes after the fan started to speed up and scream. This is when I take one of the most important decision in my life : stop using Microsoft Windows but Ubuntu instead !!! I do not regret it nowadays !
-
-For a long time, I kept on playing AoE2 thanks to Wine then Valve Steam came into the game ! A friend of mine gave me an hacked version of the HD edition (I feel ashamed to admit it). I play with it thanks to Wine for many years then I heard that a new version was about to be available : the Definitive Edition. At this time, I choose to create a real Steam account and purchase it properly. At the beginning, it was sometimes impossible to launch the game as soon as a new MS update came and I switched from Steam Platform to Lutris or even choose to install Steam Windows instead of Linux version to avoid some bugs. It remained complicated to access multiplayer games because they used to crash a few time after launching it. Even when watching others playing, I used to be disconnected after 5 to 10 min which is very frustrating. I did not have this issue with single player games but playing alone against AI could be boring after a while.
-
-As many Linux autodidacts, I read a lot on forums and discovered [Arkanosis guideline](https://aoe2.arkanosis.net/linux/) which was very useful but moreover thanks to the [Proton Database](https://www.protondb.com/), I find out a very powerful compatibility tool : [GE-Proton](https://github.com/GloriousEggroll/proton-ge-custom) !
-Thanks to it, I was now able to launch multiplayer games without "out of sync issue" and even play Ranked games as well !!!
-
-I shared advices on ProtonDB but it remains difficult for Linux beginners to correctly follow the instructions (some have difficulties with user's manual as well !!!We are not here to judge them). This is how I got the idea of this little project : create a package to automatically set up a Ubuntu based distro so that it could runs AoE2DE with GE-Proton and prevent issues that could occur with Valve Proton. The first version purpose was to be able to launch a ranked game from scratch (no OS installed) within 1 hour, and it did well !!
-
-At the beginning, this project was even named "AoE2DE for Ubuntu" but I quickly realized that combining Steam platform and GE-Proton compatibility tool was efficient with many other games so what was the point to keep on focusing just on the AoE2DE linux community when it could help the whole Steam Linux community ?!!
-This how the project became "Better Linux Gaming Experience" or just BeLGE (I am French but I have Flemish roots and sometimes I feel more Belgian than French)
-
-The first version was released in the end of January 2024 but the code was pretty ugly I must admit with a different package for each available distro (Ubuntu 20.04, 22.04, 23.04 and 23.10) but moreover there was a lack of error handling so I decided to remove it when I started to work on this new version (BeLGEV2-0). Since January, a lot of improvements were done to clear the code and make it easier to understand for others but also to improve automatization and universality through a unique package for many distros. 
-
-Before its release, tests were conducted thanks to my former laptop (DELL Latitude E5470) for OS compatibility but also on an old HP ProBook 640 G1 laptop my owner found in a dustbin to check its performance as well as the influent parameters. Let's have a look on the [Testing Report section](#testing-report) for further details. 
 
 <div id='warnings'/>
 
@@ -137,6 +124,19 @@ I strongly advise you to **upgrade your system** to Ubuntu 22.04 Jammy Jellyfish
 * CPU Governor allows you to quickly switch between "Powersave" or "Performance" CPU mode according to your needs (switch to Performance to play then go back to Powersave once your gaming is over)
 * System Updater which allows you to update the ClamAV database, the APT, Snap and Flatpak repositories in the same time
 
+   
+<div id='successfully-tested-devices'/> 
+  
+## Successfully Tested Devices
+
+* **HP ProBook 640 G1 with Intel Core i5-4210M CPU (frequency up to 3.2 GHz in Turbomode) with embedded Mesa Intel HD Graphics 4600 GPU, 4GB (1x4GB) SDRAM  DDR3 1600 MHz and a 500 GB SATA HDD 5400RPM ROM**
+
+* **DELL Latitude E5470 (2016) with Intel Core i7-6820HQ CPU (Frequency up to 3.6 GHz) with embedded Intel HD Graphics 530 GPU, 16GB RAM (1x16GB) DDR4 2133 MHz and a 512GB NVMe SSD disk**
+
+* **DELL VOSTRO (2023) with AMD Ryzen 7-5700U CPU (Frequency up to 4.3 GHz) with embedded AMD Radeon Graphics, 32GB RAM (1x32) DDR4 3200 MHz and a 512GB NVMe SSD :**
+  
+* **More Devices to come  !!! Hope so !!!**
+
 
 <div id='testing-report'/>  
   
@@ -155,13 +155,14 @@ These assays also study the most influencial parameters on the laptop performanc
 * **Materials and Methods**
 
  *Laptop* : HP ProBook 640 G1 with Intel Core i5-4210M CPU (frequency up to 3.2 GHz in Turbomode) with embedded Mesa Intel HD Graphics 4600 GPU (512MB memory capacity)
- *RAM* : 2 SAMSUNG RAM sticks 4GB (SDRAM DDR3 1Rx8 PC3L-12800S-11-13-B4 1600MHz)
+ *RAM* : 2 SAMSUNG RAM sticks 4GB (SDRAM DDR3 1Rx8 PC3L-12800S-11-13-B4 1600MHz
  *ROM* : a Seagate SATA HDD (500GB @ 5400RPM) and a Fanxiang SATA SSD (512GB @ 6Gb/s)
  *OS* : Ubuntu 22.04.5 LTS ISO and Ubuntu 24.04.1 LTS ISO
-
  *Internet connexion* : Ethernet and fiber optic network with very high speed connection (downlaod speed = 880 Mbps and upload = 550 MBps, tested on https://www.speedtest.net/)
+ *Tested Game* : Blade Runner Enhanced Edition (Steam app 1678420)
+ *Compatibility tool* : GE-Proton 9.15 for experiments 1,2,5,6,7,8 and GE-Proton 9.16 for exp 3 and 4 using Proton-Qt (GE-Proton update does not had impact on the t6 time and thus on the total time as well) 
  
- *Measures* : t1 = Time to install OS (min) / t2 = Time to access Github repository in 1rst session (min) / t3 = Time to rune the program (min) / t4 = Time to load system in 2nd session / t5 = Time to set up Steam Platform and GE-Proton (min) / t6 = Time to reload Steam Platform after GE-Proton installation (min) / t7 = Time to download and launch the game (game menu access) / t tot = t1 + t2 +t3 +t4 +t5 +t6 +t7 (Total time elapsed from boot on empty drive to game menu access)
+ *Measures* : t1 = Time to install OS (min) / t2 = Time to access Github repository in 1rst session (min) / t3 = Time to rune the program (min) / t4 = Time to load system in 2nd session / t5 = Time to set up Steam Platform and GE-Proton (min) / t6 = Time to reload Steam Platform after GE-Proton installation (min) / t7 = Time to download, run and acces the game menu / t tot = t1 + t2 +t3 +t4 +t5 +t6 +t7 (Total time elapsed from boot on empty drive to game menu access)
  *Performance indicator* : An indicator is created for the total process with the objective to access the game menu within 1 hour --> Perf-Ind  = (60 x 100) / t tot(min) assuming 
  *Parameters Levels* : 
  
@@ -181,9 +182,6 @@ These assays also study the most influencial parameters on the laptop performanc
 | 6   | 24.04  | HDD | 8GB | 4 |
 | 7   | 22.04  | SSD | 8GB | 5 |
 | 8   | 24.04  | SSD | 8GB | 6 |
-
-*Tested Game* : Blade Runner Enhanced Edition (Steam app 1678420)
-*Compatibility tool* : GE-Proton 9.15 for experiments 1,2,5,6,7,8 and GE-Proton 9.16 for exp 3 and 4 using Proton-Qt (GE-Proton update does not had impact on the t6 time and thus on the total time as well) 
 
 * **Results**
 
@@ -216,13 +214,12 @@ The normalized value are shown in the table here below :
 | 7 | -1.11 |	-0.83 |	-0.75 |	-0.88 |	-0.38 |	-0.46 |	-1.11 | -0.95 | 1.02 |
 | 8 | -0.94 |	-0.83 |	-1.02 |	-0.88 |	-1.15 |	-0.99 |	-0.54 | -1.00 | 1.12 |
 
-With these normalized data we can calculate the normalized influential factors (coresponding to t the Student test variable) for each parameters and their interactions on the **perormance index** (other response were not study further here) as well as the p-value for the 3 main factors. 
-The degrees of freedom is 4 for studying 3 parameters on a sample of 8 experiments (dof = 8-3-1 = 4) which means t=2.776 for a 95% confidence interval. Results are summarized below :
+With these normalized data we can calculate the normalized influential factors for each parameters and their interactions on the **perormance index** (other response were not study further here) as well as the p-value for the 3 main factors. As the sample size is quite limited, Student test was chosen to assess the data set. There are 4 degrees of freedom (dof) by studying 3 parameters on a sample of 8 experiments (dof = 8-3-1 = 4) which means t=2.776 for a 95% confidence interval where t is the Student test variable. Results are summarized below :
 
  | Parameter  | X1 = OS Version | X2 = ROM Type  | X3 = RAM Quantity | I12 | I13 | I23 | I123 |
  |------|-----|-----|-----|------|-----|-----|-----|
  | Student var t_Perf-Ind | 0.17 |	3,66 |	1.59 |	-0,29 |	0,31 |	-0,01 |	-0,01 |
- | p-value | 0.187 |	0.022 |	0.873 |	*** |	*** |	*** |	*** |
+ | p-value | 0.187 |	0.022 |	0.870 |	*** |	*** |	*** |	*** |
 
 Where I12 is the interaction between OS version and ROM type, I13 the one between OS version and RAM quantity, I23 between ROM type and RAM quantity and I123 the second order interaction between all parameters.
 These results show that the disk type is the most influential parameter then the RAM quantity but neither the OS version or the interactions are relevant. The p-value demonstrate that only the ROM type could be considered relevant on this study (p<0.05). 
@@ -234,27 +231,54 @@ The maximal total time obtained for experiment 2 (Ubuntu 24.04 with 4GB DDR3 RAM
 * **Conclusion**
 
 This study work demonstrate that many computers running slow on MS Windows 10 and sentenced to the dustbin due to the lack of minimum hardware requirements to upgrade to MS Windows 11 could still be used with Ubuntu lastest LTS and using BeLGE package will allow them to configure the OS, install Steam platform as well as running a game within an acceptable deadline (from 35 to 80 min in our example). Since the growing availability and compatibility of many softwares on Ubuntu as well as on other GNU/Linux distros, there is something to deal with the millions of computers which would lose their security support around the world next year. 
+
    
 2. **Compatibility Tests**
    
 * **Introduction**
+
+Indeed, In September 2024 Linux desktops market share 4.5 % whereas it was only 1.4 % in September 2014 (https://gs.statcounter.com/os-market-share/desktop/worldwide/#monthly-201409-202409). It still remains much lower than MS Windows (73.4 %) or Apple MacOS (15.5 %) but its growth rate whithin the last 10 years is 320 % and also nowadays Linux distros have gained reputation for gaming purpose surpassing MacOS on the Valve Steam platform with 1.89 % market share against 1.49 % for MacOS desktop (https://itsfoss.com/linux-market-share/).According to TrueList.co, in the beginning of 2024, there was more than 600 active Linux distros and the most popular among them was Ubuntu (33.9% of all Linux distros) which is being developed by the Sout African IT company Canonical (https://truelist.co/blog/linux-statistics/). Valve has developped a strong linux-friendly platform for gaming and also its own distro, SteamOS, based on Arch Linux. Nevertheless, Ubuntu and other distros based on it, such as Linux Mint for example, represent the main part of linux destop connected on the platform. More and more gaming Linux distro projects apperead during the last decades such as Manjaro, Nobara or Garuda for instance (https://itsfoss.com/linux-gaming-distributions/) but Ubuntu still remains the most popular base with ditros like Pop!OS, LinuxMint, ZorinOS or Ubuntu Game Pack (https://www.digitaltrends.com/computing/best-linux-distros-gaming/). However, designing a universal package to automatize gaming configuration with the latest GPU drivers and game compatibility tools that fits for all is a difficult task since every distros uses different desktop environnement (Gnome, KDE, XfCE, ...), different repositories or package dependencies. Designing a package for Ubuntu does not imply that it will work as well on other Ubuntu-based distros or even work at all. Thus, compatibility test sessions are an important step for the package developement.  
      
 * **Materials and Methods**
-     
+
+ *Laptop* : DELL Latitude E5470 (2016) with Intel Core i7-6820HQ CPU (Frequency up to 3.6 GHz) with embedded Intel HD Graphics 530 GPU, 16GB RAM (1x16GB) DDR4 2133 MHz and a 512GB NVMe SSD disk (1 RAM slot still working)
+ *RAM* :  TIMETEC RAM stick 16GB (SDRAM DDR4 2Rx8 CL15 2133MHz
+ *ROM* : Micron SK Hynix SC300 M.2 2280 SSD 512GB NVMe
+ *Internet connexion* : Ethernet and fiber optic network with very high speed connection (downlaod speed = 880 Mbps and upload = 550 MBps, tested on https://www.speedtest.net/) 
+ *OS ISOs* : Ubuntu 22.04.5 LTS, Ubuntu 24.04.1 LTS, Kubuntu 24.04.1 LTS, Xubuntu 24.04.1 LTS, Lubuntu 24.04.1 LTS, elementaryOS 7.1 Horus stable, Pop!OS 22.04 v43 for intel-amd, ZorinOS 17.2 core 64 bit 
+ *Tested Game* : Age of Empires 2 Definitive Edition (Steam app 813780)
+ *Compatibility tool* : GE-Proton 9.16
+ *Graphics settings* : Medium (1 RAM slot is not working anymore and the Core i7 6820HQ CPU performances loss after the "Downfall" vulnearibility security patch is estimated to 35%, higher graphics settings won't allow to reach our aim : playing at leats 1 vs 1 ranked games)
+
+*Customization and apps* : Checking Grub wallpaper integration at reboot, password feedback for terminal apps and correctly-working BeLGE apps checking
+ *Time Measures* : *Measures* : t1 = Time to install OS (min) / t2 = Time to access Github repository in 1rst session (min) / t3 = Time to rune the program (min) / t4 = Time to load system in 2nd session / t5 = Time to set up Steam Platform and GE-Proton (min) / t6 = Time to reload Steam Platform after GE-Proton installation (min) / t7 = Time to download, run and acces game menu / t tot = t1 + t2 +t3 +t4 +t5 +t6 +t7 (Total time elapsed from boot on empty drive to game menu access)
+ *Time Meausres uncertainty* = 0.5 min
+ 
+* Performances Indeces* : IP1 (global perf. index) = 6 000 / (t tot) - IP2 (Ready to play Index) = 3 000 /(t tot - t7) - RBTS = Score value for the Ranked Benchmark Test (> 900 for 1vs1 match and > 1 000 for 2vs2 or more)    
+  
 * **Results**
-     
+    
 * **Discussion**
      
 * **Conclusion**
-   
-<div id='successfully-tested-devices'/> 
+
+<div id='package-history'/>  
   
-## Successfully Tested Devices
+## Package History
 
-* **HP ProBook 640 G1 with Intel Core i5-4210M CPU (frequency up to 3.2 GHz in Turbomode) with embedded Mesa Intel HD Graphics 4600 GPU, 4GB (1x4GB) SDRAM  DDR3 1600 MHz and a 500 GB SATA HDD 5400RPM ROM**
+At the beginning, there was an old love story : Age of Empires 2 aka the Age of Kings !
 
-* **DELL Latitude E5470 (2016) with Intel Core i7-6820HQ CPU (Frequency up to 3.6 GHz) with embedded Intel HD Graphics 530 GPU, 16GB RAM (2x8GB) DDR4 2133 MHz and a 512GB NVMe SSD disk**
+Indeed, I remember the first time I discover this game almost 25 years ago when my neighbor gave me the CD-ROM to install it on my Windows 95 desktop (a long time ago now !)
+Then, I discovered the GNU/Linux Debian universe about 15 years ago and in 2014 I realized my laptop did have a lot fewer problems when running Ubuntu 14.04 (Trusty Tahr) than MS Windows 7 especially with CPU cooling since it prevent it from overheating while on Windows 7 session the computer often shutdowned itself few minutes after the fan started to speed up and scream. This is when I take one of the most important decision in my life : stop using Microsoft Windows but Ubuntu instead !!! I do not regret it nowadays !
 
-* **DELL VOSTRO (2023) with AMD Ryzen 7-5700U CPU (Frequency up to 4.3 GHz) with embedded AMD Radeon Graphics, 32GB RAM (1x32) DDR4 3200 MHz and a 512GB NVMe SSD :**
-  
-* **More Devices to come  !!! Hope so !!!**
+For a long time, I kept on playing AoE2 thanks to Wine then Valve Steam came into the game ! A friend of mine gave me an hacked version of the HD edition (I feel ashamed to admit it). I play with it thanks to Wine for many years then I heard that a new version was about to be available : the Definitive Edition. At this time, I choose to create a real Steam account and purchase it properly. At the beginning, it was sometimes impossible to launch the game as soon as a new MS update came and I switched from Steam Platform to Lutris or even choose to install Steam Windows instead of Linux version to avoid some bugs. It remained complicated to access multiplayer games because they used to crash a few time after launching it. Even when watching others playing, I used to be disconnected after 5 to 10 min which is very frustrating. I did not have this issue with single player games but playing alone against AI could be boring after a while.
+
+As many Linux autodidacts, I read a lot on forums and discovered [Arkanosis guideline](https://aoe2.arkanosis.net/linux/) which was very useful but moreover thanks to the [Proton Database](https://www.protondb.com/), I find out a very powerful compatibility tool : [GE-Proton](https://github.com/GloriousEggroll/proton-ge-custom) !
+Thanks to it, I was now able to launch multiplayer games without "out of sync issue" and even play Ranked games as well !!!
+
+I shared advices on ProtonDB but it remains difficult for Linux beginners to correctly follow the instructions (some have difficulties with user's manual as well !!!We are not here to judge them). This is how I got the idea of this little project : create a package to automatically set up a Ubuntu based distro so that it could runs AoE2DE with GE-Proton and prevent issues that could occur with Valve Proton. The first version purpose was to be able to launch a ranked game from scratch (no OS installed) within 1 hour, and it did well !!
+
+At the beginning, this project was even named "AoE2DE for Ubuntu" but I quickly realized that combining Steam platform and GE-Proton compatibility tool was efficient with many other games so what was the point to keep on focusing just on the AoE2DE linux community when it could help the whole Steam Linux community ?!!
+This how the project became "Better Linux Gaming Experience" or just BeLGE (I am French but I have Flemish roots and sometimes I feel more Belgian than French)
+
+The first version was released in the end of January 2024 but the code was pretty ugly I must admit with a different package for each available distro (Ubuntu 20.04, 22.04, 23.04 and 23.10) but moreover there was a lack of error handling so I decided to remove it when I started to work on this new version (BeLGEV2-0). Since January, a lot of improvements were done to clear the code and make it easier to understand for others but also to improve automatization and universality through a unique package for many distros. 
