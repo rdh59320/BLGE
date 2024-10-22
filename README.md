@@ -219,7 +219,7 @@ With these normalized data we can calculate the normalized influential factors f
  | Parameter  | X1 = OS Version | X2 = ROM Type  | X3 = RAM Quantity | I12 | I13 | I23 | I123 |
  |------|-----|-----|-----|------|-----|-----|-----|
  | Student var t_Perf-Ind | 0.17 |	3,66 |	1.59 |	-0,29 |	0,31 |	-0,01 |	-0,01 |
- | p-value | 0.187 |	0.022 |	0.870 |	*** |	*** |	*** |	*** |
+ | p-value | 0.187 |	0.022 |	0.870 |	0.991 |	0.770 |	0.786 |	0.991 |
 
 Where I12 is the interaction between OS version and ROM type, I13 the one between OS version and RAM quantity, I23 between ROM type and RAM quantity and I123 the second order interaction between all parameters.
 These results show that the disk type is the most influential parameter then the RAM quantity but neither the OS version or the interactions are relevant. The p-value demonstrate that only the ROM type could be considered relevant on this study (p<0.05). 
