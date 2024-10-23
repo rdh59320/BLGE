@@ -1,20 +1,5 @@
 # BeLGE aka Better Linux Gaming Experience
 
-**BeLGE Package** was designed to give you the usefull tools that enable you to run MS Games within the Steam app or Lutris Open Gaming Platform on either Ubuntu 22.04, Ubuntu 24.04, ZorinOS 17.2 or Pop!OS 22.04.
-
-***Ubuntu 20.04 Focal Fossa is no longer supported due to too many dependency issues but also too much time to update the system after install (*Upgrading to Ubuntu 22.04 or higher is highly recommanded*)***
-
-***PACKAGE HAS NOW BEEN SUCCESSFULLY TESTED***
-
-**Testing sessions reports on compatibility will be completed later**
-
-***YOU MAY NOW USE IT WITH CAUTION***
-
-***LET ME REMIND YOU I AM NOT A SOFTWARE ENGINEER BUT A PASSIONATE AUTODIDCT INSTEAD***
-
-***ANY CORRECTIONS OR ADVICES ARE WELCOME AS WELL AS FEEDBACKS***
-
-***THANKS FOR YOUR UNDERSTANDING***
 
 *******
 
@@ -36,7 +21,21 @@
   
 ## Introduction
 
+**BeLGE Package** was designed to give you the usefull tools that enable you to run MS Games within the Steam app or Lutris Open Gaming Platform on either Ubuntu 22.04, Ubuntu 24.04, ZorinOS 17.2 or Pop!OS 22.04 (LinuxMint isn't compatible for now but will be next update).
 
+***Ubuntu 20.04 Focal Fossa is no longer supported due to too many dependency issues but also too much time to update the system after install (*Upgrading to Ubuntu 22.04 or higher is highly recommanded*)***
+
+***PACKAGE HAS NOW BEEN SUCCESSFULLY TESTED and Release will come soon (you can test pre-release package now)***
+
+**Testing sessions reports on compatibility will be completed later**
+
+***YOU MAY NOW USE IT WITH CAUTION***
+
+***LET ME REMIND YOU I AM NOT A SOFTWARE ENGINEER BUT A PASSIONATE AUTODIDCT INSTEAD***
+
+***ANY CORRECTIONS OR ADVICES ARE WELCOME AS WELL AS FEEDBACKS***
+
+***THANKS FOR YOUR UNDERSTANDING***
 
 Before its release, tests were conducted thanks to my former laptop (DELL Latitude E5470) for OS compatibility but also on an old HP ProBook 640 G1 laptop my owner found in a dustbin to check its performance as well as the influent parameters. Let's have a look on the [Testing Report section](#testing-report) for further details. 
 <div id='acknoledgements'/> 
@@ -65,7 +64,7 @@ This package would not have been possible without the following contributors:
 
 The package successfully runs on **Ubuntu, Kubuntu, Xubuntu, Zorin OS 17.2 and Pop!OS 22.04** 
 Tests had also been conducted on **Lubuntu and ElementaryOS** but **Steam Linux does not work properly on the first one** (you have to install Steam Windows through Lutris platform) and the package make **too many changes in ElementaryOS settings** so I do not recommend you to use it even if it works.
-Unfortunately, **LinuxMint is not compatible** with the package but it is not surprising because the additionnal PPA for GPU drivers are not supported as [warned by Glorious Eggroll here](https://github.com/lutris/docs/blob/master/InstallingDrivers.md).
+Unfortunately, **LinuxMint is not compatible** with the package but it is not surprising because of broken depencies with snap package and does not support GE-Proton either [warned by Glorious Eggroll here](https://github.com/lutris/docs/blob/master/InstallingDrivers.md). However, some tests with Proton Tkg compatibility tool gave good resultst and the new version of this package will support Mint as well.
 
 I strongly advise you to **upgrade your system** to Ubuntu 22.04 Jammy Jellyfish or 24.04 Noble Numbat if you wish to use this package.
 
