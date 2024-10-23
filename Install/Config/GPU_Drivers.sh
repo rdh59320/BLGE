@@ -32,7 +32,6 @@ if [ "$GPU" = "AMD" ] || [ "$GPU" = "Intel" ]; then
 # Case where NVIDIA is the main GPU supplier
 elif [ "$GPU" = "NVIDIA" ]; then
     echo -e "\n\n\n Adding NVIDIA Drivers \n\n\n"
-    sudo add-apt-repository ppa:graphics-drivers/ppa -y
     sudo apt update
     sudo apt install -y nvidia-driver-550 libvulkan1 libvulkan1:i386
 else
