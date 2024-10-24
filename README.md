@@ -245,21 +245,54 @@ Indeed, In September 2024 Linux desktops market share 4.5 % whereas it was only 
 * **Materials and Methods**
 
  *Laptop* : DELL Latitude E5470 (2016) with Intel Core i7-6820HQ CPU (Frequency up to 3.6 GHz) with embedded Intel HD Graphics 530 GPU, 16GB RAM (1x16GB) DDR4 2133 MHz and a 512GB NVMe SSD disk (1 RAM slot still working)
+ 
  *RAM* :  TIMETEC RAM stick 16GB (SDRAM DDR4 2Rx8 CL15 2133MHz
+ 
  *ROM* : Micron SK Hynix SC300 M.2 2280 SSD 512GB NVMe
+ 
  *Internet connexion* : Ethernet and fiber optic network with very high speed connection (downlaod speed = 880 Mbps and upload = 550 MBps, tested on https://www.speedtest.net/) 
- *OS ISOs* : Ubuntu 22.04.5 LTS, Ubuntu 24.04.1 LTS, Kubuntu 24.04.1 LTS, Xubuntu 24.04.1 LTS, Lubuntu 24.04.1 LTS, elementaryOS 7.1 Horus stable, LinuxMint 22 Wilma, Pop!OS 22.04 v43 for intel-amd, ZorinOS 17.2 core 64 bit 
+ 
+ *OS ISOs* : Ubuntu 22.04.5 LTS, Ubuntu 24.04.1 LTS, Kubuntu 24.04.1 LTS, Xubuntu 24.04.1 LTS, Lubuntu 24.04.1 LTS, LinuxMint 22 Wilma, Pop!OS 22.04 v43 for intel-amd, ZorinOS 17.2 core
+ 
+ *OS features* :
+| OS  | Ubunut 22.04 | Ubunut 24.04  | Kubunut 24.04 | Lubunut 24.04 | Xubunut 24.04 | LinuxMint 22 | Pop!OS 22.04 | Zorin OS 17.2 |
+|------|-----|-----|-----|------|-----|-----|-----|-----|
+| Ubuntu Base | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
+| Desktop | Gnome | Gnome | KDE Plasma | LXQt | XfCE | Cinnamon | Gnome | Gnome |
+| Linux Kernel | 6.8.0 | 6.8.0 | 6.8.0 | 6.8.0 | 6.8.0 | 6.8.0 | 6.9.3 | 6.8.0 |
+ 
  *Tested Game* : Age of Empires 2 Definitive Edition (Steam app 813780)
- *Compatibility tool* : GE-Proton 9.16
+ 
+ *Compatibility tool* : GE-Proton 9.16 (except for LinuxMint Proton Tkg 11487868346)
+ 
  *Graphics settings* : Medium (1 RAM slot is not working anymore and the Core i7 6820HQ CPU performances loss after the "Downfall" vulnearibility security patch is estimated to 35%, higher graphics settings won't allow to reach our aim : playing at leats 1 vs 1 ranked games)
 
 *Customization and apps* : Checking Grub wallpaper integration at reboot, password feedback for terminal apps and correctly-working BeLGE apps checking
-*Time Measures* : *Measures* : t1 = Time to install OS (min) / t2 = Time to access Github repository in 1rst session (min) / t3 = Time to rune the program (min) / t4 = Time to load system in 2nd session / t5 = Time to set up Steam Platform and GE-Proton (min) / t6 = Time to reload Steam Platform after GE-Proton installation (min) / t7 = Time to download, run and acces game menu / t tot = t1 + t2 +t3 +t4 +t5 +t6 +t7 (Total time elapsed from boot on empty drive to game menu access)
+
+*Time Measures* : 
+  t1 = Time to install OS (min) / t2 = Time to access Github repository in 1rst session (min) / t3 = Time to rune the program (min) / t4 = Time to load system in 2nd session / t5 = Time to set up Steam Platform and GE-Proton (min) / t6 = Time to reload Steam Platform after GE-Proton installation (min) / t7 = Time to download, run and acces game menu / t tot = t1 + t2 +t3 +t4 +t5 +t6 +t7 (Total time elapsed from boot on empty drive to game menu access)
+  
 *Time Meausres uncertainty* = 0.5 min
  
 *Performances Indeces* : IP1 (global perf. index) = 6 000 / (t tot) - IP2 (Ready to play Index) = 3 000 /(t tot - t7) - RBTS = Score value for the Ranked Benchmark Test (> 900 for 1vs1 match and > 1 000 for 2vs2 or more)    
   
 * **Results**
+
+| OS  | Ubunut 22.04 | Ubunut 24.04  | Kubunut 24.04 | Lubunut 24.04 | Xubunut 24.04 | LinuxMint 22 | Pop!OS 22.04 | Zorin OS 17.2 |
+|------|-----|-----|-----|------|-----|-----|-----|-----|
+| t1 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
+| t2 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
+| t3 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
+| t4 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
+| t5 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
+| t6 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
+| t7 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
+| t tot | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
+| IP1 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
+| IP2 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
+| RBTS | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
+
+
     
 * **Discussion**
      
