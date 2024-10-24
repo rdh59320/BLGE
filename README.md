@@ -255,7 +255,7 @@ Indeed, In September 2024 Linux desktops market share 4.5 % whereas it was only 
  *OS ISOs* : Ubuntu 22.04.5 LTS, Ubuntu 24.04.1 LTS, Kubuntu 24.04.1 LTS, Xubuntu 24.04.1 LTS, Lubuntu 24.04.1 LTS, LinuxMint 22 Wilma, Pop!OS 22.04 v43 for intel-amd, ZorinOS 17.2 core
  
  *OS features* :
-| OS  | Ubunut 22.04 | Ubunut 24.04  | Kubunut 24.04 | Lubunut 24.04 | Xubunut 24.04 | LinuxMint 22 | Pop!OS 22.04 | Zorin OS 17.2 |
+| OS  | Ubuntu 22.04 | Ubuntu 24.04  | Kubuntu 24.04 | Lubuntu 24.04 | Xubuntu 24.04 | LinuxMint 22 | Pop!OS 22.04 | Zorin OS 17.2 |
 |------|-----|-----|-----|------|-----|-----|-----|-----|
 | Ubuntu Base | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
 | Desktop | Gnome | Gnome | KDE Plasma | LXQt | XfCE | Cinnamon | Gnome | Gnome |
@@ -278,7 +278,7 @@ Indeed, In September 2024 Linux desktops market share 4.5 % whereas it was only 
   
 * **Results**
 
-| OS  | Ubunut 22.04 | Ubunut 24.04  | Kubunut 24.04 | Lubunut 24.04 | Xubunut 24.04 | LinuxMint 22 | Pop!OS 22.04 | Zorin OS 17.2 |
+| OS  | Ubuntu 22.04 | Ubuntu 24.04  | Kubuntu 24.04 | Lubuntu 24.04 | Xubuntu 24.04 | LinuxMint 22 | Pop!OS 22.04 | Zorin OS 17.2 |
 |------|-----|-----|-----|------|-----|-----|-----|-----|
 | t1 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
 | t2 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
