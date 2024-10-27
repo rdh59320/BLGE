@@ -173,6 +173,7 @@ These assays also study the most influencial parameters on the laptop performanc
    - t6 = Time to reload Steam Platform after GE-Proton installation (min)
    - t7 = Time to download, run and acces the game menu
    - t_tot = t1 + t2 +t3 +t4 +t5 +t6 +t7 (Total time elapsed from boot on empty drive to game menu access)
+*Time Meausres uncertainty* = 0.5 min
  *Performance indexes* :   
  - An indicator is created for the total process with the objective to access the game menu within 1 hour --> P1  = (60 x 100) / t tot(min) 
  - Another one was designed to assess the "ready-to-use" time by removing t7 from t_tot because it was very dependant to the internet download speed (most of t7 come from game download time) --> P2 = (60 x 100) / (t_tot - t7) 
@@ -281,36 +282,48 @@ Indeed, In September 2024 Linux desktops market share 4.5 % whereas it was only 
 | Desktop | Gnome | Gnome | KDE Plasma | LXQt | XfCE | Cinnamon | Gnome | Gnome |
 | Linux Kernel | 6.8.0 | 6.8.0 | 6.8.0 | 6.8.0 | 6.8.0 | 6.8.0 | 6.9.3 | 6.8.0 |
  
- *Tested Game* : Age of Empires 2 Definitive Edition (Steam app 813780)
- 
- *Compatibility tool* : GE-Proton 9.16 (except for LinuxMint Proton Tkg 11487868346)
- 
+ *Tested Game* : Age of Empires 2 Definitive Edition (Steam app 813780) 
+ *Compatibility tool* : GE-Proton 9.16 (except for LinuxMint Proton Tkg 11487868346) 
  *Graphics settings* : Medium (1 RAM slot is not working anymore and the Core i7 6820HQ CPU performances loss after the "Downfall" vulnearibility security patch is estimated to 35%, higher graphics settings won't allow to reach our aim : playing at leats 1 vs 1 ranked games)
-
 *Customization and apps* : Checking Grub wallpaper integration at reboot, password feedback for terminal apps and correctly-working BeLGE apps checking
 
 *Time Measures* : 
   t1 = Time to install OS (min) / t2 = Time to access Github repository in 1rst session (min) / t3 = Time to rune the program (min) / t4 = Time to load system in 2nd session / t5 = Time to set up Steam Platform and GE-Proton (min) / t6 = Time to reload Steam Platform after GE-Proton installation (min) / t7 = Time to download, run and acces game menu / t tot = t1 + t2 +t3 +t4 +t5 +t6 +t7 (Total time elapsed from boot on empty drive to game menu access)
   
 *Time Meausres uncertainty* = 0.5 min
- 
-*Performances Indeces* : IP1 (global perf. index) = 6 000 / (t tot) - IP2 (Ready to play Index) = 3 000 /(t tot - t7) - RBTS = Score value for the Ranked Benchmark Test (> 900 for 1vs1 match and > 1 000 for 2vs2 or more)    
+*Performances Indexes* : 
+- IP1 (global perf. index) = 6 000 / (t tot)
+- IP2 (Ready to play Index) = 3 000 /(t tot - t7)
+- RBTS = Score value for the Ranked Benchmark Test (> 900 for 1vs1 match and > 1 000 for 2vs2 or more)    
   
 * **Results**
 
-| OS  | Ubuntu 22.04 | Ubuntu 24.04  | Kubuntu 24.04 | *Lubuntu 24.04* | Xubuntu 24.04 | *LinuxMint 22* | Pop!OS 22.04 | Zorin OS 17.2 |
+| OS  | Ubuntu 22.04 | Ubuntu 24.04  | Kubuntu 24.04 | *Lubuntu 24.04* (1) | Xubuntu 24.04 | *LinuxMint 22* (2) | Pop!OS 22.04 | Zorin OS 17.2 |
 |------|-----|-----|-----|------|-----|-----|-----|-----|
 | t1 | 9.0 | 10.0 | 9.5 | 14.5 | 10.5 | 12.0 | 14.5 | 10.0 |
 | t2 | 2.0 | 2.0 | 2.5 | 2.5 | 2.0 | 2.0 | 2.0 | 1.5 |
 | t3 | 7.5 | 7.5 | 15.5 | 12.0 | 6.5 | 12.0 | 10.0 | 9.0 |
 | t4 | 1.5 | 1.0 | 1.5 | 1.5 | 1.0 | 1.5 | 1.5 | 1.5 |
-| t5 | 3.0 | 3.0 | 3.5 | 3.5 | 3.5 | **10.0** | 3.5 | 3.5 |
+| t5 | 3.0 | 3.0 | 3.5 | 3.5 | 3.5 | **10.0** (3) | 3.5 | 3.5 |
 | t6 | 0.5 | 0.5 | 0.5 | 1.0 | 0.5 | 0.5 | 0.5 | 0.5 |
-| t7 | 10.5 | 13.0 | 11.5 | **NA** | 12.0 | 20.0 | 12.0 | 12.0 |
-| t tot | 34.0 | 37.0 | 44.5 | **NA** | 36.0 | 58.0 | 44.0 | 37.5 |
-| IP1 | 176.5 | 162.2 | 134.8 | **NA** | 166.7 | 103.4 | 136.4 | 160.0 |
+| t7 | 10.5 | 13.0 | 11.5 | **NA** (4) | 12.0 | 20.0 | 12.0 | 12.0 |
+| t tot | 34.0 | 37.0 | 44.5 | **NA** (4) | 36.0 | 58.0 | 44.0 | 37.5 |
+| IP1 | 176.5 | 162.2 | 134.8 | **NA** (4) | 166.7 | 103.4 | 136.4 | 160.0 |
 | IP2 | 127.7 | 125.0 | **90.9** | **85.7** | 125.0 | **78.9** | **93.8** | 117.6 |
-| RBTS | 955 | 955 | 955 | **854** | 955 | **938** | 955 | 955 |
+| RBTS | 955 | 955 | 955 | **854** (5) | 955 | **938** (5) | 955 | 955 |
+| Grub Wallpaper | Ok | OK | OK | **not OK** (6) | OK | OK | **not OK** (6) | OK |
+| Password Feedback | OK | OK | OK | OK | OK | **OK** (7) | OK | OK |
+| Apps Functionement | OK | OK | OK | OK | OK | **OK** (8) | OK | OK |
+
+*Comments* : 
+ - (1) : 
+ - (2) : 
+ - (3) : 
+ - (4) : 
+ - (5) : 
+ - (6) : 
+ - (7) : 
+ - (8) : 
 
 
     
