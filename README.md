@@ -298,19 +298,19 @@ Indeed, In September 2024 Linux desktops market share 4.5 % whereas it was only 
   
 * **Results**
 
-| OS  | Ubuntu 22.04 | Ubuntu 24.04  | Kubuntu 24.04 | Lubuntu 24.04 | Xubuntu 24.04 | LinuxMint 22 | Pop!OS 22.04 | Zorin OS 17.2 |
+| OS  | Ubuntu 22.04 | Ubuntu 24.04  | Kubuntu 24.04 | *Lubuntu 24.04* | Xubuntu 24.04 | *LinuxMint 22* | Pop!OS 22.04 | Zorin OS 17.2 |
 |------|-----|-----|-----|------|-----|-----|-----|-----|
-| t1 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
-| t2 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
-| t3 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
-| t4 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
-| t5 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
-| t6 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
-| t7 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
-| t tot | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
-| IP1 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
-| IP2 | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
-| RBTS | Jammy | Noble | Noble | Noble | Noble | Noble | Jammy | Jammy |
+| t1 | 9.0 | 10.0 | 9.5 | 14.5 | 10.5 | 12.0 | 14.5 | 10.0 |
+| t2 | 2.0 | 2.0 | 2.5 | 2.5 | 2.0 | 2.0 | 2.0 | 1.5 |
+| t3 | 7.5 | 7.5 | 15.5 | 12.0 | 6.5 | 12.0 | 10.0 | 9.0 |
+| t4 | 1.5 | 1.0 | 1.5 | 1.5 | 1.0 | 1.5 | 1.5 | 1.5 |
+| t5 | 3.0 | 3.0 | 3.5 | 3.5 | 3.5 | **10.0** | 3.5 | 3.5 |
+| t6 | 0.5 | 0.5 | 0.5 | 1.0 | 0.5 | 0.5 | 0.5 | 0.5 |
+| t7 | 10.5 | 13.0 | 11.5 | **NA** | 12.0 | 20.0 | 12.0 | 12.0 |
+| t tot | 34.0 | 37.0 | 44.5 | **NA** | 36.0 | 58.0 | 44.0 | 37.5 |
+| IP1 | 176.5 | 162.2 | 134.8 | **NA** | 166.7 | 103.4 | 136.4 | 160.0 |
+| IP2 | 127.7 | 125.0 | **90.9** | **85.7** | 125.0 | **78.9** | **93.8** | 117.6 |
+| RBTS | 955 | 955 | 955 | **854** | 955 | **938** | 955 | 955 |
 
 
     
