@@ -163,17 +163,24 @@ These assays also study the most influencial parameters on the laptop performanc
  *OS* : Ubuntu 22.04.5 LTS ISO and Ubuntu 24.04.1 LTS ISO
  *Internet connexion* : Ethernet and fiber optic network with very high speed connection (downlaod speed = 880 Mbps and upload = 550 MBps, tested on https://www.speedtest.net/)
  *Tested Game* : Blade Runner Enhanced Edition (Steam app 1678420)
- *Compatibility tool* : GE-Proton 9.15 for experiments 1,2,5,6,7,8 and GE-Proton 9.16 for exp 3 and 4 using Proton-Qt (GE-Proton update does not had impact on the t6 time and thus on the total time as well) 
- 
- *Measures* : t1 = Time to install OS (min) / t2 = Time to access Github repository in 1rst session (min) / t3 = Time to rune the program (min) / t4 = Time to load system in 2nd session / t5 = Time to set up Steam Platform and GE-Proton (min) / t6 = Time to reload Steam Platform after GE-Proton installation (min) / t7 = Time to download, run and acces the game menu / t tot = t1 + t2 +t3 +t4 +t5 +t6 +t7 (Total time elapsed from boot on empty drive to game menu access)
- *Performance index* : An indicator is created for the total process with the objective to access the game menu within 1 hour --> Perf-Ind  = (60 x 100) / t tot(min) assuming 
- 
+ *Compatibility tool* : GE-Proton 9.15 for experiments 1,2,5,6,7,8 and GE-Proton 9.16 for exp 3 and 4 using Proton-Qt (GE-Proton update does not had impact on the t6 time and thus on the total time as well)  
+ *Measures* : 
+   - t1 = Time to install OS (min)
+   - t2 = Time to access Github repository in 1rst session (min)
+   - t3 = Time to rune the program (min)
+   - t4 = Time to load system in 2nd session
+   - t5 = Time to set up Steam Platform and GE-Proton (min)
+   - t6 = Time to reload Steam Platform after GE-Proton installation (min)
+   - t7 = Time to download, run and acces the game menu
+   - t_tot = t1 + t2 +t3 +t4 +t5 +t6 +t7 (Total time elapsed from boot on empty drive to game menu access)
+ *Performance indexes* :   
+ - An indicator is created for the total process with the objective to access the game menu within 1 hour --> P1  = (60 x 100) / t tot(min) 
+ - Another one was designed to assess the "ready-to-use" time by removing t7 from t_tot because it was very dependant to the internet download speed (most of t7 come from game download time) --> P2 = (60 x 100) / (t_tot - t7) 
  *Parameters Levels* :  
  | Parameter        | Ubuntu Version | ROM Type  | RAM Quantity |
  | ------|-----|-----|-----|
  | Level -1 | 22.04 Jammy Jellyfish | HDD 5400RPM | 4GB DDR3 |
   | Level +1 | 24.04 Noble Numbat | SSD 6Gb/s | 8GB DDR3 |
-
 *Design of experiments* : 
 | Exp | Ubuntu | ROM | RAM | Run Order |
 |------|-----|-----|-----|-----|
@@ -190,46 +197,59 @@ These assays also study the most influencial parameters on the laptop performanc
 
 Every time has been recorded with a precision of 0.5 min and reported in the table below :
 
-| Exp | t1 (min) | t2(min) | t3 (min) | t4(min) |	t5 (min) | t6 (min) | t7 (min | t tot (min) | Perf-Ind |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| 1 | 20,0 | 4,0 |	24,0 |	3,0 |	7,0 |	2,0 |	17,0 | 77.0 | 77 |
-| 2 | 21,0 |	5,0 |	20,0 |	3,0 |	5,0 |	3,0 |	18,0 | 75.0 | 80 |
-| 3 | 9,0 | 	2,0 | 8,0 | 1,0 | 4,0 |	0,5 |	12,5 | 37.0 | 162 |
-| 4 | 12,0 | 2,0	| 7,0	| 1,0	| 3,0	| 0,5	| 13,5 | 39.0 | 153 |
-| 5 | 22,0 |	5,0 |	22,0 |	3,0 |	5,0 |	2,0 |	12,0 | 71.0 | 84 |
-| 6 | 15,0 |	3,0 |	20,0 |	2,0 |	5,0 |	2,0 |	12,0 | 59.0 | 101 |
-| 7 | 8,0 |	2,0 |	9,0 |	1,0 |	4,0 |	1,0 |	10,5 | 35.5 | 169 |
-| 8 | 9,0 |	2,0 |	7,0 |	1,0 |	3,0 |	0,5 |	12,0 | 34.5 | 173 |
-| Mean | 14,5 |	3,1 |	14,6 |	1,9 |	4,5 |	1,4 |	13,4 | 53.5 | 124.9 |
-| SD | 5,8 |	1,4 |	7,5 |	1,0 |	1,3 |	0,9 |	2,7	| 19,0	| 43,1 |
+| Exp | t1 (min) | t2(min) | t3 (min) | t4(min) |	t5 (min) | t6 (min) | t7 (min | t tot (min) | P1 | P2 |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| 1 | 20,0 | 4,0 |	24,0 |	3,0 |	7,0 |	2,0 |	17,0 | 77.0 | 77 | 100 |
+| 2 | 21,0 |	5,0 |	20,0 |	3,0 |	5,0 |	3,0 |	18,0 | 75.0 | 80 | 105 |
+| 3 | 9,0 | 	2,0 | 8,0 | 1,0 | 4,0 |	0,5 |	12,5 | 37.0 | 162 | 245 |
+| 4 | 12,0 | 2,0	| 7,0	| 1,0	| 3,0	| 0,5	| 13,5 | 39.0 | 153 | 235 |
+| 5 | 22,0 |	5,0 |	22,0 |	3,0 |	5,0 |	2,0 |	12,0 | 71.0 | 84 | 102 |
+| 6 | 15,0 |	3,0 |	20,0 |	2,0 |	5,0 |	2,0 |	12,0 | 59.0 | 101 | 128 |
+| 7 | 8,0 |	2,0 |	9,0 |	1,0 |	4,0 |	1,0 |	10,5 | 35.5 | 169 | 240 |
+| 8 | 9,0 |	2,0 |	7,0 |	1,0 |	3,0 |	0,5 |	12,0 | 34.5 | 173 | 267 |
+| Mean | 14,5 |	3,1 |	14,6 |	1,9 |	4,5 |	1,4 |	13,4 | 53.5 | 124.9 | 177.7 |
+| SD | 5,8 |	1,4 |	7,5 |	1,0 |	1,3 |	0,9 |	2,7	| 19,0	| 43,1 | 74.8 |
 
 Where SD is the calculated standard deviation to normalize responses with the mean measures tn normalized value = (tn - tn_mean) / SD_n
 The normalized value are shown in the table here below :
 
-| Exp | t1 (min) | t2(min) | t3 (min) | t4(min) |	t5 (min) | t6 (min) | t7 (min | t tot (min) | Perf-Ind |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| 1 | 0.94 | 0.65 |	1.25 |	1.14 |	1.91 |	0.60 |	1.34 | 1.24 | -1.11 |
-| 2 | 1.11 |	1.38 |	0.72 |	1.14 |	0.38 |	1.66 |	1.72 | 1.13 | -1.04 |
-| 3 | -0.94 | -0.83 | -0.89 | -0.88 | -0.38 |	-0.99 |	-0.35 | -0.87 | 0.86 |
-| 4 | -0.43 | -0.83	| -1.02	| -0.88	| -1.15	| -0.99	| 0.02 | -0.76 | 0.65 |
-| 5 | 1.29 |	1.38 |	0.99 |	1.14 |	0.38 |	0.60 |	-0.54 | 0.92 | -0.95 |
-| 6 | 0.09 |	-0.09 |	0.72 |	0.13 |	0.38 |	0.60 |	-0.54 | 0.29 | -0.55 |
-| 7 | -1.11 |	-0.83 |	-0.75 |	-0.88 |	-0.38 |	-0.46 |	-1.11 | -0.95 | 1.02 |
-| 8 | -0.94 |	-0.83 |	-1.02 |	-0.88 |	-1.15 |	-0.99 |	-0.54 | -1.00 | 1.12 |
+| Exp | t1 (min) | t2(min) | t3 (min) | t4(min) |	t5 (min) | t6 (min) | t7 (min | t tot (min) | P1 | P2 |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| 1 | 0.94 | 0.65 |	1.25 |	1.14 |	1.91 |	0.60 |	1.34 | 1.24 | -1.11 | -1.04 | 
+| 2 | 1.11 |	1.38 |	0.72 |	1.14 |	0.38 |	1.66 |	1.72 | 1.13 | -1.04 | -0.97 |
+| 3 | -0.94 | -0.83 | -0.89 | -0.88 | -0.38 |	-0.99 |	-0.35 | -0.87 | 0.86 | 0.90 |
+| 4 | -0.43 | -0.83	| -1.02	| -0.88	| -1.15	| -0.99	| 0.02 | -0.76 | 0.65 | 0.77 |
+| 5 | 1.29 |	1.38 |	0.99 |	1.14 |	0.38 |	0.60 |	-0.54 | 0.92 | -0.95 | -1.02 |
+| 6 | 0.09 |	-0.09 |	0.72 |	0.13 |	0.38 |	0.60 |	-0.54 | 0.29 | -0.55 | -0.67 |
+| 7 | -1.11 |	-0.83 |	-0.75 |	-0.88 |	-0.38 |	-0.46 |	-1.11 | -0.95 | 1.02 | 0.83 |
+| 8 | -0.94 |	-0.83 |	-1.02 |	-0.88 |	-1.15 |	-0.99 |	-0.54 | -1.00 | 1.12 | 1.19 |
 
-With these normalized data we can calculate the normalized influential factors for each parameters and their interactions on the **perormance index** (other response were not study further here) as well as the p-value for the 3 main factors. As the sample size is quite limited, Student test was chosen to assess the data set. There are 4 degrees of freedom (dof) by studying 3 parameters on a sample of 8 experiments (dof = 8-3-1 = 4) which means t=2.776 for a 95% confidence interval where t is the Student test variable. Results are summarized below :
+With these normalized data we can calculate the normalized influential factors for each parameters and their interactions on the **perormance indexes** (other response were not study further here) as well as the p-value for the 3 main factors. As the sample size is quite limited, Student test was chosen to assess the data set. There are 4 degrees of freedom (dof) by studying 3 parameters on a sample of 8 experiments (dof = 8-3-1 = 4) which means t=2.776 for a 95% confidence interval where t is the Student test variable. Results are summarized below :
 
+**P1 Analysis**
  | Parameter  | X1 = OS Version | X2 = ROM Type  | X3 = RAM Quantity | I12 | I13 | I23 | I123 |
  |------|-----|-----|-----|------|-----|-----|-----|
- | Student var t_Perf-Ind | 0.17 |	3,66 |	1.59 |	-0,29 |	0,31 |	-0,01 |	-0,01 |
+ | Student var t_P1 | 0.17 |	3,66 |	1.59 |	-0,29 |	0,31 |	-0,01 |	-0,01 |
  | p-value | 0.187 |	**0.022** |	0.870 |	0.991 |	0.770 |	0.786 |	0.991 |
 
+ **P2 Analysis**
+ | Parameter  | X1 = OS Version | X2 = ROM Type  | X3 = RAM Quantity | I12 | I13 | I23 | I123 |
+ |------|-----|-----|-----|------|-----|-----|-----|
+ | Student var t_P2 | 0.34 |	3.69 |	0.32 |	0.02 |	0.38 |	-0,09 |	0,10 |
+ | p-value | 0.752 |	**0.021** |	0.763 |	0.988 |	0.723 |	0.929 |	0.922 |
+
+  **t7 Analysis**
+ | Parameter  | X1 = OS Version | X2 = ROM Type  | X3 = RAM Quantity | I12 | I13 | I23 | I123 |
+ |------|-----|-----|-----|------|-----|-----|-----|
+ | Student var t_t7 | 0.17 |	3,66 |	1.59 |	-0,29 |	0,31 |	-0,01 |	-0,01 |
+ | p-value | **0.052** |	**0.119** |	0.545 |	**0.230** |	0.929 |	0.791 |	0.791 |
+
 Where I12 is the interaction between OS version and ROM type, I13 the one between OS version and RAM quantity, I23 between ROM type and RAM quantity and I123 the second order interaction between all parameters.
-These results show that the disk type is the most influential parameter then the RAM quantity but neither the OS version or the interactions are relevant. The p-value demonstrate that only the ROM type could be considered relevant on this study (p<0.05). 
+These results show that the disk type (ROM) is the most influential parameter then the RAM quantity but neither the OS version or the interactions are relevant. The p-value demonstrate that only the ROM type could be considered relevant on this study (p<0.05) except for t7 (min) where RAM has a greater impact than ROM type. Thus, it is relevant that I12 results are important for t7 measures since it is related to the combination of ROM and RAM. Those results fit with the theory so it is in accordance with the facts that ROM type is most relevant with installation time and RAM with gaming speed. 
      
 * **Discussion**
 
-The maximal total time obtained for experiment 2 (Ubuntu 24.04 with 4GB DDR3 RAM and a 500 GB HDD at 5400RPM (which is not really fitted to gaming purpose) is 80 min which seems quite acceptable for this hardware configuration. All results obtained with SSD hard drive are faster than 40 min which is in agreement with the Student test variables calculated above and demonstrate the ***ROM type is a relevant parameter*** to upgrade older computer performances. Fastest access to game was obtained with experiment 8 (Ubuntu 24.04 / SSD / 8GB). RAM quantity have also an impact but less relevant and the p-value does not demonstrate its consistency in our case since only ROM Type obtained a p-value < 0.05. Another big surprise while conducted this study was the results with experiment 6. Indeed, it was not expected to fall beneath 60 min for the total process at all with the newest Ubuntu LTS version (24.04 Noble Numbat) but especially with a HDD @ 5400rpm. It is supposed that the newest Ubuntu LTS have a better RAM management with all RAM slots but further investigations may be required to confirm this statement. Another limited factor which has not been studied here is the network connection speed. Indeed, even though the BeLGE package size is quite tiny (only 1 MB), OS install, package intall and game download require to download a huge quantity of data (dozens of GB) from different external sources (Ubuntu, Kisak and Valve Steam repositories). Moreover, Steam servers speed is likely to be responsible of the results between experiments 7 and 8 on t7 which is lower for Exp 7 than Exp 8 whereas the oppsosite was expected (Exp 8 has a better material configuration). This is why a high connection speed is strongly recommanded to use this package and even necessary if you wish to play online. 
+The maximal total time obtained for experiment 2 (Ubuntu 24.04 with 4GB DDR3 RAM and a 500 GB HDD at 5400RPM (which is not really fitted to gaming purpose) is 80 min which seems quite acceptable for this hardware configuration. All results obtained with SSD hard drive are faster than 40 min which is in agreement with the Student test variables calculated above and demonstrate the ***ROM type is a relevant parameter*** to upgrade older computer performances. Fastest access to game was obtained with experiment 8 (Ubuntu 24.04 / SSD / 8GB). RAM quantity have also an impact but less relevant execpt for games installation and execution. P-values do not demonstrate its consistency for P1 and P2 in our case since only ROM Type obtained a p-value < 0.05. Another big surprise while conducted this study was the results with experiment 6. Indeed, it was not expected to fall beneath 60 min for the total process at all with the newest Ubuntu LTS version (24.04 Noble Numbat) but especially with a HDD @ 5400rpm. It is supposed that the newest Ubuntu LTS have a better RAM management with all RAM slots but further investigations may be required to confirm this statement. Another limited factor which has not been studied here is the network connection speed. Indeed, even though the BeLGE package size is quite tiny (only 1 MB), OS install, package intall and game download require to download a huge quantity of data (dozens of GB) from different external sources (Ubuntu, Kisak and Valve Steam repositories). Moreover, Steam servers speed is likely to be responsible of the results between experiments 7 and 8 on t7 which is lower for Exp 7 than Exp 8 whereas the oppsosite was expected (Exp 8 has a better material configuration). This is why a high connection speed is strongly recommanded to use this package and even necessary if you wish to play online. 
      
 * **Conclusion**
 
