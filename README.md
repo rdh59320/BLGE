@@ -298,7 +298,7 @@ Indeed, In September 2024 Linux desktops market share 4.5 % whereas it was only 
   
 * **Results**
 
-| OS  | Ubuntu 22.04 | Ubuntu 24.04  | Kubuntu 24.04 | *Lubuntu 24.04* (1) | Xubuntu 24.04 | *LinuxMint 22* (2) | Pop!OS 22.04 | Zorin OS 17.2 |
+| OS  | Ubuntu 22.04 | Ubuntu 24.04  | Kubuntu 24.04 | *Lubuntu 24.04* (1) | Xubuntu 24.04 | *LinuxMint 22* (1) | Pop!OS 22.04 | Zorin OS 17.2 Core (2) |
 |------|-----|-----|-----|------|-----|-----|-----|-----|
 | t1 | 9.0 | 10.0 | 9.5 | 14.5 | 10.5 | 12.0 | 14.5 | 10.0 |
 | t2 | 2.0 | 2.0 | 2.5 | 2.5 | 2.0 | 2.0 | 2.0 | 1.5 |
