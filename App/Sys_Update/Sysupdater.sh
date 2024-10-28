@@ -32,12 +32,6 @@ update_apt() {
     sudo apt autoclean
 }
 
-# Function to update Snap packages
-update_snap() {
-    echo -e "\n\n Snap updates \n\n"
-    sudo snap refresh
-}
-
 # Function to update Flatpak packages
 update_flatpak() {
     echo -e "\n\n Flatpak updates \n\n"
@@ -59,7 +53,13 @@ fi
 
 update_clamav
 update_apt
-update_snap
+if [ $(hostnamectl | grep -e 'Operating System' | grep -e 'Ubuntu') = ""; then echo -e " ";
+    
+else 
+    echo -e "\n\n Snap Updates \n\n"
+    sudo snap refresh
+fi
+
 update_flatpak
 
 echo -e "\n\n System updates are completed \n\n"
