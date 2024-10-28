@@ -25,7 +25,7 @@ see the bug reports [here for details](https://bugs.winehq.org/show_bug.cgi?id=5
   
 ## Introduction
 
-**BeLGE Package** was designed to give you the usefull tools that enable you to run MS Games within the Steam app or Lutris Open Gaming Platform on either Ubuntu 22.04, Ubuntu 24.04 (and also Kubuntu, Xubuntu and Lubuntu), ZorinOS 17.2 or Pop!OS 22.04 (LinuxMint isn't compatible for now but will be next update).
+**BeLGE Package** was designed to give you the usefull tools that enable you to run MS Games within the Steam app or Lutris Open Gaming Platform on either Ubuntu 22.04, Ubuntu 24.04 (and also Kubuntu, Xubuntu and Lubuntu), ZorinOS 17.2 or Pop!OS 22.04 (LinuxMint isn't compatible for now but will be in the next update).
 
 ***Ubuntu 20.04 Focal Fossa is no longer supported due to too many dependency issues but also too much time to update the system after install (*Upgrading to Ubuntu 22.04 or higher is highly recommanded*)***
 
