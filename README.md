@@ -318,7 +318,7 @@ Indeed, In September 2024 Linux desktops market share 4.5 % whereas it was only 
 *Comments* : 
  - (1) : Lubuntu and LinuxMint were not tested with the standard procedure. Lubuntu can not have access to the "properties" tab in the Linux Steam game "Manage" Button to apply compatibility tools (tests were performed on Steam Wine with Lutris Platform instead). LinuxMint has been tested with a custom package (standard is not working yet due to lack of snap in LMint repositories) and with Proton Tkg for compatibility tool (GE-Proton is not compatible with).
  - (2) : Zorin OS 17.2 Edu was also successfully tested but it took a bit longer for the OS installation
- - (3) : As told in (1), test for LinuxMint uses Proton Tkg instead of GE-Proton and installing the compatibility tool took more time than GE
+ - (3) : Test for LinuxMint uses Proton Tkg instead of GE-Proton and installing the compatibility tool took more time than GE
  - (4) : Lubuntu t7 can not be recorded since to run the game we first have to apply the right compatibility tool via the "Properties" tab and there is no access in Steam Linux for Lubuntu
  - (5) : Lubuntu and LinuxMint RTBS were acquired with another tool than GE-Proton. LinuxMint uses Proton Tkg and Lubuntu was tested with Lutris Plateform
  - (6) : Grub custom wallpaper was not correctly loaded when booting with Lubuntu and was not loaded at all with Pop!OS 
