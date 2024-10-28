@@ -36,7 +36,7 @@ echo -e " \n\nSteam has been pre-installed on your System \n\n"
 # ProtonUp-Qt Installation via Flatpak as recommended by Davidotek
 
 echo -e "\n\n Installing Lutris and ProtonUp-Qt dependencies \n\n"
-sudo apt install -y --install-recommends git unzip xdotool xxd yad scummvm inotify-tools libssl-dev dosbox timidity lutris
+sudo apt install git unzip xdotool xxd yad scummvm inotify-tools libssl-dev dosbox timidity lutris -y --install-recommends 
 echo -e "\n\n Installing ProtonUp-Qt compatibility tool \n\n"
 if ! flatpak install flathub net.davidotek.pupgui2 -y; then
     echo "Failed to install ProtonUp-Qt. Please check the error messages above."
