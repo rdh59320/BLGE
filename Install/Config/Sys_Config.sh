@@ -40,16 +40,17 @@ sysctl -p /etc/sysctl.d/99-sysctl.conf
 echo -e "\n\n Adding 32 bits architecture for package compatibility \n\n And first updating system \n\n"
 dpkg --add-architecture i386
 apt update
-apt -y full-upgrade
+apt full-upgrade -y
 # Install the useful dependencies prog and replacing snap-store by gnome software
-apt install -y snapd xterm numlockx tlp aptitude gdebi-core flatpak clamav clamtk clamav-daemon grub2
-apt install -y --install-suggests gnome-software
-apt install -y --install-recommends gedit stacer gnome-software-plugin-flatpak 
+apt install xterm numlockx tlp aptitude gdebi-core flatpak clamav clamtk clamav-daemon grub2 -y 
+apt install gnome-software -y --install-suggests 
+apt install gedit stacer gnome-software-plugin-flatpak -y --install-recommends
 
-# Updating Snap
-snap refresh
+# Updating Snap for ubuntu and its flavors
 
-
+if [ $(hostnamectl | grep -e 'Operating System' | grep -e 'Ubuntu') = "" ]; then echo ""
+else snap refresh;
+fi
 
 
 # Adding flathub repo for more applications available to the user after rebooting
