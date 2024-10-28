@@ -17,10 +17,6 @@
 
 *******
 
-***PACKAGE RELEASE IS DELAYED DUE TO WINEHQ REPOSITORY ISSUES*** 
-
-see the bug reports [here for details](https://bugs.winehq.org/show_bug.cgi?id=57342) or [here to see impacted distros](https://bugs.winehq.org/show_bug.cgi?id=57345)
-
 <div id='introduction'/>  
   
 ## Introduction
