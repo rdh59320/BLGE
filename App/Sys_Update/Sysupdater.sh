@@ -54,14 +54,7 @@ fi
 update_clamav
 update_apt
 update_flatpak
-
-if [ $(hostnamectl | grep -e 'Operating System' | grep -e 'Ubuntu') = ""; then echo -e " ";
-    
-else 
-    echo -e "\n\n Snap Updates \n\n"
-    sudo snap refresh
-fi
-
+sudo snap refresh
 
 echo -e "\n\n System updates are completed \n\n"
 
