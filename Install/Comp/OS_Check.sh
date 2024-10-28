@@ -20,16 +20,16 @@ trap 'handle_error $LINENO' ERR
 # Ubuntu version detection
 if grep -q "UBUNTU_CODENAME=focal" /etc/os-release; then
     echo "focal" > "/opt/BeLGE/Var/OS"
-    echo "Detected Ubuntu 20.04 (Focal Fossa)"
+    echo "Detected : Focal Fossa"
 elif grep -q "UBUNTU_CODENAME=jammy" /etc/os-release; then
     echo "jammy" > "/opt/BeLGE/Var/OS"
-    echo "Detected Ubuntu 22.04 (Jammy Jellyfish)"
+    echo "Detected : Jammy Jellyfish"
 elif grep -q "UBUNTU_CODENAME=noble" /etc/os-release; then
     echo "noble" > "/opt/BeLGE/Var/OS"
-    echo "Detected Ubuntu 24.04 (Noble Numbat)"
+    echo "Detected : Noble Numbat"
 else
     echo "0" > "/opt/BeLGE/Var/OS"
-    echo "Unsupported Ubuntu version detected. BeLGE requires Ubuntu 20.04, 22.04, or 24.04 LTS."
+    echo -e "\n Unsupported Ubuntu version detected. \n BeLGE requires either Ubuntu 22.04, 24.04 LTS and its flavors or \n LinuxMint, Pop!OS and LinuxMint. \n"
 fi
 
 # End script
