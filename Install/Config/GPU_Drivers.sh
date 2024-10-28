@@ -27,13 +27,13 @@ if [ "$GPU" = "AMD" ] || [ "$GPU" = "Intel" ]; then
     echo -e "\n\n\n Adding Intel/AMD Mesa/Vulkan Drivers\n\n\n"
     sudo add-apt-repository ppa:kisak/kisak-mesa -y
     sudo apt update
-    sudo apt install -y libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386
+    sudo apt install libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386 -y
     
 # Case where NVIDIA is the main GPU supplier
 elif [ "$GPU" = "NVIDIA" ]; then
     echo -e "\n\n\n Adding NVIDIA Drivers \n\n\n"
     sudo apt update
-    sudo apt install -y nvidia-driver-550 libvulkan1 libvulkan1:i386
+    sudo apt install nvidia-driver-550 libvulkan1 libvulkan1:i386 -y
 else
     echo "Unsupported GPU type: $GPU"
     exit 1
