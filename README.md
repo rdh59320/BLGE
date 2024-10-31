@@ -173,11 +173,13 @@ These assays also study the most influencial parameters on the laptop performanc
  *Performance indexes* :   
  - An indicator is created for the total process with the objective to access the game menu within 1 hour --> P1  = (60 x 100) / t tot(min) 
  - Another one was designed to assess the "ready-to-use" time by removing t7 from t_tot because it was very dependant to the internet download speed (most of t7 come from game download time) --> P2 = (60 x 100) / (t_tot - t7) 
- *Parameters Levels* :  
- | Parameter        | Ubuntu Version | ROM Type  | RAM Quantity |
- | ------|-----|-----|-----|
+ *Parameters Levels* :
+
+ | Parameter | Ubuntu Version | ROM Type  | RAM Quantity |
+ |-----|-----|-----|-----|
  | Level -1 | 22.04 Jammy Jellyfish | HDD 5400RPM | 4GB DDR3 |
   | Level +1 | 24.04 Noble Numbat | SSD 6Gb/s | 8GB DDR3 |
+  
 *Design of experiments* : 
 | Exp | Ubuntu | ROM | RAM | Run Order |
 |------|-----|-----|-----|-----|
