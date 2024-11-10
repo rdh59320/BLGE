@@ -116,9 +116,8 @@ I strongly advise you to **upgrade your system** to Ubuntu 22.04 Jammy Jellyfish
 <div id='additional-apps'/>  
   
 ## Additional Apps
-* BeLGE provides additional apps to improve your new OS
-* The package will customize your your system starting menu in order for you to choose the best way for you to launch your system (either on generic or low latency kernel)
-* BeLGE will also install 3 additional apps and their desktop entries : ClamAV Scan, CPU Governor and System Updater
+* The package will customize your your system starting menu
+* BeLGE provides 3 additional apps to improve your new OS and their desktop entries : ClamAV Scan, CPU Governor and System Updater
 * ClamAV Scan allow you to scan the folder you want with ClamAV daemon
 * CPU Governor allows you to quickly switch between "Powersave" or "Performance" CPU mode according to your needs (switch to Performance to play then go back to Powersave once your gaming is over)
 * System Updater which allows you to update the ClamAV database, the APT, Snap and Flatpak repositories in the same time
