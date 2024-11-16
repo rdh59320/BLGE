@@ -68,7 +68,7 @@ I strongly advise you to **upgrade your system** to Ubuntu 22.04 Jammy Jellyfish
 
 * **Please note that the package is STILL EXPERIMENTAL and might need further modifications or optimization later**
 * **DO NOT USE THIS PACKAGE IF YOUR SYSTEM DOES NOT HAVE THE MINIMAL REQUIREMENTS BELOW.**
-* To avoid any configuration conflicts with your system, it is **STRICTLY RECOMMENDED TO USE THIS PROGRAM ON A FRESHLY INSTALLED OS.**
+* To avoid any configuration conflicts with your system, it is **HIGHLY RECOMMENDED TO USE THIS PROGRAM ON A FRESHLY INSTALLED OS.**
 * This package is **only configured for Ubuntu 22.04 Jammy Jellyfish, 24.04 Noble Numbat, Pop!OS 22.04 and Zorin OS 17.2**. Some other Ubuntu-based-distros may run the programm but beware of depency conflicts which can occur. You never know unless you have a complete understanding of what you are doing ! 
 * Let's take into account that this package is **STILL EXPERIMENTAL** as told before and **YOU ARE RESPONSIBLE for ANY ISSUE** that could happen during its execution!!!
 * It remains **impossible for me to connect to the XBox server** but that **does not prevent you to play online multiplayer mode** with a great gaming experience (Maybe the same reasons that **CaptureAge** is **not working on Linux** just like Arkanosis said on https://aoe2.arkanosis.net/linux/#how_do_i_use_capture_age_on_linux , you should have a look !) .
