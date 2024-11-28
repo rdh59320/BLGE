@@ -226,7 +226,7 @@ With these normalized data we can calculate the normalized influential factors f
  | Parameter  | X1 = OS Version | X2 = ROM Type  | X3 = RAM Quantity | I12 | I13 | I23 | I123 |
  |------|-----|-----|-----|------|-----|-----|-----|
  | Student var t_P1 | 0.17 |	3,66 |	0.64 |	-0,29 |	0,31 |	-0,01 |	-0,01 |
- | p-value | 0.870 |	**0.022** |	0.558 |	0.991 |	0.770 |	0.786 |	0.991 |
+ | p-value | 0.870 |	**0.022** |	0.558 |	0.786 |	0.770 |	0.991 |	0.991 |
 
  **P2 Analysis**
  | Parameter  | X1 = OS Version | X2 = ROM Type  | X3 = RAM Quantity | I12 | I13 | I23 | I123 |
