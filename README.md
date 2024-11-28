@@ -225,19 +225,19 @@ With these normalized data we can calculate the normalized influential factors f
 **P1 Analysis**
  | Parameter  | X1 = OS Version | X2 = ROM Type  | X3 = RAM Quantity | I12 | I13 | I23 | I123 |
  |------|-----|-----|-----|------|-----|-----|-----|
- | Student var t_P1 | 0.17 |	3,66 |	0.64 |	-0,29 |	0,31 |	-0,01 |	-0,01 |
+ | Student var t_P1 | 0.17 |	3,66 |	0.64 |	0,29 |	0,31 |	0,01 |	0,01 |
  | p-value | 0.870 |	**0.022** |	0.558 |	0.786 |	0.770 |	0.991 |	0.991 |
 
  **P2 Analysis**
  | Parameter  | X1 = OS Version | X2 = ROM Type  | X3 = RAM Quantity | I12 | I13 | I23 | I123 |
  |------|-----|-----|-----|------|-----|-----|-----|
- | Student var t_P2 | 0.34 |	3.69 |	0.32 |	0.02 |	0.38 |	-0,09 |	0,10 |
+ | Student var t_P2 | 0.34 |	3.69 |	0.32 |	0.02 |	0.38 |	0,09 |	0,10 |
  | p-value | 0.752 |	**0.021** |	0.763 |	0.988 |	0.723 |	0.929 |	0.922 |
 
   **t7 Analysis**
  | Parameter  | X1 = OS Version | X2 = ROM Type  | X3 = RAM Quantity | I12 | I13 | I23 | I123 |
  |------|-----|-----|-----|------|-----|-----|-----|
- | Student var t_t7 | 0.17 |	3,66 |	1.59 |	-0,29 |	0,31 |	-0,01 |	-0,01 |
+ | Student var t_t7 | 0.66 |	1.98 |	2.73 |	0,28 |	0,09 |	1.41 |	0,28 |
  | p-value | 0.545 |	**0.119** |	**0.052** |	0.791 |	0.929 |	**0.230** |	0.791 |
 
 Where I12 is the interaction between OS version and ROM type, I23 the one between OS version and RAM quantity, I23 between ROM type and RAM quantity and I123 the second order interaction between all parameters.
