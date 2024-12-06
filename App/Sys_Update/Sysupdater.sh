@@ -26,8 +26,8 @@ update_clamav() {
 # Function to update APT packages
 update_apt() {
     echo -e "\n\n APT updates \n\n"
-    sudo apt update
-    sudo apt full-upgrade -y
+    sudo aptitude update
+    sudo aptitude full-upgrade -y
     sudo apt autoremove --purge -y
     sudo apt autoclean
 }
